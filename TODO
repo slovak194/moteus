@@ -1,0 +1,30 @@
+Get VESC to drive the 3508
+Get VESC FOC mode to work in sensorless configuration
+
+
+Figure out why I can no longer build VESC firmware
+
+Build rotor puller for motors
+ * 2 al plates with M4 bolts
+
+Extract a shaft from one of the motors, figure out how to put it back
+in
+ * use arbor press
+
+Find new shaft source
+
+Do mechanics to figure out what torque is necessary to jump given
+linkage
+
+Design gearbox for multistar 3508
+ * Initial print in plastic
+
+
+DONE 2018-09-26
+ * Mounted the 3508 motors for unloaded test stand operation
+ * Build cables to attach smaller motors to VESC
+
+
+DONE 2018-09-24
+
+ * Build permanent cable from power supply to VESC
