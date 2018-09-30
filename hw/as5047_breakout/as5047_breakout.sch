@@ -3784,7 +3784,11 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="as5147_breakout" deviceset="AS5147" device=""/>
+<part name="U$1" library="as5147_breakout" deviceset="AS5147" device="">
+<attribute name="DPN" value="AS5047D-ATSMCT-ND"/>
+<attribute name="MFG" value="AMS"/>
+<attribute name="MPN" value="AS5047D-ATSM"/>
+</part>
 <part name="C1" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
@@ -3794,7 +3798,11 @@ Source: AVX .. aphvc.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="63.5" y="45.72"/>
+<instance part="U$1" gate="G$1" x="63.5" y="45.72">
+<attribute name="DPN" x="63.5" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MFG" x="63.5" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="63.5" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C1" gate="G$1" x="27.94" y="38.1"/>
 <instance part="GND1" gate="1" x="43.18" y="22.86"/>
 <instance part="JP1" gate="A" x="109.22" y="43.18"/>
