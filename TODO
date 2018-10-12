@@ -1,24 +1,67 @@
-Get VESC to drive the 3508
-Get VESC FOC mode to work in sensorless configuration
+Weigh all the gearbox components
+Design magnetometer board mount
+
+Order grease for gearbox
+
+Design first prototype gearbox for multistar 3508
+ * Current gearset - MOD 0.5
+   * 20 tooth sun - sdp-si KSS0.5-20B
+   * 30 tooth planet - sdp-si S12N05M030A0510
+   * 80 tooth internal gear - sdp-si S1E05ZM05S080
+   * planet bearing - sdp-si S9912YME0410PS2 4mm bore, 10mm OD
+   * input carrier bearing - vxb.com MR6702-ZZ (15x21x4)
+   * output carrier bearing - vxb.com MR6704-ZZ (20x27x4)
+ * to design
+   * planet carrier
+   * housing
+     * figure out how this would mount to each other for a leg
+     * figure out how to mount the angular sensor on the back
+     * figure out how to mount a control board on it
+   * screws to mount housing to motor
+   * screws and nuts to hold planet carriers together
+   * screws and nuts to hold housing together
+ * Initial print in plastic
 
 
 Figure out why I can no longer build VESC firmware
-
-Build rotor puller for motors
- * 2 al plates with M4 bolts
-
-Extract a shaft from one of the motors, figure out how to put it back
-in
- * use arbor press
-
-Find new shaft source
+Get VESC to use absolute magnetic position sensor
 
 Do mechanics to figure out what torque is necessary to jump given
 linkage
 
-Design gearbox for multistar 3508
- * Initial print in plastic
 
+
+DONE 2018-10-11
+ * Redrew planetary output stage with master sketch
+ * Redrew 1st housing with master sketch for outside perimeter
+ * Add lips to planet carriers to contact bearing sides
+ * Design housing clamping mechanism
+ * Design mount to stick two together in a leg
+ * Design control board mount
+
+DONE 2018-10-10
+ * SDP-SI shaft fits in motor bearing
+ * Test fit SDP-SI gear assembly
+
+DONE 2018-10-09
+ * Ordered micrometer
+ * Ordered SDP-SI gearset
+
+DONE 2018-10-01
+ * Ordered gear design book
+
+DONE 2018-09-30
+ * Ordered VESC v6 w/ SPI connector
+ * Ordered AS5047 breakout
+ * Built jig to pull motors, tested extracting a shaft from the 4112
+   motor
+ * Pulled shaft from 3508
+ * Ordered more 3508s
+ * Ordered 4mm shaft for 3508
+
+DONE 2018-09-27
+ * Get VESC to drive the 3508
+ * Get VESC FOC mode to work in sensorless configuration
 
 DONE 2018-09-26
  * Mounted the 3508 motors for unloaded test stand operation
