@@ -1,0 +1,10 @@
+ * Current gearset - MOD 0.5
+   * 20 tooth sun - sdp-si KSS0.5-20B
+   * 30 tooth planet - sdp-si S12N05M030A0510
+   * 80 tooth internal gear - sdp-si S1E05ZM05S080
+   * planet bearing - sdp-si S9912YME0410PS2 4mm bore, 10mm OD
+   * input carrier bearing - vxb.com MR6702-ZZ (15x21x4)
+   * output carrier bearing - vxb.com MR6704-ZZ (20x27x4)
+   * screws to mount housing to motor: M3x6 phillips flat head
+   * screws and nuts to hold planet carriers together: M2x? bolts and nuts
+   * screws and nuts to hold housing together: M3x? bolts and nuts
