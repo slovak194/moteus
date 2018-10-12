@@ -1,5 +1,4 @@
 Weigh all the gearbox components
-Design magnetometer board mount
 
 Order grease for gearbox
 
@@ -11,17 +10,13 @@ Design first prototype gearbox for multistar 3508
    * planet bearing - sdp-si S9912YME0410PS2 4mm bore, 10mm OD
    * input carrier bearing - vxb.com MR6702-ZZ (15x21x4)
    * output carrier bearing - vxb.com MR6704-ZZ (20x27x4)
- * to design
-   * planet carrier
-   * housing
-     * figure out how this would mount to each other for a leg
-     * figure out how to mount the angular sensor on the back
-     * figure out how to mount a control board on it
-   * screws to mount housing to motor
-   * screws and nuts to hold planet carriers together
-   * screws and nuts to hold housing together
+   * screws to mount housing to motor: M3x6 phillips flat head
+   * screws and nuts to hold planet carriers together: M2x? bolts and nuts
+   * screws and nuts to hold housing together: M3x? bolts and nuts
  * Initial print in plastic
 
+
+Design motor angle sensor mount
 
 Figure out why I can no longer build VESC firmware
 Get VESC to use absolute magnetic position sensor
@@ -38,6 +33,7 @@ DONE 2018-10-11
  * Design housing clamping mechanism
  * Design mount to stick two together in a leg
  * Design control board mount
+ * Design magnetometer board mount
 
 DONE 2018-10-10
  * SDP-SI shaft fits in motor bearing
