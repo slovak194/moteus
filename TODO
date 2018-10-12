@@ -1,22 +1,9 @@
 Weigh all the gearbox components
 
-Order grease for gearbox
-
-Design first prototype gearbox for multistar 3508
- * Current gearset - MOD 0.5
-   * 20 tooth sun - sdp-si KSS0.5-20B
-   * 30 tooth planet - sdp-si S12N05M030A0510
-   * 80 tooth internal gear - sdp-si S1E05ZM05S080
-   * planet bearing - sdp-si S9912YME0410PS2 4mm bore, 10mm OD
-   * input carrier bearing - vxb.com MR6702-ZZ (15x21x4)
-   * output carrier bearing - vxb.com MR6704-ZZ (20x27x4)
-   * screws to mount housing to motor: M3x6 phillips flat head
-   * screws and nuts to hold planet carriers together: M2x? bolts and nuts
-   * screws and nuts to hold housing together: M3x? bolts and nuts
- * Initial print in plastic
-
-
+Model 3508 motor in freecad
 Design motor angle sensor mount
+
+Bring up new VESC
 
 Figure out why I can no longer build VESC firmware
 Get VESC to use absolute magnetic position sensor
@@ -24,7 +11,19 @@ Get VESC to use absolute magnetic position sensor
 Do mechanics to figure out what torque is necessary to jump given
 linkage
 
+# Master Plan #
+ * Build 1 3d printed sdp-si gearbox
+ * If that works well enough, build 2 more 3d printed gearboxes
+ * Otherwise, build an Al sdp-si gearbox
+ * get 2dof leg jumping
+ * get 3dof leg jumping
 
+ * design custom gears, get prototyping run sufficient to build one mammal plus spares
+
+
+DONE 2018-10-12
+ * made flats on shaft
+ * assembled shaft into 3508 with sdp-si spur gear
 
 DONE 2018-10-11
  * Redrew planetary output stage with master sketch
@@ -34,6 +33,9 @@ DONE 2018-10-11
  * Design mount to stick two together in a leg
  * Design control board mount
  * Design magnetometer board mount
+ * Ordered gearbox from shapeways
+ * Order grease for gearbox
+ * Ordered input and output bearings
 
 DONE 2018-10-10
  * SDP-SI shaft fits in motor bearing
