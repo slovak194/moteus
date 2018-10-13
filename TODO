@@ -1,15 +1,29 @@
-Weigh all the gearbox components
+Order flat head screws for gearbox-3508 mount
 
-Model 3508 motor in freecad
-Design motor angle sensor mount
+Design controller board
+ * STM32F446
+ * DRV8323RS (includes buck regulator and SPI interface)
+ * 485 transceiver - MAX13431E
+ * FETs
+ * Current Shunt
+ * Connectors
+   * power in
+   * BLDC out
+   * as5048 sensor
+   * rs485
+   * swd programming port
+   * usb?
 
-Bring up new VESC
-
-Figure out why I can no longer build VESC firmware
 Get VESC to use absolute magnetic position sensor
+
+Assemble gearbox
+
+Weigh all the gearbox components
 
 Do mechanics to figure out what torque is necessary to jump given
 linkage
+
+
 
 # Master Plan #
  * Build 1 3d printed sdp-si gearbox
@@ -24,6 +38,11 @@ linkage
 DONE 2018-10-12
  * made flats on shaft
  * assembled shaft into 3508 with sdp-si spur gear
+ * Modeled 3508 motor in freecad
+ * Designed sensor mount
+ * Ordered sensor mount from shapeways
+ * Wired and powered up new VESC
+ * Fixed ubuntu arm newlib so I can build firmware images
 
 DONE 2018-10-11
  * Redrew planetary output stage with master sketch
