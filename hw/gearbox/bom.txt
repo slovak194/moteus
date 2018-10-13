@@ -1,4 +1,5 @@
  * Current gearset - MOD 0.5
+   * 35mm 4mm shaft - sdp-si S40PX0MHG4M-035
    * 20 tooth sun - sdp-si KSS0.5-20B
    * 30 tooth planet - sdp-si S12N05M030A0510
    * 80 tooth internal gear - sdp-si S1E05ZM05S080
@@ -8,3 +9,5 @@
    * screws to mount housing to motor: M3x6 phillips flat head
    * screws and nuts to hold planet carriers together: M2x? bolts and nuts
    * screws and nuts to hold housing together: M3x? bolts and nuts
+   * screws and nuts to hold sensor mount on: M3x? bolts and nuts
+   * screws and nuts to hold sensor board on: M3x? bolts and nuts
