@@ -1,4 +1,13 @@
-Order flat head screws for gearbox-3508 mount
+gearbox
+ * fix v1 errata
+
+Get DMA based UART to work on nucleo
+
+Write controller board SW
+ * Get high rate UART working
+   * Design serial 485 frame protocol
+ * Get basic current sampling and PWM structure working
+   * Emit current sample to DAC
 
 Design controller board
  * STM32F446
@@ -9,14 +18,14 @@ Design controller board
  * Connectors
    * power in
    * BLDC out
-   * as5048 sensor
+   * as5047p (25krpm or as5047d only 14krpm) sensor
    * rs485
    * swd programming port
    * usb?
+   * motor temperature sensor
+   * motor output absolute encoder / position sensor
 
-Get VESC to use absolute magnetic position sensor
-
-Assemble gearbox
+Design leg
 
 Weigh all the gearbox components
 
@@ -26,14 +35,40 @@ linkage
 
 
 # Master Plan #
- * Build 1 3d printed sdp-si gearbox
+ * Figure out correct dimensions for all 3d printed press fit interfaces
+ * Build another single shapeways gearbox
  * If that works well enough, build 2 more 3d printed gearboxes
- * Otherwise, build an Al sdp-si gearbox
  * get 2dof leg jumping
  * get 3dof leg jumping
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-10-20
+ * Mounted gearbox to test plate
+ * Mounted delrin plate to output shaft
+ * Moderately hurt my finger when the VESC position mode control went bonkers
+ * Measured torque at 1.5kg at 19cm, so 28.5kgf * cm, or 2.79 N*m,
+   current on lab supply got up to 13A at 12V and motor got *very* hot
+ * Ordered shapeways dimensional tests for each press fit interface
+ * Ordered 2x of all necessary gears at sdp-si
+ * Ordered 2x of all necessary gears at vxb.com
+
+
+DONE 2018-10-19
+ * Received AS5047 breakout, verified that it works with a bus pirate
+ * Got AS5047 reading from the VESC
+ * Wrote DMA based uart, untested on HW so far
+ * assembled gearbox, with much dremeling
+
+DONE 2018-10-17
+ * Wrote string_span and string_view
+ * Got some kind of test coverage, although apparently can't do host
+   based unit test coverage with mbed
+ * Wrote async_stream
+
+DONE 2018-10-16
+ * Received flat head screws for gearbox-3508 mount
 
 DONE 2018-10-12
  * made flats on shaft
