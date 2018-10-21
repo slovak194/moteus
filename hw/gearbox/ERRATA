@@ -1,0 +1,30 @@
+gearbox v1 errata
+ * spur gear extends too far lengthwise and interferes with inside of
+   output gear
+ * need some kinda of interlock to prevent housing 2 and output stud
+   mounting bolts from going in too far
+ * motor wire interferes with sensor bracket
+ * housing 1
+   * hole for spur gear is slightly too small, set screw of gear interferes
+   * internal gear doesn't quite press fit into place, needs a tiny
+     bit more space
+ * housing 2
+   * hole for output bearing is too small
+   * output bearing hole needs a lip to keep the bearing from escaping
+   * needed to be spaced away from housing 1 to leave enough room for
+     output planet
+   * mounting tabs leave bolt heads not flush with mounting surface
+   * not thick enough for output bearing + lip
+
+ * planet carrier input
+   * hole for input bearing a bit too small
+   * M2 screws for planet carrier have too big of a head to allow the
+     input bearing to fit
+ * planet carrier output
+   * M3 retaining nuts can't fit in to slot
+   * M2 retaining nuts holes are slightly too small
+   * stud for output bearing too wide
+   * stud for output bearing needs to be longer
+ * feature requests
+   * some way to mount a motor temperature sensor
+   * some way to mount an absolute encoder on output or planet carrier
