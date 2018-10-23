@@ -20,6 +20,7 @@ gearbox v1 errata
    * hole for input bearing a bit too small
    * M2 screws for planet carrier have too big of a head to allow the
      input bearing to fit
+   * need lip to keep input bearing away from wall
  * planet carrier output
    * M3 retaining nuts can't fit in to slot
    * M2 retaining nuts holes are slightly too small
@@ -28,3 +29,4 @@ gearbox v1 errata
  * feature requests
    * some way to mount a motor temperature sensor
    * some way to mount an absolute encoder on output or planet carrier
+   * some way to mount two gearboxes side by side
