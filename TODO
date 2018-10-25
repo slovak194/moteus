@@ -1,5 +1,5 @@
 gearbox
- * fix v1 errata
+ * order r2 gearbox
 
 Get DMA based UART to work on nucleo
 
@@ -25,6 +25,12 @@ Design controller board
    * motor temperature sensor
    * motor output absolute encoder / position sensor
 
+Absolute position board
+  * 8x DRV5053 hall effect sensors
+  * 1 AVR
+  * two magnets in planet carrier 1, configured with opposite polarities
+  * I2C slave
+
 Design leg
 
 Weigh all the gearbox components
@@ -43,6 +49,9 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-10-24
+ * Finished updating gearbox with errata and bearing fit sizes
 
 DONE 2018-10-20
  * Mounted gearbox to test plate
