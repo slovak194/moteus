@@ -1,13 +1,7 @@
-gearbox
- * order r2 gearbox
-
-Get DMA based UART to work on nucleo
-
 Write controller board SW
- * Get high rate UART working
-   * Design serial 485 frame protocol
  * Get basic current sampling and PWM structure working
    * Emit current sample to DAC
+ * Design serial 485 frame protocol
 
 Design controller board
  * STM32F446
@@ -25,6 +19,9 @@ Design controller board
    * motor temperature sensor
    * motor output absolute encoder / position sensor
 
+Validate r2 of gearbox
+  * Order 2x more if it works well
+
 Absolute position board
   * 8x DRV5053 hall effect sensors
   * 1 AVR
@@ -41,7 +38,6 @@ linkage
 
 
 # Master Plan #
- * Figure out correct dimensions for all 3d printed press fit interfaces
  * Build another single shapeways gearbox
  * If that works well enough, build 2 more 3d printed gearboxes
  * get 2dof leg jumping
@@ -50,8 +46,13 @@ linkage
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
 
+DONE 2018-10-26
+ * Got DMA based UART transmit working
+ * Got DMA based UART receive working
+
 DONE 2018-10-24
  * Finished updating gearbox with errata and bearing fit sizes
+ * Ordered r2 of gearbox from shapeways
 
 DONE 2018-10-20
  * Mounted gearbox to test plate
