@@ -1,5 +1,4 @@
 Write controller board SW
- * Switch from TIM1 to TIM8
  * Get basic current sampling and PWM structure working
    * Sample from SPI
    * Get velocity from SPI or ABI encoder outputs
@@ -7,18 +6,12 @@ Write controller board SW
 
 Design controller board
  * TODO
-   * rs485 con
-    * 3 pin JST - gnd a b
-   * absolute sens con
-    * 4 pin JST - 3.3v gnd i2c
-   * motor temp con
-    * 2 pin JST - thermistor connection
-   * verify pin ordering of programming connector
-   * position parts
-   * mounting holes
-   * power planes
-   * power routing
+   * verify PWM and ADC channels work on nucleo
+   * annotate all MPNs
    * signal routing
+   * final silk placement
+ * LEDs
+   * status LEDs
  * STM32F446
  * DRV8323RS (includes buck regulator and SPI interface)
    * buck inductor
@@ -73,6 +66,21 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-11-02
+ * Controller board
+   * Board outline drawn
+   * All parts fit within outline
+   * Power routed
+   * Silks resized and rough placed
+   * power copper on bottom for heat transfer
+   * title / version silk
+   * labels for connector pins
+   * verified PWM works on TIM2 (ADC not yet verified)
+
+DONE 2018-11-01
+ * Controller board
+   * All major parts in schematic
 
 DONE 2018-10-26
  * Got DMA based UART transmit working
