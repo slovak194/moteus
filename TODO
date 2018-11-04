@@ -6,8 +6,7 @@ Write controller board SW
 
 Design controller board
  * TODO
-   * verify PWM and ADC channels work on nucleo
-   * annotate all MPNs
+   * Get down to 20 unique populated items
    * signal routing
    * final silk placement
  * LEDs
@@ -66,6 +65,10 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-11-03
+ * Verified PWM and ADC channels work on nucleo
+ * annotated all MPNs
 
 DONE 2018-11-02
  * Controller board
