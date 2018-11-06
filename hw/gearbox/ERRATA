@@ -1,3 +1,9 @@
+v3 changes
+ * output stud changed from 19.9 to 19.95
+ * M1.6 bolt holes changed to 1.7m diameter
+ * internal gear dimension changed from 50.2 to 50.15
+ * sensor bracket adjusted to controller mounting holes
+
 gearbox v2 errata
  * output stud is slightly loose in bearing
  * M1.6 bolt holes are too small

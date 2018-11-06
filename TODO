@@ -1,5 +1,5 @@
-Validate r2 of gearbox
-  * Order 2x more if it works well
+Order ZH connectors for swd cable, along with colored 28 awg wire
+Design new back plate to hold controller board
 
 Design leg
 Design linear rail for jump fixture
@@ -30,10 +30,15 @@ linkage
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
 
+DONE 2018-11-05
+ * Updated gearbox dimensions for r3
+ * Ordered r3 of gearbox from shapeways
+
 DONE 2018-11-04
  * Got down to 20 unique parts
  * Reviewed STM32 and DRV8323 design notes
  * Iterated on MF quoting to fix other minor layout and silk problems
+ * Ordered r1 of controller from macrofab
 
 DONE 2018-11-03
  * Verified PWM and ADC channels work on nucleo
@@ -139,5 +144,4 @@ DONE 2018-09-26
 
 
 DONE 2018-09-24
-
  * Build permanent cable from power supply to VESC
