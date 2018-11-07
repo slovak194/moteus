@@ -1,8 +1,7 @@
-Order ZH connectors for swd cable, along with colored 28 awg wire
-Design new back plate to hold controller board
-
 Design leg
 Design linear rail for jump fixture
+
+Order ZH connectors for swd cable, along with colored 28 awg wire
 
 Write controller board SW
  * Get basic current sampling and PWM structure working
@@ -30,9 +29,15 @@ linkage
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
 
+DONE 2018-11-06
+ * Mostly designed leg
+ * Ordered carriage rail and rs485 adapter from amazon
+
 DONE 2018-11-05
  * Updated gearbox dimensions for r3
  * Ordered r3 of gearbox from shapeways
+ * Started work on leg
+ * Ordered angular contact bearings for leg
 
 DONE 2018-11-04
  * Got down to 20 unique parts
