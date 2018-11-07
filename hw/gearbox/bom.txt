@@ -11,3 +11,6 @@
    * screws and nuts to hold housing together: M3x? bolts and nuts
    * screws and nuts to hold sensor mount on: M3x? bolts and nuts
    * screws and nuts to hold sensor board on: M3x? bolts and nuts
+
+ * Leg
+   * angular contact bearing - vxb.com 30-5ZZ
