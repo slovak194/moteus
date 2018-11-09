@@ -1,13 +1,22 @@
-Design leg
 Design linear rail for jump fixture
 
-Order ZH connectors for swd cable, along with colored 28 awg wire
-
 Write controller board SW
- * Get basic current sampling and PWM structure working
-   * Sample from SPI
-   * Get velocity from SPI or ABI encoder outputs
+ * Get telemetry working
+ * Get tview working
+ * Implement current control
+ * Implement FOC
+ * Implement AS5047 interface
+ * Figure out how to get velocity from AS5047 quadrature inputs
+ * Need board
+   * Get current control working
+   * Get FOC working
  * Design serial 485 frame protocol
+
+Code cleanup
+ * Get apache license in all headers
+ * Make StaticFunction not so expensive to call
+ * Try to figure out a way so that we can actually bind callbacks without
+   having to shrink all over the place?
 
 Absolute position board
   * 8x DRV5053 hall effect sensors
@@ -28,6 +37,13 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-11-08
+ * Got CommandManager working
+
+DONE 2018-11-07
+ * Ordered legs on 3dhubs
+ * Ordered ZH connectors
 
 DONE 2018-11-06
  * Mostly designed leg
