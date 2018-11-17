@@ -1,5 +1,3 @@
-Design linear rail for jump fixture
-
 Write controller board SW
  * Get telemetry working
  * Get tview working
@@ -11,6 +9,12 @@ Write controller board SW
    * Get current control working
    * Get FOC working
  * Design serial 485 frame protocol
+
+Board bringup
+ * No power shorts
+ * Power with minimal current
+ * Attach debug cable
+ * Try to program stm32
 
 Code cleanup
  * Get apache license in all headers
@@ -37,6 +41,14 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-11-17
+ * Got rules_mbed working in target and host mode
+ * Drafted blog post
+
+DONE 2018-11-11
+ * Built leg jumping fixture
+ * First version of bazel mbed rules complete
 
 DONE 2018-11-08
  * Got CommandManager working
