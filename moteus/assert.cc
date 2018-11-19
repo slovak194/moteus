@@ -12,17 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include <cstdio>
-#include <cstdlib>
+#include "mbed_assert.h"
 
 namespace mjlib {
 namespace base {
 
-void __attribute__((weak)) assertion_failed(const char* expression, const char* filename, int line) {
-  ::fprintf(stderr, "\n");
-  ::fprintf(stderr, "Assertion Failed: %s:%d %s\n", filename, line, expression);
-  ::fflush(stderr);
-  ::abort();
+void assertion_failed(const char* expression, const char* filename, int line) {
+  mbed_assert_internal(expression, filename, line);
 }
 
 }

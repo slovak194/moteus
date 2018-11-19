@@ -1,15 +1,33 @@
 // Copyright 2018 Josh Pieper, jjp@pobox.com.  All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
-#include "stm32f446_async_uart.h"
+#include "moteus/stm32f446_async_uart.h"
 
 #include <tuple>
 
 #include "mbed.h"
 #include "serial_api_hal.h"
 
-#include "error.h"
-#include "irq_callback_table.h"
-#include "mj_assert.h"
+#include "mjlib/base/assert.h"
+
+#include "moteus/error.h"
+#include "moteus/irq_callback_table.h"
+
+namespace base = mjlib::base;
+namespace micro = mjlib::micro;
+
+namespace moteus {
 
 namespace {
 IRQn_Type FindUartRxIrq(USART_TypeDef* uart) {
@@ -28,7 +46,7 @@ IRQn_Type FindUartRxIrq(USART_TypeDef* uart) {
 
 class Stm32F446AsyncUart::Impl : public RawSerial {
  public:
-  Impl(EventQueue* event_queue, const Options& options)
+  Impl(events::EventQueue* event_queue, const Options& options)
       : RawSerial(options.tx, options.rx, options.baud_rate),
         event_queue_(event_queue) {
     // Our receive buffer requires that all unprocessed words be
@@ -120,7 +138,8 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
     }
   }
 
-  void AsyncReadSome(const string_span& data, const SizeCallback& callback) {
+  void AsyncReadSome(const base::string_span& data,
+                     const micro::SizeCallback& callback) {
     MJ_ASSERT(!current_read_callback_.valid());
 
     // All this does is set our buffer and callback.  We're always
@@ -133,7 +152,8 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
     EventProcessData();
   }
 
-  void AsyncWriteSome(const string_view& data, const SizeCallback& callback) {
+  void AsyncWriteSome(const string_view& data,
+                      const micro::SizeCallback& callback) {
     MJ_ASSERT(!current_write_callback_.valid());
 
     current_write_callback_ = callback;
@@ -153,7 +173,7 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
   // INVOKED FROM INTERRUPT CONTEXT
   void HandleTransmit() {
     const ssize_t amount_sent = tx_size_ - tx_dma_.stream->NDTR;
-    int error_code = 0;
+    base::error_code error_code;
 
     // The enable bit should be 0 at this point.
     MJ_ASSERT((tx_dma_.stream->CR & DMA_SxCR_EN) == 0);
@@ -164,14 +184,14 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
     if (*tx_dma_.status_register & tx_dma_.status_teif) {
       // We've got an error, report it.
       *tx_dma_.status_clear |= tx_dma_.status_teif;
-      error_code = kDmaStreamTransferError;
+      error_code = errc::kDmaStreamTransferError;
     } else if (*tx_dma_.status_register & tx_dma_.status_feif) {
       *tx_dma_.status_clear |= tx_dma_.status_feif;
-      error_code = kDmaStreamFifoError;
+      error_code = errc::kDmaStreamFifoError;
     } else  if (*tx_dma_.status_register & tx_dma_.status_tcif) {
       // Transmit is complete.
       *tx_dma_.status_clear |= tx_dma_.status_tcif;
-      error_code = 0;
+      error_code = {};
     } else {
       MJ_ASSERT(false);
     }
@@ -183,7 +203,7 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
     // its own even if we send back to back quickly.
   }
 
-  void EventHandleTransmit(int error_code, ssize_t amount_sent) {
+  void EventHandleTransmit(base::error_code error_code, ssize_t amount_sent) {
     const int id = event_queue_->call(current_write_callback_, error_code, amount_sent);
     MJ_ASSERT(id != 0);
     current_write_callback_ = {};
@@ -208,17 +228,17 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
       (void)tmp;
 
       if (uart_sr & USART_SR_ORE) {
-        pending_rx_error_ = kUartOverrunError;
+        pending_rx_error_ = errc::kUartOverrunError;
       } else if (uart_sr & USART_SR_FE) {
-        pending_rx_error_ = kUartFramingError;
+        pending_rx_error_ = errc::kUartFramingError;
       } else if (uart_sr & USART_SR_NE) {
-        pending_rx_error_ = kUartNoiseError;
+        pending_rx_error_ = errc::kUartNoiseError;
       } else {
-        pending_rx_error_ = kDmaStreamTransferError;
+        pending_rx_error_ = errc::kDmaStreamTransferError;
       }
     } else if (*rx_dma_.status_register & rx_dma_.status_feif) {
       *rx_dma_.status_clear |= rx_dma_.status_feif;
-      pending_rx_error_ = kDmaStreamFifoError;
+      pending_rx_error_ = errc::kDmaStreamFifoError;
     } else if (*rx_dma_.status_register & rx_dma_.status_tcif) {
       *rx_dma_.status_clear |= rx_dma_.status_tcif;
     } else {
@@ -249,14 +269,14 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
       return;
     }
 
-    if (rx_buffer_[rx_buffer_pos_] == 0xffff && pending_rx_error_ == 0) {
+    if (rx_buffer_[rx_buffer_pos_] == 0xffff && !pending_rx_error_) {
       // There are no data or errors pending.
       return;
     }
 
     const uint16_t last_pos = (rx_buffer_pos_ + (kRxBufferSize - 1)) % kRxBufferSize;
     if (rx_buffer_[last_pos] != 0xffff) {
-      pending_rx_error_ = kUartBufferOverrunError;
+      pending_rx_error_ = errc::kUartBufferOverrunError;
       // We have lost synchronization with wherever the DMA controller
       // is spewing.
       if (rx_dma_.stream->CR & DMA_SxCR_EN) {
@@ -282,7 +302,7 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
                                       pending_rx_error_, bytes_read);
     MJ_ASSERT(id != 0);
 
-    pending_rx_error_ = 0;
+    pending_rx_error_ = {};
     current_read_callback_ = {};
     current_read_data_ = {};
 
@@ -364,11 +384,11 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
   IrqCallbackTable::Callback rx_callback_;
   IrqCallbackTable::Callback uart_callback_;
 
-  SizeCallback current_read_callback_;
-  string_span current_read_data_;
-  ErrorCode pending_rx_error_ = 0;
+  micro::SizeCallback current_read_callback_;
+  base::string_span current_read_data_;
+  base::error_code pending_rx_error_;
 
-  SizeCallback current_write_callback_;
+  micro::SizeCallback current_write_callback_;
   ssize_t tx_size_ = 0;
 
   // This buffer serves as a place to store things in between calls to
@@ -379,16 +399,20 @@ class Stm32F446AsyncUart::Impl : public RawSerial {
   uint16_t rx_buffer_pos_ = 0;
 };
 
-Stm32F446AsyncUart::Stm32F446AsyncUart(EventQueue* event_queue, const Options& options)
-    : impl_(event_queue, options) {}
+Stm32F446AsyncUart::Stm32F446AsyncUart(micro::Pool* pool,
+                                       events::EventQueue* event_queue,
+                                       const Options& options)
+    : impl_(pool, event_queue, options) {}
 Stm32F446AsyncUart::~Stm32F446AsyncUart() {}
 
-void Stm32F446AsyncUart::AsyncReadSome(const string_span& data,
-                                       const SizeCallback& callback) {
+void Stm32F446AsyncUart::AsyncReadSome(const base::string_span& data,
+                                       const micro::SizeCallback& callback) {
   impl_->AsyncReadSome(data, callback);
 }
 
 void Stm32F446AsyncUart::AsyncWriteSome(const string_view& data,
-                                        const SizeCallback& callback) {
+                                        const micro::SizeCallback& callback) {
   impl_->AsyncWriteSome(data, callback);
+}
+
 }

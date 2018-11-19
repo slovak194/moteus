@@ -12,18 +12,31 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include <cstdio>
-#include <cstdlib>
+#pragma once
+
+#include <type_traits>
+
+#include "mjlib/base/system_error.h"
+
+namespace moteus {
+
+enum class errc {
+  kDmaStreamTransferError = 1,
+  kDmaStreamFifoError,
+  kUartOverrunError,
+  kUartFramingError,
+  kUartNoiseError,
+  kUartBufferOverrunError,
+};
+
+mjlib::base::error_code make_error_code(errc);
+}
 
 namespace mjlib {
 namespace base {
 
-void __attribute__((weak)) assertion_failed(const char* expression, const char* filename, int line) {
-  ::fprintf(stderr, "\n");
-  ::fprintf(stderr, "Assertion Failed: %s:%d %s\n", filename, line, expression);
-  ::fflush(stderr);
-  ::abort();
-}
+template <>
+struct is_error_code_enum<moteus::errc> : std::true_type {};
 
 }
 }
