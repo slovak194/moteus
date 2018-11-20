@@ -1,10 +1,8 @@
 Board bringup
  * DRV8323 SPI
  * DRV8323 flag lines
- * AS5047 SPI
  * AS5047 ABI
  * RS485 out
- * debug out
  * ABS I2C
 
  * FET switching
@@ -50,6 +48,8 @@ DONE 2018-11-20
  * Wrote board bringup class
  * Functions tested
    * LEDs
+   * AS5047 position
+   * Debug serial
 
 DONE 2018-11-19
  * Got all infrastructure pieces ported to bazel
