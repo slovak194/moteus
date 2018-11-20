@@ -1,6 +1,5 @@
 Board bringup
  * AS5047 ABI
- * RS485 out
  * ABS I2C
 
  * FET switching
@@ -50,6 +49,7 @@ DONE 2018-11-20
    * Debug serial
    * DRV8323 SPI
    * DRV8323 flag lines
+   * RS485 out
 
 
 DONE 2018-11-19
