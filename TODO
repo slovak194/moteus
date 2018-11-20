@@ -1,6 +1,4 @@
 Board bringup
- * DRV8323 SPI
- * DRV8323 flag lines
  * AS5047 ABI
  * RS485 out
  * ABS I2C
@@ -50,6 +48,9 @@ DONE 2018-11-20
    * LEDs
    * AS5047 position
    * Debug serial
+   * DRV8323 SPI
+   * DRV8323 flag lines
+
 
 DONE 2018-11-19
  * Got all infrastructure pieces ported to bazel
