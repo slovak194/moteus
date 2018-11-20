@@ -1,8 +1,5 @@
-Board bringup
- * AS5047 ABI
- * ABS I2C
-
- * FET switching
+Board bringup infrastructure
+ * AS5047 class
 
 Write controller board SW
  * Implement current control
@@ -50,6 +47,7 @@ DONE 2018-11-20
    * DRV8323 SPI
    * DRV8323 flag lines
    * RS485 out
+ * DRV8323 class
 
 
 DONE 2018-11-19
