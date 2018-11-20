@@ -1,7 +1,7 @@
-Board bringup infrastructure
- * AS5047 class
-
 Write controller board SW
+ * Get currents to be metricly correct
+ * Scope to see what the power bus looks like when under load
+
  * Implement current control
  * Implement FOC
  * Implement AS5047 interface
@@ -11,9 +11,14 @@ Write controller board SW
    * Get FOC working
  * Design serial 485 frame protocol
 
+ * Measure temperature at different loads
+ * Test undervoltage response
+ * Test over-current response
+
+* Glue inner ring into gearbox
+
 
 Code cleanup
- * Get apache license in all headers
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
@@ -48,6 +53,7 @@ DONE 2018-11-20
    * DRV8323 flag lines
    * RS485 out
  * DRV8323 class
+ * First power through the motor!
 
 
 DONE 2018-11-19
