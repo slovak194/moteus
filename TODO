@@ -1,6 +1,15 @@
+Board bringup
+ * DRV8323 SPI
+ * DRV8323 flag lines
+ * AS5047 SPI
+ * AS5047 ABI
+ * RS485 out
+ * debug out
+ * ABS I2C
+
+ * FET switching
+
 Write controller board SW
- * Get telemetry working
- * Get tview working
  * Implement current control
  * Implement FOC
  * Implement AS5047 interface
@@ -10,11 +19,6 @@ Write controller board SW
    * Get FOC working
  * Design serial 485 frame protocol
 
-Board bringup
- * No power shorts
- * Power with minimal current
- * Attach debug cable
- * Try to program stm32
 
 Code cleanup
  * Get apache license in all headers
@@ -41,6 +45,17 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-11-20
+ * Wrote board bringup class
+ * Functions tested
+   * LEDs
+
+DONE 2018-11-19
+ * Got all infrastructure pieces ported to bazel
+ * Got tview working!
+ * Powered up and programmed board for the first time!
+ * Built test harnesses for board
 
 DONE 2018-11-17
  * Got rules_mbed working in target and host mode
