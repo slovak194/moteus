@@ -16,7 +16,6 @@ Write controller board SW
  * Test undervoltage response
  * Test over-current response
 
-* Glue inner ring into gearbox
 
 
 Code cleanup
@@ -44,10 +43,16 @@ linkage
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
 
+DONE 2018-11-22
+ * Reported out D/Q currents
+
 DONE 2018-11-21
  * Got phase currents to be metricly correct
  * Configured DRV8323
  * Implemented AS5047 interface
+ * Glued inner ring into gearbox
+ * Put at least *some* grease in gearbox, unclear if it is sufficient
+ * At 10A phase current, got about 0.8N*m of torque out
 
 DONE 2018-11-20
  * Wrote board bringup class
