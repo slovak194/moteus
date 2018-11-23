@@ -1,23 +1,25 @@
 Write controller board SW
- * Implement auto-theta/phase calibrate
+ * Unwrap encoder position
+ * Implement position control
 
- * Scope to see what the power bus looks like when under load
+ * Actually tune current control loop to measure BW
 
- * Implement current control
- * Implement FOC
+ * current sampling is jittering again (but by a smaller amount),
+   figure out why
  * Figure out how to get velocity from AS5047 quadrature inputs
- * Need board
-   * Get current control working
-   * Get FOC working
+ * Get AS5047 SPI sampling to be faster
+
  * Design serial 485 frame protocol
  * Implement software over-voltage fault
 
+ * Apply more grease to gearbox
+
+ * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Measure temperature at different loads
  * Test undervoltage response
  * Test over-current response
-
 
 
 Code cleanup
@@ -47,6 +49,7 @@ linkage
 
 DONE 2018-11-22
  * Reported out D/Q currents
+ * Got D/Q current control working
 
 DONE 2018-11-21
  * Got phase currents to be metricly correct
