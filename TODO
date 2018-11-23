@@ -1,5 +1,7 @@
 Write controller board SW
- * Implement position control
+ * position control
+   * numerically differentiate for velocity
+   * automatically advance position for velocity
  * Design serial 485 frame protocol
 
  * Apply more grease to gearbox
