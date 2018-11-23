@@ -12,6 +12,8 @@ Write controller board SW
  * Design serial 485 frame protocol
  * Implement software over-voltage fault
 
+ * Turn on -Wdouble-promotion for STM32 builds
+ * Figure out why -O2 and -O3 start linking in assert
  * Measure temperature at different loads
  * Test undervoltage response
  * Test over-current response
