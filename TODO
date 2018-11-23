@@ -1,6 +1,8 @@
 Write controller board SW
- * Unwrap encoder position
  * Implement position control
+ * Design serial 485 frame protocol
+
+ * Apply more grease to gearbox
 
  * Actually tune current control loop to measure BW
 
@@ -9,15 +11,13 @@ Write controller board SW
  * Figure out how to get velocity from AS5047 quadrature inputs
  * Get AS5047 SPI sampling to be faster
 
- * Design serial 485 frame protocol
- * Implement software over-voltage fault
 
- * Apply more grease to gearbox
-
+ * Report firmware version over serial protocol
  * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Measure temperature at different loads
+ * Implement software over-voltage fault
  * Test undervoltage response
  * Test over-current response
 
@@ -46,6 +46,9 @@ linkage
 
  * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+
+DONE 2018-11-23
+ * unwrapped encoder position
 
 DONE 2018-11-22
  * Reported out D/Q currents
