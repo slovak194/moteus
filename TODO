@@ -1,9 +1,7 @@
 Write controller board SW
- * position control
-   * numerically differentiate for velocity
-   * automatically advance position for velocity
  * Design serial 485 frame protocol
-
+ * Build second gearbox
+ * Rewire to power both gearboxes
  * Apply more grease to gearbox
 
  * Actually tune current control loop to measure BW
@@ -14,6 +12,7 @@ Write controller board SW
  * Get AS5047 SPI sampling to be faster
 
 
+ * automatically advance position for velocity
  * Report firmware version over serial protocol
  * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
