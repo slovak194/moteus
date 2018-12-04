@@ -1,3 +1,11 @@
+gearbox v3 errata
+ * detents in outer housing are insufficient to hold M3 nuts in place
+ * tabs for servo to servo mounting do not leave sufficient room to
+   actually put an M3x8 screw in, but that is what is necessary to
+   mate to another servo
+ * Seems to be maybe a bit *too* tight on the output bearing... maybe
+   just need to debur or tweak dimensions some more?
+
 v3 changes
  * output stud changed from 19.9 to 19.95
  * M1.6 bolt holes changed to 1.7m diameter

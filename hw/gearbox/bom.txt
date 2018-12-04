@@ -6,11 +6,14 @@
    * planet bearing - sdp-si S9912YME0410PS2 4mm bore, 10mm OD
    * input carrier bearing - vxb.com MR6702-ZZ (15x21x4)
    * output carrier bearing - vxb.com MR6704-ZZ (20x27x4)
-   * screws to mount housing to motor: M3x6 phillips flat head
-   * screws and nuts to hold planet carriers together: M1.6x? bolts and nuts
-   * screws and nuts to hold housing together: M3x? bolts and nuts
-   * screws and nuts to hold sensor mount on: M3x? bolts and nuts
-   * screws and nuts to hold sensor board on: M3x? bolts and nuts
+   * screws and nuts to hold planet carriers together: 3x M1.6x12 bolts and nuts
+   * screws and nuts to hold housing together: 4x M3x8 bolts and nuts
+   * screws and nuts to hold control mount on: 4x M3x8 bolts and nuts
+   * screws and nuts to hold controller on: 4x M2x8 bolt, washer, M2 locknut
+   * screws to hold motor, 4x M3x10 flat head
+   * housing retained nuts: 4x M3
+   * output stud retained nuts: 4x M3
+   * sense magnet: K&J Magnetics D42DIA 1/4"x1/8" N42 Dia Magnetized
 
  * Leg
    * angular contact bearing - vxb.com 30-5ZZ
