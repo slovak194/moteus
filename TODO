@@ -1,12 +1,26 @@
- * Create servo state machine that sequences things on in a reliable order
- * Create a command to exit the control state machine back to stopped
+ * Necessary for 12 leg mech
+   * Get absolute position sensing working
+   * Design housing that protects controller and motor while still
+     allowing heat dissipation
+     * Build back plate to mount board to, initially in plastic
+     * Build new back shroud with air vents smaller than BB size
+   * try getting a gearbox housing printed in onyx
+
+ * Necessary for further testing
+   * Create servo state machine that sequences things on in a reliable order
+   * Create a command to exit the control state machine back to stopped
+
+ * Improve jumping performance
+   * Actually tune current control loop to measure BW
+   * Need to be able to accurately report current plot during jump event
+     w/ at least ms resolution
+   * Measure thermal performance in jumping loads
+   * Try to get more transient current than 35A through the motor
+   * Build servo pair link for position-space control
+
  * Figure out why gbx 3 is stiffer than 2 by a lot
  * Figure out if gbx2 inner ring actually slipped... affix it better
 
- * Try to get more transient current than 35A through the motor
- * Need to be able to accurately report current plot during jump event
-   w/ at least ms resolution
- * Measure thermal performance in jumping loads
  * Make a more permanent jumping fixture, including with a better
    linear rail
  * Measure how weight affects the jump time
@@ -14,15 +28,15 @@
  * Fix gearbox v3 errata (possibly just do an assembly that could work
    on a mech, so enclosed controller)
 
- * Closed loop control full trajectory during jump
-   * Might need another STM32, could be a prototype for a joint
-     controller
+ * Firmware quality issues
+   * Implement a fault state that disables outputs, activate it when
+     * drv8232 faults
+     * position control isn't working
+     * undervoltage / overvoltage
 
  * Leg needs to be stiffer laterally
  * Leg needs a way to assemble that doesn't have bolts sticking far out
  * Leg needs more clearance from front plate of servo
-
- * Actually tune current control loop to measure BW
 
  * current sampling is jittering again (but by a smaller amount),
    figure out why
@@ -32,15 +46,11 @@
  * Get python telemetry stuff into moteus/mjlib
  * Get tview into moteus/mjlib repository
 
- * Figure out a way to enclose the control board for actual mounting
-
  * automatically advance position for velocity
  * Report firmware version over serial protocol
  * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
- * Measure temperature at different loads
- * Implement software over-voltage fault
  * Test undervoltage response
  * Test over-current response
 
@@ -58,17 +68,15 @@ Absolute position board
 
 Weigh all the gearbox components
 
-Do mechanics to figure out what torque is necessary to jump given
-linkage
-
 # Master Plan #
- * Rev shapeways box with slightly different tolerances
- * get 2dof leg jumping
- * Get one more shapeways set
- * get 3dof leg jumping
+ * Answer questions necessary for full mech build
+ * Place orders for mech qtys
+   * Do first medium volume controller board run, qty 20-40
+   * Gearsets
 
- * design custom gears, get prototyping run sufficient to build one mammal plus spares
 
+DONE 2018-12-03
+ * Ordered leg sample from shapeways
 
 DONE 2018-12-01
  * First jump!
