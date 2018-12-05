@@ -582,7 +582,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U1" library="absolute_position" package="14S1" value="ATTINY44A-SSU" x="19.2" y="5.25" smashed="yes" rot="MR270">
 <attribute name="VENDOR" value="Atmel" x="24.28" y="-12.53" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ATTINY44ASSU" x="24.28" y="-12.53" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="24.115" y="3.9234" size="0.8" layer="26" font="vector" ratio="10" rot="SMR90"/>
+<attribute name="NAME" x="23.865" y="5.5234" size="0.8" layer="26" font="vector" ratio="10" rot="SMR90"/>
 </element>
 <element name="U2" library="absolute_position" package="DBZ3" value="DRV5053OAQDBZR" x="19" y="33" smashed="yes">
 <attribute name="VENDOR" value="Texas Instruments" x="34.24" y="8.87" size="1.778" layer="27" display="off"/>
@@ -617,7 +617,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIELECTRIC" value="" x="0.95" y="36.15" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VOLTAGE" value="" x="0.95" y="36.15" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="URL" value="" x="0.95" y="36.15" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="14.75" y="4.27" size="0.8" layer="26" font="vector" ratio="10" rot="MR90"/>
+<attribute name="NAME" x="14" y="4.28" size="0.8" layer="26" font="vector" ratio="10" rot="MR270"/>
 </element>
 <element name="C2" library="mfpassives" package="C0603" value="" x="16.35" y="33.14" smashed="yes" rot="R270">
 <attribute name="HOUSEPART" value="" x="-2.7" y="17.9" size="1.778" layer="27" rot="R270" display="off"/>
