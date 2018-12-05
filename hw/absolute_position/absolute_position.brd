@@ -664,7 +664,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="34.799725" y="9.93035625" size="1.27" layer="28" rot="MR15"/>
 </element>
 <element name="JP2" library="pinhead" package="1X04" value="" x="26.85" y="31.78" smashed="yes" rot="MR210">
-<attribute name="NAME" x="21.7048625" y="32.37753125" size="1.27" layer="26" ratio="10" rot="MR210"/>
+<attribute name="NAME" x="21.7048625" y="32.37753125" size="0.8" layer="26" font="vector" ratio="10" rot="MR210"/>
 <attribute name="VALUE" x="24.0380875" y="37.069628125" size="1.27" layer="28" rot="MR210"/>
 </element>
 <element name="D1" library="mfleds" package="LED0603" value="" x="9.07" y="13.4" smashed="yes" rot="R180">
