@@ -21,7 +21,8 @@
  * Measure how weight affects the jump time
 
  * Fix gearbox v3 errata
-   * try a print in onyx
+   * try a print of housing in onyx
+   * get some planet carriers in Al
 
  * Firmware quality issues
    * Implement a fault state that disables outputs, activate it when
