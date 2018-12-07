@@ -1,10 +1,5 @@
  * Necessary for 12 leg mech
    * Get absolute position sensing working
-   * Design housing that protects controller and motor while still
-     allowing heat dissipation
-     * Build back plate to mount board to, initially in plastic
-     * Build new back shroud with air vents smaller than BB size
-   * try getting a gearbox housing printed in onyx
 
  * Necessary for further testing
    * Create servo state machine that sequences things on in a reliable order
@@ -25,8 +20,8 @@
    linear rail
  * Measure how weight affects the jump time
 
- * Fix gearbox v3 errata (possibly just do an assembly that could work
-   on a mech, so enclosed controller)
+ * Fix gearbox v3 errata
+   * try a print in onyx
 
  * Firmware quality issues
    * Implement a fault state that disables outputs, activate it when
@@ -74,6 +69,19 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+
+DONE 2018-12-07
+ * Designed and ordered from shapeways new back housing and controller
+   board mount
+
+
+DONE 2018-12-05
+ * Ordered digikey parts for absolute position sensing board
+ * Ordered 8020 for jumping fixture
+ * Ordered neoprene mat for jumping fixture
+
+DONE 2018-12-04
+ * Made and ordered absolute position sensing board from osh park
 
 DONE 2018-12-03
  * Ordered leg sample from shapeways
