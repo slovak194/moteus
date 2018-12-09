@@ -1,12 +1,10 @@
  * Necessary for 12 leg mech
    * Get absolute position sensing working
 
- * Necessary for further testing
-   * Create servo state machine that sequences things on in a reliable order
-   * Create a command to exit the control state machine back to stopped
-
  * Improve jumping performance
-   * Actually tune current control loop to measure BW
+   * Optimize current measurement noise
+   * Tune current control loop
+   * Try a feedforward in current loop
    * Need to be able to accurately report current plot during jump event
      w/ at least ms resolution
    * Measure thermal performance in jumping loads
@@ -15,6 +13,7 @@
 
  * Figure out why gbx 3 is stiffer than 2 by a lot
  * Figure out if gbx2 inner ring actually slipped... affix it better
+ * Figure out why gbx2 has so much backlash now
 
  * Make a more permanent jumping fixture, including with a better
    linear rail
@@ -29,13 +28,12 @@
      * drv8232 faults
      * position control isn't working
      * undervoltage / overvoltage
+   * disable stuff if MJ_ASSERT or mbed_die happens
 
  * Leg needs to be stiffer laterally
  * Leg needs a way to assemble that doesn't have bolts sticking far out
  * Leg needs more clearance from front plate of servo
 
- * current sampling is jittering again (but by a smaller amount),
-   figure out why
  * Figure out how to get velocity from AS5047 quadrature inputs
  * Get AS5047 SPI sampling to be faster
 
@@ -71,10 +69,18 @@ Weigh all the gearbox components
    * Gearsets
 
 
+DONE 2018-12-08
+ * Got motor de-powered for many software faults
+ * Tracked down remaining jitter to mbed Timer class.
+ * Configured to not use the RTOS, since we didn't really need it
+
+
 DONE 2018-12-07
  * Designed and ordered from shapeways new back housing and controller
    board mount
-
+ * Added actual state machine and sequenced startup
+ * Added a full rate debug spew and a simple tool to plot it to tune
+   current controller
 
 DONE 2018-12-05
  * Ordered digikey parts for absolute position sensing board
