@@ -2,9 +2,6 @@
    * Get absolute position sensing working
 
  * Improve jumping performance
-   * Optimize current measurement noise
-   * Tune current control loop
-   * Try a feedforward in current loop
    * Need to be able to accurately report current plot during jump event
      w/ at least ms resolution
    * Measure thermal performance in jumping loads
@@ -68,6 +65,10 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2018-12-09
+   * Try a feedforward in current loop
+   * Optimize current measurement noise
+   * Tune current control loop
 
 DONE 2018-12-08
  * Got motor de-powered for many software faults
