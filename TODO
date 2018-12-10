@@ -1,11 +1,12 @@
  * Necessary for 12 leg mech
    * Get absolute position sensing working
+   * Get enclosed housing functioning
+   * Get heat spreader or Aluminum board mounting cover
 
  * Improve jumping performance
    * Need to be able to accurately report current plot during jump event
      w/ at least ms resolution
    * Measure thermal performance in jumping loads
-   * Try to get more transient current than 35A through the motor
    * Build servo pair link for position-space control
 
  * Figure out why gbx 3 is stiffer than 2 by a lot
@@ -25,7 +26,6 @@
      * drv8232 faults
      * position control isn't working
      * undervoltage / overvoltage
-   * disable stuff if MJ_ASSERT or mbed_die happens
 
  * Leg needs to be stiffer laterally
  * Leg needs a way to assemble that doesn't have bolts sticking far out
@@ -66,9 +66,12 @@ Weigh all the gearbox components
    * Gearsets
 
 DONE 2018-12-09
-   * Try a feedforward in current loop
-   * Optimize current measurement noise
-   * Tune current control loop
+ * Try a feedforward in current loop
+ * Optimize current measurement noise
+ * Tune current control loop
+ * Switched around gains to support more than 40A.  Was stable up to
+   55A, but 60A looked like the controller wasn't liking itself no
+   matter what gains I set.
 
 DONE 2018-12-08
  * Got motor de-powered for many software faults
