@@ -1,7 +1,23 @@
- * Necessary for 12 leg mech
+ * write firmware for absolute position board
+ * integrate into controller firmware
+
+ * rev controller board, get 4 copies made so I will have some spares
+   to swap around and debug problems
+
+ * replace drv8323 on gbx3
+ * Figure out why drv8323 on gbx3 always reports a fault
+ * Figure out why high currents cause seeming random bit flips in memory
+   * scope power bus during a jump event
+
+ * Test jumping performance with max current
+
+ * Before building next rev of controller
    * Get absolute position sensing working
    * Get enclosed housing functioning
    * Get heat spreader or Aluminum board mounting cover
+
+ * Before building large quantities of controller
+   * jump indefinitely
 
  * Improve jumping performance
    * Need to be able to accurately report current plot during jump event
@@ -10,20 +26,14 @@
    * Build servo pair link for position-space control
 
  * Figure out why gbx 3 is stiffer than 2 by a lot
- * Figure out if gbx2 inner ring actually slipped... affix it better
- * Figure out why gbx2 has so much backlash now
-
- * Make a more permanent jumping fixture, including with a better
-   linear rail
  * Measure how weight affects the jump time
 
  * Fix gearbox v3 errata
    * try a print of housing in onyx
-   * get some planet carriers in Al
+   * get some planet c4arriers in Al
 
  * Firmware quality issues
    * Implement a fault state that disables outputs, activate it when
-     * drv8232 faults
      * position control isn't working
      * undervoltage / overvoltage
 
@@ -64,6 +74,20 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2018-12-14
+ * Re-installed spur gear
+ * Seemed to have likely exploded gbx3's drv8323
+ * Ordered some spare drv8323
+ * Built first absolute position board
+ * Started writing firmware for absolute position board, got blinken
+   light working
+
+DONE 2018-12-13
+ * Re-assembled everything, got 400ms of air time
+ * Kept getting persistent vds faults on gbx 2
+ * Also set screw for gbx2 spur gear came loose, need to reinstall
+   with loctite
 
 DONE 2018-12-09
  * Try a feedforward in current loop
