@@ -1,0 +1,12 @@
+r1
+ * There is an airwire between LED and current limiting resistor
+ * R1's connection to VCC seemed to be messed up, although that might
+   have been a result of rework
+
+
+
+DESIGN
+  * 8x DRV5053 hall effect sensors
+  * 1 AVR
+  * two magnets in planet carrier 1, configured with opposite polarities
+  * I2C slave
