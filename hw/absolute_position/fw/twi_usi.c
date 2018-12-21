@@ -118,6 +118,8 @@ typedef enum {
   kGetDataAndSendAck,
 } State;
 
+_Static_assert(sizeof(State) == 1, "-fshort-enums should be used");
+
 enum {
   kDefaultUsicrConfig = (
       // Operate in TWI mode, without an overflow clock hold.
@@ -236,11 +238,6 @@ ISR(USI_START_VECTOR) {
   // completed.  However, also bail early if a stop condition is
   // detected.
 
-  // TODO(jpieper): Verify that a start immediately followed by a stop
-  // gets through this loop.
-
-  // TODO(jpieper): Figure out what the SDA conditional here checks
-  // and verify it.
   uint8_t start_received = 0;
   while (1) {
     if (!(PIN_USI & (1 << PIN_USI_SCL))) {
@@ -304,7 +301,7 @@ ISR(USI_OVERFLOW_VECTOR) {
     }
 
     case kCheckReplyFromSendData: {
-      if (USIDR) {
+      if (current_usidr) {
         // We got a NACK, so the master does not want more data.
         set_usi_to_twi_start_condition_mode();
         return;
@@ -334,8 +331,6 @@ ISR(USI_OVERFLOW_VECTOR) {
     }
 
     case kGetDataAndSendAck: {
-      uint8_t current_usidr = READ_USIDR;
-
       // Copy data from USIDR and send ack.
       if (g_write_byte_count == 0) {
         g_current_register = current_usidr;

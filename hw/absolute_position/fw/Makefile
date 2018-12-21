@@ -26,6 +26,7 @@ CFLAGS= \
   -Winline \
   -Wall \
   -flto \
+  -fshort-enums \
   -DF_CPU=8000000
 
 LINKFLAGS =
