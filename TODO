@@ -1,22 +1,25 @@
+ * Get current control loop to be more steady during jump
+   maneuver... with a 25A jump right now, there are +-10A current
+   oscillations, and at 27A it goes more like +-20A.
+   * Try reporting control values at full rate and tuning control loop
+   * Try doing higher order terms in park transform
+   * Look at ben k's current ripple writeup
+
  * write firmware for absolute position board
  * integrate into controller firmware
 
- * rev controller board, get 4 copies made so I will have some spares
-   to swap around and debug problems
-
- * replace drv8323 on gbx3
- * Figure out why drv8323 on gbx3 always reports a fault
  * Figure out why high currents cause seeming random bit flips in memory
    * scope power bus during a jump event
 
  * Test jumping performance with max current
+ * Test jumping at running pace
+   * Measure thermal performance
+   * Check gearbox and leg wear / fatigue
 
- * Before building next rev of controller
+ * Before building large quantities of controller
    * Get absolute position sensing working
    * Get enclosed housing functioning
    * Get heat spreader or Aluminum board mounting cover
-
- * Before building large quantities of controller
    * jump indefinitely
 
  * Improve jumping performance
@@ -30,11 +33,12 @@
 
  * Fix gearbox v3 errata
    * try a print of housing in onyx
-   * get some planet c4arriers in Al
+   * get some planet carriers in Al
 
  * Firmware quality issues
    * Implement a fault state that disables outputs, activate it when
      * position control isn't working
+     * current control isn't working
      * undervoltage / overvoltage
 
  * Leg needs to be stiffer laterally
@@ -61,12 +65,6 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
-Absolute position board
-  * 8x DRV5053 hall effect sensors
-  * 1 AVR
-  * two magnets in planet carrier 1, configured with opposite polarities
-  * I2C slave
-
 Weigh all the gearbox components
 
 # Master Plan #
@@ -74,6 +72,26 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2018-12-28
+  * Ordered FT4232 422 and TTL adapters
+  * Ordered discretes for controller r2
+
+DONE 2018-12-27
+ * Wrote tool to validate absolute encoder algorithm
+
+DONE 2018-12-21
+ * Got absolute position board reading ADC values
+ * Ordered r2 of controller board from macrofab
+ * Successfully installed new drv8323 on gbx3!
+ * Got leg jumping again!
+
+DONE 2018-12-19
+  * Fixed a number of controller board errata
+
+DONE 2018-12-18
+ * Tried to replace drv8323, failed.  Will try again with better
+   supplies
 
 DONE 2018-12-14
  * Re-installed spur gear
