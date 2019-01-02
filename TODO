@@ -1,17 +1,8 @@
- * Get current control loop to be more steady during jump
-   maneuver... with a 25A jump right now, there are +-10A current
-   oscillations, and at 27A it goes more like +-20A.
-   * Try reporting control values at full rate and tuning control loop
-   * Try doing higher order terms in park transform
-   * Look at ben k's current ripple writeup
+ * Ramp up jump current to 45 or 50A, looking for problems
 
  * write firmware for absolute position board
  * integrate into controller firmware
 
- * Figure out why high currents cause seeming random bit flips in memory
-   * scope power bus during a jump event
-
- * Test jumping performance with max current
  * Test jumping at running pace
    * Measure thermal performance
    * Check gearbox and leg wear / fatigue
@@ -23,10 +14,10 @@
    * jump indefinitely
 
  * Improve jumping performance
-   * Need to be able to accurately report current plot during jump event
-     w/ at least ms resolution
    * Measure thermal performance in jumping loads
    * Build servo pair link for position-space control
+
+ * clean up velocity so that position control doesn't result in as much audible noise
 
  * Figure out why gbx 3 is stiffer than 2 by a lot
  * Measure how weight affects the jump time
@@ -73,9 +64,16 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-01-01
+ * Got FT4232 TTL working
+ * Got debug port working at 5mbps
+ * Added feedforward velocity term
+ * More control tuning
+ * Got 27A jump that seemed to track just fine with no anomalies
+
 DONE 2018-12-28
-  * Ordered FT4232 422 and TTL adapters
-  * Ordered discretes for controller r2
+ * Ordered FT4232 422 and TTL adapters
+ * Ordered discretes for controller r2
 
 DONE 2018-12-27
  * Wrote tool to validate absolute encoder algorithm
