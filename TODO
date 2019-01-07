@@ -1,7 +1,14 @@
- * Ramp up jump current to 45 or 50A, looking for problems
+ * Figure out some way to fault for a disconnected motor phase
+
+ * Design/order 8020 to hold cables for jumping fixture
+
+ * Measure how weight affects the jump time
+   * Figure out how I can attach weights to the jumping fixture
 
  * write firmware for absolute position board
  * integrate into controller firmware
+
+ * write IK equations for position and force
 
  * Test jumping at running pace
    * Measure thermal performance
@@ -19,8 +26,7 @@
 
  * clean up velocity so that position control doesn't result in as much audible noise
 
- * Figure out why gbx 3 is stiffer than 2 by a lot
- * Measure how weight affects the jump time
+ * Calibrate motor side position sensor for higher order terms
 
  * Fix gearbox v3 errata
    * try a print of housing in onyx
@@ -30,7 +36,7 @@
    * Implement a fault state that disables outputs, activate it when
      * position control isn't working
      * current control isn't working
-     * undervoltage / overvoltage
+     * undervoltage
 
  * Leg needs to be stiffer laterally
  * Leg needs a way to assemble that doesn't have bolts sticking far out
@@ -63,6 +69,37 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-06
+ * Removed most of the NLGI#1 grease from both gearboxes and
+   re-greased with #00.
+ * Fixtured improved mechanism for holding power and communication
+   wires to fixture
+ * Tested out improved position control mode, velocity, nan starting
+   position, and per-command p and d term scales
+
+DONE 2019-01-05
+ * Degreased both gbx2 and gbx3 shafts and pinions, re-assembled with
+   loctite 243 both on set screw and on shaft/pinion interior.
+
+DONE 2019-01-04
+ * Tried to find a softer way to land... didn't have much luck
+ * set screw in gbx3 came loose, re-loc-tited
+
+
+DONE 2019-01-03
+ * loc-tited set screw in gbx2
+ * loc-tited screws holding leg to carriage
+ * weighed 2 motor leg assembly at 600g
+ * got tview to send simultaneous commands, now hit the top rail
+   pretty hard with a 35A jump
+
+DONE 2019-01-02
+
+ * Ramped up current, at 37A it would ripple up to 54A or so and hit
+   the top bumper on my linear rail.  No problems observed, aside from
+   it being really hard to keep wires attached.  Air time about 450ms
+   and when retracted legs got 30cm off the ground.
 
 DONE 2019-01-01
  * Got FT4232 TTL working
