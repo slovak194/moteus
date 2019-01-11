@@ -1,18 +1,26 @@
- * Figure out some way to fault for a disconnected motor phase
+ * Measure static torque from 3508 with constant current supply
+ * Remove ms_i_err protection, it is worthless
 
- * Design/order 8020 to hold cables for jumping fixture
+ * figure out why gate drive protection tripped during 40A full weight
+   jump
 
- * Measure how weight affects the jump time
-   * Figure out how I can attach weights to the jumping fixture
+ * check gbx2 to see why its slop is increased, verify it is just wear
+   in planetary gear
+
+ * Test jumping at running pace
+   * with full load
+   * Measure thermal performance
+   * Check gearbox and leg wear / fatigue
+
+ * run second long USB cable so I can have one on a different host
+   controller
+
+ * bring up v2 of controller board
 
  * write firmware for absolute position board
  * integrate into controller firmware
 
  * write IK equations for position and force
-
- * Test jumping at running pace
-   * Measure thermal performance
-   * Check gearbox and leg wear / fatigue
 
  * Before building large quantities of controller
    * Get absolute position sensing working
@@ -69,6 +77,29 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-10
+ * Tested jumping with 500g and 1000g of weight
+ * Observed a gate drive fault when trying to jump with 40A of
+   current, didn't look like the controller actually faulted for it
+   correctly either
+ * Ordered another 700g of weights to get to full load
+ * NLGI #00 grease is too free flowing and leaks out the output
+   bearing, guess I need to try #0
+
+DONE 2019-01-09
+ * Fixed gbx3, test fit the new controller mounting plate.  It largely
+   worked, although it turned out there was no viable way to route
+   phase wires inside enclosure.  Just ran them outside for now.
+ * Tried jumping w/ 0.5kg weight.  It worked, but kept tripping the
+   ms_i_error fault, need to get per-sample tracing working again
+ * Received r2 control board
+
+DONE 2019-01-07
+ * Implemented current control fault
+ * Resoldered gbx3 phase wires on back, inserted bullet in power
+   lines, tried and failed to use the fully enclosed mounting
+   hardware.
 
 DONE 2019-01-06
  * Removed most of the NLGI#1 grease from both gearboxes and

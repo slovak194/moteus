@@ -1,3 +1,6 @@
+controller faceplate v1 errata
+ * holes for power wires are too small for 14AWG silicone wire
+
 gearbox v3 errata
  * detents in outer housing are insufficient to hold M3 nuts in place
  * tabs for servo to servo mounting do not leave sufficient room to
