@@ -1,5 +1,11 @@
+ * Implement temperature measurement for r2 controller
+ * include voltage in debug output somehow
+ * try limiting rate at which commanded value can change for pid controller
+
  * Measure static torque from 3508 with constant current supply
- * Remove ms_i_err protection, it is worthless
+ * Measure static torque from XOAR motor
+
+ * design aluminum board mounting plate and get machined
 
  * figure out why gate drive protection tripped during 40A full weight
    jump
@@ -15,21 +21,18 @@
  * run second long USB cable so I can have one on a different host
    controller
 
- * bring up v2 of controller board
-
  * write firmware for absolute position board
  * integrate into controller firmware
 
  * write IK equations for position and force
 
- * Before building large quantities of controller
+ * Before building large quantities of controller board
    * Get absolute position sensing working
    * Get enclosed housing functioning
    * Get heat spreader or Aluminum board mounting cover
    * jump indefinitely
 
  * Improve jumping performance
-   * Measure thermal performance in jumping loads
    * Build servo pair link for position-space control
 
  * clean up velocity so that position control doesn't result in as much audible noise
@@ -56,7 +59,6 @@
  * Get python telemetry stuff into moteus/mjlib
  * Get tview into moteus/mjlib repository
 
- * automatically advance position for velocity
  * Report firmware version over serial protocol
  * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
@@ -77,6 +79,15 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-11
+ * Removed ms_i_error stuff
+ * Ordered more usb cabling
+ * Built first controller r2, updated firmware to use it
+ * Installed it in jumping fixture and wired in 422 based debug output
+ * Jumped with it for the first time!
+ * Discovered voltage and drv8323 faults were only being checked when
+   changing modes, not every sample as intended
 
 DONE 2019-01-10
  * Tested jumping with 500g and 1000g of weight
