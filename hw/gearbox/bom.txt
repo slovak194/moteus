@@ -16,4 +16,4 @@
    * sense magnet: K&J Magnetics D42DIA 1/4"x1/8" N42 Dia Magnetized
 
  * Leg
-   * angular contact bearing - vxb.com 30-5ZZ
+   * angular contact bearing 5x14x7mm - vxb.com 30-5ZZ
