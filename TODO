@@ -1,15 +1,16 @@
- * try limiting rate at which commanded value can change for pid
-   controller
-
- * Implement temperature measurement for r2 controller
- * include voltage in debug output somehow
+ * Build second r2 controller
+ * Try jumping under load again with improved control loops
 
  * figure out why gate drive protection tripped during 40A full weight
    jump
 
  * direct drive experiment
+   * build third r2 controller
    * mount controller to Titan 6008 and test it
    * design belt driven mammal geometry leg
+     * verify shapeways pulley is functional
+     * select leg length to match available belt length
+     * design lower leg pulley cover
 
  * Test jumping at running pace
    * with full load
@@ -86,6 +87,12 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-18
+ * Verified desired current rate limiting
+ * Implemented temperature measurement for r2 controller
+ * Upped debug baud rate to 5450000 and got bus voltage in the set of data
+ * Started filtering bus voltage to improve current control stability
 
 DONE 2019-01-17
  * Ordered draft bracket for 6008 mount
