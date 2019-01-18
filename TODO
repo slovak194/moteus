@@ -1,17 +1,15 @@
+ * try limiting rate at which commanded value can change for pid
+   controller
+
  * Implement temperature measurement for r2 controller
  * include voltage in debug output somehow
- * try limiting rate at which commanded value can change for pid controller
-
- * Measure static torque from 3508 with constant current supply
- * Measure static torque from XOAR motor
-
- * design aluminum board mounting plate and get machined
 
  * figure out why gate drive protection tripped during 40A full weight
    jump
 
- * check gbx2 to see why its slop is increased, verify it is just wear
-   in planetary gear
+ * direct drive experiment
+   * mount controller to Titan 6008 and test it
+   * design belt driven mammal geometry leg
 
  * Test jumping at running pace
    * with full load
@@ -24,7 +22,9 @@
  * write firmware for absolute position board
  * integrate into controller firmware
 
- * write IK equations for position and force
+ * Improve jumping performance
+   * write IK equations for position and force
+   * Build servo pair link for position-space control
 
  * Before building large quantities of controller board
    * Get absolute position sensing working
@@ -32,26 +32,35 @@
    * Get heat spreader or Aluminum board mounting cover
    * jump indefinitely
 
- * Improve jumping performance
-   * Build servo pair link for position-space control
+ * Before building large quantities of servos
+   * rule out a no-gearbox solution w/ the XOAR or BE8108?
+   * check gbx2 to see why its slop is increased, verify it is just wear
+     in planetary gear
+   * Fix gearbox v3 errata and get another 2x prototype (since the
+     mounting pattern will change)
+   * evaluate using a 3508 w/ no gearbox for lateral axis
+   * Leg needs to be stiffer laterally
+   * Leg needs a way to assemble that doesn't have bolts sticking far out
+   * Leg needs more clearance from front plate of servo
+   * Absolute position sensing
+   * Solution for phase wires in enclosure
+   * Grease solution that doesn't leak out
+   * Aluminum planet carriers
+   * Wear testing on backlash and flex
+   * Order large quantities of controller boards
+
 
  * clean up velocity so that position control doesn't result in as much audible noise
 
  * Calibrate motor side position sensor for higher order terms
 
- * Fix gearbox v3 errata
    * try a print of housing in onyx
-   * get some planet carriers in Al
 
  * Firmware quality issues
    * Implement a fault state that disables outputs, activate it when
      * position control isn't working
      * current control isn't working
      * undervoltage
-
- * Leg needs to be stiffer laterally
- * Leg needs a way to assemble that doesn't have bolts sticking far out
- * Leg needs more clearance from front plate of servo
 
  * Figure out how to get velocity from AS5047 quadrature inputs
  * Get AS5047 SPI sampling to be faster
@@ -63,8 +72,6 @@
  * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
- * Test undervoltage response
- * Test over-current response
 
 
 Code cleanup
@@ -80,6 +87,22 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-01-17
+ * Ordered draft bracket for 6008 mount
+ * Ordered shapeways GT3 pulley test
+
+DONE 2019-01-15
+ * Designed bracket to mount controller to 6008 and configure them in
+   a leg-like position
+
+DONE 2019-01-13
+ * Ordered experimental timing belt and pulleys
+
+DONE 2019-01-12
+ * Tested torque on MOAR Titan 6008... it is within the realm of
+   plausible to use it purely direct drive.  It produces about 2.5 the
+   torque of the 3508-580kv for the same current.
+
 DONE 2019-01-11
  * Removed ms_i_error stuff
  * Ordered more usb cabling
@@ -88,6 +111,9 @@ DONE 2019-01-11
  * Jumped with it for the first time!
  * Discovered voltage and drv8323 faults were only being checked when
    changing modes, not every sample as intended
+ * Split up the config in bldc_servo so that things that are always
+   different, like position limits, don't get reset as often.
+
 
 DONE 2019-01-10
  * Tested jumping with 500g and 1000g of weight
