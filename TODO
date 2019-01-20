@@ -1,16 +1,18 @@
- * Build second r2 controller
+ * direct drive experiment
+   * design belt driven mammal geometry leg
+     * verify shapeways pulley is functional
+     * select leg length to match available belt length
+     * switch lower leg to have separate pulley with pin retainers
+     * design lower leg pulley cover
+   * need to clean up velocity signal, without gearbox lowering
+     things down, the velocity signal is too noisy
+
+ * Install r2 controller in gbx3
+
  * Try jumping under load again with improved control loops
 
  * figure out why gate drive protection tripped during 40A full weight
    jump
-
- * direct drive experiment
-   * build third r2 controller
-   * mount controller to Titan 6008 and test it
-   * design belt driven mammal geometry leg
-     * verify shapeways pulley is functional
-     * select leg length to match available belt length
-     * design lower leg pulley cover
 
  * Test jumping at running pace
    * with full load
@@ -88,11 +90,18 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-01-19
+ * Actually applied loctite 680 to gbx2
+ * Mounted and ran controller against xoar 6008.  Maybe?  30A gave
+   1.02N*m of torque.  Probably worth building out a leg to see how
+   much force it gets on the ground.  40A gave 1.28N*m, 45A gave 1.37N*m
+
 DONE 2019-01-18
  * Verified desired current rate limiting
  * Implemented temperature measurement for r2 controller
  * Upped debug baud rate to 5450000 and got bus voltage in the set of data
  * Started filtering bus voltage to improve current control stability
+ * Built up remaining r2 controller boards
 
 DONE 2019-01-17
  * Ordered draft bracket for 6008 mount
