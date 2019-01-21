@@ -1,26 +1,17 @@
  * direct drive experiment
+   * Calibrate motor side position sensor for higher order terms
    * design belt driven mammal geometry leg
      * verify shapeways pulley is functional
-     * select leg length to match available belt length
-     * switch lower leg to have separate pulley with pin retainers
-     * design lower leg pulley cover
-   * need to clean up velocity signal, without gearbox lowering
-     things down, the velocity signal is too noisy
 
- * Install r2 controller in gbx3
-
- * Try jumping under load again with improved control loops
-
- * figure out why gate drive protection tripped during 40A full weight
-   jump
 
  * Test jumping at running pace
+   * Install r2 controller in gbx3
+   * Try jumping under load again with improved control loops
+   * figure out why gate drive protection tripped during 40A full weight
+     jump
    * with full load
    * Measure thermal performance
    * Check gearbox and leg wear / fatigue
-
- * run second long USB cable so I can have one on a different host
-   controller
 
  * write firmware for absolute position board
  * integrate into controller firmware
@@ -37,8 +28,6 @@
 
  * Before building large quantities of servos
    * rule out a no-gearbox solution w/ the XOAR or BE8108?
-   * check gbx2 to see why its slop is increased, verify it is just wear
-     in planetary gear
    * Fix gearbox v3 errata and get another 2x prototype (since the
      mounting pattern will change)
    * evaluate using a 3508 w/ no gearbox for lateral axis
@@ -54,8 +43,6 @@
 
 
  * clean up velocity so that position control doesn't result in as much audible noise
-
- * Calibrate motor side position sensor for higher order terms
 
    * try a print of housing in onyx
 
@@ -90,11 +77,21 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-01-20
+ * Designed upper leg length: 22.9*math.pi*.5*2 + 114.05*2 = 300.04mm
+ * Created 6008 leg BOM
+ * Ordered parts from SDP-SI
+ * Ordered remaining shapeways parts for direct drive leg
+ * Ordered direct drive leg bearings from vxb
+ * Ordered low profile bolts from mcmaster
+ * Increased velocity filter to reduce noise
+
 DONE 2019-01-19
  * Actually applied loctite 680 to gbx2
  * Mounted and ran controller against xoar 6008.  Maybe?  30A gave
    1.02N*m of torque.  Probably worth building out a leg to see how
    much force it gets on the ground.  40A gave 1.28N*m, 45A gave 1.37N*m
+ * Got direct drive leg good except for length
 
 DONE 2019-01-18
  * Verified desired current rate limiting
