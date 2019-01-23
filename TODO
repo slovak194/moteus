@@ -1,11 +1,16 @@
+ * fix D/Q current axis swap
+
  * direct drive experiment
    * Calibrate motor side position sensor for higher order terms
+     * Get tview to be able to import a calibration and wait for OK
+       before sending each new command
    * design belt driven mammal geometry leg
      * verify shapeways pulley is functional
 
 
  * Test jumping at running pace
    * Install r2 controller in gbx3
+   * Find NLGI #0 grease
    * Try jumping under load again with improved control loops
    * figure out why gate drive protection tripped during 40A full weight
      jump
@@ -76,6 +81,9 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-21
+ * Beginnings of auto-calibration
 
 DONE 2019-01-20
  * Designed upper leg length: 22.9*math.pi*.5*2 + 114.05*2 = 300.04mm
