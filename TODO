@@ -1,20 +1,15 @@
- * fix D/Q current axis swap
-
  * direct drive experiment
-   * Calibrate motor side position sensor for higher order terms
-     * Get tview to be able to import a calibration and wait for OK
-       before sending each new command
    * design belt driven mammal geometry leg
      * verify shapeways pulley is functional
 
-
  * Test jumping at running pace
-   * Install r2 controller in gbx3
-   * Find NLGI #0 grease
-   * Try jumping under load again with improved control loops
+   * Order NLGI #0 grease from mcmaster
    * figure out why gate drive protection tripped during 40A full weight
      jump
-   * with full load
+     * swap a r2 controller into gbx3 so that I can monitor data in
+       real time
+   * Try jumping under 1kg load again with improved control loops
+     * with full 1.7kg load
    * Measure thermal performance
    * Check gearbox and leg wear / fatigue
 
@@ -81,6 +76,26 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-25
+ * Fixed D/Q current axis swap
+ * Discovered that gbx2 motor must have gotten some retaining compound
+   in the output bearing :(  It is now relatively sluggish.
+ * Got cmdline utility to push calibrations working.  Re-flashed and
+   re-calibrated all boards.
+ * First shapeways pulley seems at least minimally functional
+ * Tried jumping with 1kg load again... at 42a current gbx3 (using the
+   r1 controller), always triggered a GDF fault, on the high side of a
+   seemingly random phase.  I upped the drive current to 120ms, and
+   tdrive to 2000ns to no avail.
+
+DONE 2019-01-24
+ * Continued working on cmdline utility
+
+DONE 2019-01-23
+ * Continued working on cmdline utility that can install
+   calibrations... first re-implementing the multiplex protocol in
+   python3 asyncio
 
 DONE 2019-01-21
  * Beginnings of auto-calibration
