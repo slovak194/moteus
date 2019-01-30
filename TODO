@@ -1,13 +1,25 @@
+ * Fix high current operation
+   * Get loop to fault if it overruns the timer
+   * Get scope triggering on commands
+   * Scope voltage ripple during jump, see how it compares to static
+     and how it compares to voltage plot from debug output
+   * Double up caps on existing board with the one that gives ~6uF at
+     12V DC bias
+
  * direct drive experiment
-   * design belt driven mammal geometry leg
-     * verify shapeways pulley is functional
+   * mount leg sideways to bent plate
+
+   * test maximum force achievable at endpoint when retracted and at
+     half-retraction
+   * test moving rapidly
+
+   * remove gearboxes from jump fixture
+   * drill new plate to attach mammal leg to jump fixture
+
+   * fix errata in 3d printed parts
 
  * Test jumping at running pace
    * Order NLGI #0 grease from mcmaster
-   * figure out why gate drive protection tripped during 40A full weight
-     jump
-     * swap a r2 controller into gbx3 so that I can monitor data in
-       real time
    * Try jumping under 1kg load again with improved control loops
      * with full 1.7kg load
    * Measure thermal performance
@@ -42,17 +54,14 @@
    * Order large quantities of controller boards
 
 
+ * Automate calibration
+   * Have script do initial "d pwm" command to align motor, run cal,
+     get results, calculate calibration, and store results on device.
+   * Implement autocal for motor resistance
+   * Implement autocal for kV rating
+
  * clean up velocity so that position control doesn't result in as much audible noise
 
-   * try a print of housing in onyx
-
- * Firmware quality issues
-   * Implement a fault state that disables outputs, activate it when
-     * position control isn't working
-     * current control isn't working
-     * undervoltage
-
- * Figure out how to get velocity from AS5047 quadrature inputs
  * Get AS5047 SPI sampling to be faster
 
  * Get python telemetry stuff into moteus/mjlib
@@ -76,6 +85,21 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-01-29
+ * Received mammal leg parts
+ * Modified to achieve first git, recorded errata
+ * Mounted sn12 and sn13 on the Al brackets
+ * Calibrated sn13
+ * Fully assembled leg
+
+
+DONE 2019-01-27
+ * Ordered some TDK CGA5L1X7R1V106K160AC 10uF caps, which have a
+   higher capacitance at a 12V bias voltage than the 22uF ones I had
+   on the board.
+ * Wired up scope probes to v+, M3 and debug out, took scope pictures
+   of voltage ripple at 18A with 40kHz and 80kHz switching.
 
 DONE 2019-01-25
  * Fixed D/Q current axis swap
