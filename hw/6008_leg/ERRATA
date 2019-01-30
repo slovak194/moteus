@@ -1,0 +1,21 @@
+r1
+ * All holes that need to have a pin in them are too small
+ * Lower leg cover bottom mounting surface is a bit too long and interferes
+ * Upper leg needs more clearance around belt hole for mounting
+ * Upper pulley center hole needs to be larger diameter to give
+   opposing motor sufficient clearance
+ * Upper pulley bolt holes need to be big enough that bolts don't
+   thread much
+
+ * While can't make upper leg hole bigger, since it is a bearing
+   interface, need to figure out some way to allow for inspection of
+   proper belt fit... maybe just having more room and a window on the
+   end would work?
+
+ * Need M3x12 narrow head for upper pulley
+ * upper leg mounting holes for shaft will likely want a thicker
+   section around where the shaft leaves in order to provide better
+   lateral support
+ * belt hits interior of lower clamp well before travel range is
+   exhausted
+ * lower clamp needs a positive means of attaching, probably bolts
