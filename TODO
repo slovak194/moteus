@@ -1,13 +1,10 @@
  * Fix high current operation
-   * Get loop to fault if it overruns the timer
-   * Get scope triggering on commands
-   * Scope voltage ripple during jump, see how it compares to static
-     and how it compares to voltage plot from debug output
    * Double up caps on existing board with the one that gives ~6uF at
      12V DC bias
 
  * direct drive experiment
-   * mount leg sideways to bent plate
+   * build harness to power and communicate with leg
+   * code up absolute position calibration for 1x1 gear ratio
 
    * test maximum force achievable at endpoint when retracted and at
      half-retraction
@@ -71,6 +68,7 @@
  * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
+ * Get all mbed ticker stuff out of the link, we never want it used
 
 
 Code cleanup
@@ -86,13 +84,31 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-01-30
+ * Designed and ordered busbar board from oshpark
+ * Mounted leg sideways to bent plate
+ * Optimized the PWM sampling code to greatly increase achievable duty
+   cycle, and added hard monitoring that we are getting the sampling
+   done before the FETs go high again.
+ * Measured voltage ripple and temp performance of r2 controller at
+   40kHz and 80kHz switching frequencies.
+   * 80kHz
+     * 5A, temp around 52.0C
+     * 10A, temp around 66C
+     * 40A, voltage ripple is about 2.40V
+   * 40kHz
+     * 5A, temp around 49.5C
+     * 10A, temp around 56C
+     * 20A, voltage ripple is about 1.92V
+     * 30A, voltage ripple is about 4.2V
+     * 35A, voltage ripple is about 6V
+
 DONE 2019-01-29
  * Received mammal leg parts
- * Modified to achieve first git, recorded errata
+ * Modified to achieve first fit, recorded errata
  * Mounted sn12 and sn13 on the Al brackets
  * Calibrated sn13
  * Fully assembled leg
-
 
 DONE 2019-01-27
  * Ordered some TDK CGA5L1X7R1V106K160AC 10uF caps, which have a
