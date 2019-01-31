@@ -19,3 +19,7 @@ r1
  * belt hits interior of lower clamp well before travel range is
    exhausted
  * lower clamp needs a positive means of attaching, probably bolts
+ * belt tension is a tiny bit too high
+ * belt rubs against inside of upper leg, needs a mm or 2 more space
+ * would be nice if upper leg could rotate even more, so move 3rd axis
+   motor higher and make additional cutout in al bracket
