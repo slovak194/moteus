@@ -1,11 +1,7 @@
+ * set up maximum pwm duty cycle based on time required
+ * store serial number in eeprom
+
  * direct drive experiment
-   * build data harness for leg
-   * code up absolute position calibration for 1x1 gear ratio
-
-   * test maximum force achievable at endpoint when retracted and at
-     half-retraction
-   * test moving rapidly
-
    * remove gearboxes from jump fixture
    * drill new plate to attach mammal leg to jump fixture
 
@@ -79,6 +75,27 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-01
+ * Wired up mammal leg, flashed both boards, and recorded video of it moving
+ * w/ 50A, max force I was able to get on the plate was about 2.4kgf,
+   although that still was very sensitive to deflection, as this
+   geometry is much stronger when nearly straight.  An I term or
+   feedforward force term could make the absolute force arbitrarily
+   large at the expense of being unable to reject incoming forces.
+ * At 0.1/0.1 position, got following forces per current
+   * 10A - 0.52kgf
+   * 20A - 0.82kgf
+   * 30A - 1.1kgf
+   * 40A - 1.25kgf
+ * At 0.05/0.05 position (kp=1200)
+   * 10A - 0.82kgf
+   * 20A - 1.3kgf
+   * 30A - 1.56kgf
+ * At 0.02/0.02 position (kp=1200)
+   * 10A - 1.32kgf
+   * 20A - 2.02kgf
+   * 30A - 2.36kgf
 
 DONE 2019-01-31
  * drive strength test at 80kHz, 7A
