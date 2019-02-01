@@ -84,6 +84,16 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-01-31
+ * drive strength test at 80kHz, 7A
+   * 30/60 - 65
+   * 60/120 - 56.6
+   * 80/160 - 53.6
+   * 120/240 - 53.4
+ * Added CGA5L1X7R1V106K160AC on top of existing caps on SN11, set PWM
+   rate to 60kHz and control rate to 30kHz.  Was able to do 50A
+   continuous with only 2V ripple on the bus
+
 DONE 2019-01-30
  * Designed and ordered busbar board from oshpark
  * Mounted leg sideways to bent plate
@@ -92,7 +102,7 @@ DONE 2019-01-30
    done before the FETs go high again.
  * Measured voltage ripple and temp performance of r2 controller at
    40kHz and 80kHz switching frequencies.
-   * 80kHz
+   * 80kHz w/ 60/120 drive strength
      * 5A, temp around 52.0C
      * 10A, temp around 66C
      * 40A, voltage ripple is about 2.40V
