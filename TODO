@@ -1,11 +1,21 @@
- * set up maximum pwm duty cycle based on time required
- * store serial number in eeprom
+ * Design and mfg al backing plate for mammal mounted motor controller
+ * Rev r3 controller board, get 2x made, verify all is good and ready
+   for volume
 
  * direct drive experiment
-   * remove gearboxes from jump fixture
-   * drill new plate to attach mammal leg to jump fixture
+   * see if leg can be cantilevered off of shoulder motor
+     * drill holes in back bracket to mount 3dof leg to jump stand
+
+   * determine average torque/current/power required during IK walk at
+     various heights
+   * Use that to optimize leg lengths, maybe a shorter upper leg is
+     advantageous
 
    * fix errata in 3d printed parts
+
+ * set up maximum pwm duty cycle based on time required
+ * store serial number in eeprom
+ * clean up torque notebook and blog
 
  * Test jumping at running pace
    * Order NLGI #0 grease from mcmaster
@@ -49,6 +59,16 @@
    * Implement autocal for motor resistance
    * Implement autocal for kV rating
 
+ * central control board
+   * battery in
+   * 4 leg powers out
+   * 4 leg rs485 out
+   * power to computer
+   * rs485 to computer
+   * imu
+   * stm32f4 of some kind, w/ rs485 bridge
+   * leds
+
  * clean up velocity so that position control doesn't result in as much audible noise
 
  * Get AS5047 SPI sampling to be faster
@@ -76,6 +96,26 @@ Weigh all the gearbox components
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-02-02
+ * Installed BE8108 for upper leg motor
+ * At 0.13/0.13 position (kp=1200)
+   * 30A - 1.33kgf (0.155 position)
+ * At 0.1/0.1 position (kp=1200)
+   * 10A - 0.800kgf
+   * 20A - 1.30kgf
+   * 30A - 1.69kgf
+   * 40A - 1.92kgf
+ * At 0.05/0.05 position (kp=1200)
+   * 5A - 0.830kgf
+   * 10A - 1.30kgf
+   * 20A - 2.00kgf
+   * 30A - 2.60kgf
+ * At 0.02/0.02 position (kp=1200)
+   * 5A - 1.54kgf
+   * 10A - 2.00kgf
+   * 15A - 2.73kgf
+   * 20A - >3.0kgf
+
 DONE 2019-02-01
  * Wired up mammal leg, flashed both boards, and recorded video of it moving
  * w/ 50A, max force I was able to get on the plate was about 2.4kgf,
@@ -96,6 +136,8 @@ DONE 2019-02-01
    * 10A - 1.32kgf
    * 20A - 2.02kgf
    * 30A - 2.36kgf
+ * first mammal jump!
+ * did IK to determine torque requirements for arbitrary force requests
 
 DONE 2019-01-31
  * drive strength test at 80kHz, 7A
