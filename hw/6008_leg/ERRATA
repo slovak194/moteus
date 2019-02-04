@@ -23,3 +23,8 @@ r1
  * belt rubs against inside of upper leg, needs a mm or 2 more space
  * would be nice if upper leg could rotate even more, so move 3rd axis
    motor higher and make additional cutout in al bracket
+   * maybe not in the end... we don't have enough force for the motion
+     we have
+
+ * al bracket could use more material around motor mounting point to
+   make it stiffer in torsion
