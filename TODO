@@ -1,15 +1,11 @@
- * Design and mfg al backing plate for mammal mounted motor controller
- * Rev r3 controller board, get 2x made, verify all is good and ready
-   for volume
-
  * direct drive experiment
-   * see if leg can be cantilevered off of shoulder motor
-     * drill holes in back bracket to mount 3dof leg to jump stand
-
    * determine average torque/current/power required during IK walk at
      various heights
    * Use that to optimize leg lengths, maybe a shorter upper leg is
      advantageous
+
+   * see if leg can be cantilevered off of shoulder motor
+     * drill holes in back bracket to mount 3dof leg to jump stand
 
    * fix errata in 3d printed parts
 
@@ -95,6 +91,14 @@ Weigh all the gearbox components
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-06
+ * Designed and ordered 20x of the controller backplate
+ * Started the process of getting full IK equations into jupyter
+   notebooks for blogging
+
+DONE 2019-02-05
+ * Ordered 2x of r3 controller board
 
 DONE 2019-02-02
  * Installed BE8108 for upper leg motor
