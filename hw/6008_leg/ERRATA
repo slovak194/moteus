@@ -1,4 +1,8 @@
 r1
+ * make leg slightly longer, probably 0.25m from the 0.232m it is now
+ * make femur/tibia ratio more like 0.5 or 0.55 from the 0.48 that it is now
+ * make pulley reduce by 1.8 to 2.0
+
  * All holes that need to have a pin in them are too small
  * Lower leg cover bottom mounting surface is a bit too long and interferes
  * Upper leg needs more clearance around belt hole for mounting
