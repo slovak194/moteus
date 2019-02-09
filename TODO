@@ -1,59 +1,26 @@
- * direct drive experiment
-   * determine average torque/current/power required during IK walk at
-     various heights
-   * Use that to optimize leg lengths, maybe a shorter upper leg is
-     advantageous
-
-   * see if leg can be cantilevered off of shoulder motor
-     * drill holes in back bracket to mount 3dof leg to jump stand
-
+ * direct drive
    * fix errata in 3d printed parts
+    * make leg slightly longer, probably 0.25m from the 0.232m it is now
+    * make femur/tibia ratio more like 0.5 or 0.55 from the 0.48 that it is now
+    * make pulley reduce by 1.8 to 2.0
+   * order first walker set of motors
+    * 5x be8108
+    * 9x Titan 6008
 
  * set up maximum pwm duty cycle based on time required
  * store serial number in eeprom
  * clean up torque notebook and blog
-
- * Test jumping at running pace
-   * Order NLGI #0 grease from mcmaster
-   * Try jumping under 1kg load again with improved control loops
-     * with full 1.7kg load
-   * Measure thermal performance
-   * Check gearbox and leg wear / fatigue
-
- * write firmware for absolute position board
- * integrate into controller firmware
-
- * Improve jumping performance
-   * write IK equations for position and force
-   * Build servo pair link for position-space control
+ * fault for temperature (possibly derate for temperature first)
 
  * Before building large quantities of controller board
-   * Get absolute position sensing working
-   * Get enclosed housing functioning
    * Get heat spreader or Aluminum board mounting cover
    * jump indefinitely
 
- * Before building large quantities of servos
-   * rule out a no-gearbox solution w/ the XOAR or BE8108?
-   * Fix gearbox v3 errata and get another 2x prototype (since the
-     mounting pattern will change)
-   * evaluate using a 3508 w/ no gearbox for lateral axis
-   * Leg needs to be stiffer laterally
-   * Leg needs a way to assemble that doesn't have bolts sticking far out
-   * Leg needs more clearance from front plate of servo
-   * Absolute position sensing
-   * Solution for phase wires in enclosure
-   * Grease solution that doesn't leak out
-   * Aluminum planet carriers
-   * Wear testing on backlash and flex
-   * Order large quantities of controller boards
-
-
- * Automate calibration
-   * Have script do initial "d pwm" command to align motor, run cal,
-     get results, calculate calibration, and store results on device.
-   * Implement autocal for motor resistance
-   * Implement autocal for kV rating
+ * clean up velocity so that position control doesn't result in as much audible noise
+ * implement an optional "feed-forward" torque for position control
+ * implement servo-pair link position control
+   * at a minimum support feed forward
+   * possibly elliptical control gain alteration
 
  * central control board
    * battery in
@@ -62,10 +29,15 @@
    * power to computer
    * rs485 to computer
    * imu
+   * buck converter for stm32f4
    * stm32f4 of some kind, w/ rs485 bridge
    * leds
 
- * clean up velocity so that position control doesn't result in as much audible noise
+ * Automate calibration
+   * Have script do initial "d pwm" command to align motor, run cal,
+     get results, calculate calibration, and store results on device.
+   * Implement autocal for motor resistance
+   * Implement autocal for kV rating
 
  * Get AS5047 SPI sampling to be faster
 
@@ -84,13 +56,22 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
-Weigh all the gearbox components
-
 # Master Plan #
  * Answer questions necessary for full mech build
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-08
+ * Assembled and mounted 3dof leg... maaaybe could be cantilevered?
+   It is a little wobbly, but it seems like a fair amount of that is
+   the linear rail carriage flexing.  I guess it wouldn't be too hard
+   to try a 3d printed frame with cantilevered joints, and switch to
+   one with the far side supported later.
+
+DONE 2019-02-07
+ * Got animation of leg geometry and torque
+ * Finished up calculations for mammal geometry
 
 DONE 2019-02-06
  * Designed and ordered 20x of the controller backplate
