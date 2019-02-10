@@ -1,11 +1,5 @@
  * direct drive
    * fix errata in 3d printed parts
-    * make leg slightly longer, probably 0.25m from the 0.232m it is now
-    * make femur/tibia ratio more like 0.5 or 0.55 from the 0.48 that it is now
-    * make pulley reduce by 1.8 to 2.0
-   * order first walker set of motors
-    * 5x be8108
-    * 9x Titan 6008
 
  * set up maximum pwm duty cycle based on time required
  * store serial number in eeprom
@@ -62,12 +56,17 @@ Code cleanup
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-02-09
+ * Fixed most errata in 3d printed parts
+
 DONE 2019-02-08
  * Assembled and mounted 3dof leg... maaaybe could be cantilevered?
    It is a little wobbly, but it seems like a fair amount of that is
    the linear rail carriage flexing.  I guess it wouldn't be too hard
    to try a 3d printed frame with cantilevered joints, and switch to
    one with the far side supported later.
+ * Ordered first mech's worth of BE8108, Titan 6008, and 2x 5S Lipo
+   packs
 
 DONE 2019-02-07
  * Got animation of leg geometry and torque
