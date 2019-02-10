@@ -1,6 +1,4 @@
 r2 TODO
- * fine tune upper leg length to get center distance appropriate for a
-   purchaseable belt
 
 r2 DONE
  * be8108 modeled
@@ -9,6 +7,8 @@ r2 DONE
  * I had left 1.5mm clearance around the pulley to leave room for the
    belt.  Now going to leave 2.5mm of clearance.  pulley diameter of
    22mm
+ * selected 120 tooth belt, which for a 24/44 pulley sdp-si's online
+   calculator claims a center distance of 128.65mm
 
 r1
 
