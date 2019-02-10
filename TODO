@@ -1,5 +1,12 @@
  * direct drive
-   * fix errata in 3d printed parts
+   * mcmaster
+     * low profile M3 HW
+     * low profile M2 HW
+     * 4-6in cable ties
+
+   VXB
+     * upper pulley bearing
+     * knee bearings
 
  * set up maximum pwm duty cycle based on time required
  * store serial number in eeprom
@@ -55,6 +62,11 @@ Code cleanup
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-10
+ * finished with r1 leg errata
+ * ordered r2 leg from shapeways
+ * ordered r2 belt from sdp-si along with some extra shafts
 
 DONE 2019-02-09
  * Fixed most errata in 3d printed parts
