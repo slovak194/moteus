@@ -1,32 +1,31 @@
 SDP-SI
  * 5mmx25mm shaft - sdp-si.com - A 7X 1M050025
- * 3mm pitch 300mm x 6mm GT3 timing belt - A36R53M100060
- * One of
-   * grooveless retaining ring: S73NW2MGR555-050
-   * regular retaining ring MD0471MQB005
+ * 3mm pitch 120 tooth 6mm wide GT3 timing belt - A36R53M120060
 
 Amazon
- * 3x MOAR Titan 6008
+ * 2x MOAR Titan 6008
  * rubber foot - amazon B0040CZ60I
 
+aliexpress
+ * 1x be8108
+
 3d Printed
- * upper leg 3d bracket
+ * upper leg 3d
+ * upper leg pulley
  * lower 3d leg
  * lower 3d clamp
-
-3d Printed / Maybe Machined
- * upper leg 3d pulley
- * lower 3d pulley
+ * lower leg pulley
 
 McMaster
- * 4x M3 bolts to attach bracket to motor - M3x6 low profile  92855A307
- * 2x M3 bolts to attach pulley to motor - M3x6 low profile  92855A307
+ * 4x M3 bolts to attach bracket to motor - M3x8 low profile 92855A309
+ * 2x M3 bolts to attach pulley to motor - M3x12 low profile 92855A313
+ * 4x M2 bolts to attach controller to plate - M2x6 phillips head 92005A023
 
 VXB
  * upper leg bearing 17x23x4mm - vxb.com  MR6703-ZZ
  * 2x 5x14x7mm angle bearing - vxb.com 30-5ZZ
- * 1x 4x13x5 bearing - vxb.com MR624-ZZ
 
 Other
  * 3x al brackets - emachineshop
+ * 3x controller backplates
  * 3x controller boards

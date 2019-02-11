@@ -1,4 +1,8 @@
-r2 TODO
+r3 DONE
+ * added back in upper leg mounting countersinks
+
+r2 ERRATA
+ * bolt countersinks were broken in upper leg
 
 r2 DONE
  * be8108 modeled
@@ -11,10 +15,6 @@ r2 DONE
    calculator claims a center distance of 128.65mm
 
 r1
-
- * Need M3x12 narrow head for upper pulley
-
- * belt tension is a tiny bit too high
 
  * al brackets need holes to tie wire harnesses to
 
