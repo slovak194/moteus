@@ -1,17 +1,10 @@
- * direct drive
-   * mcmaster
-     * low profile M3 HW
-     * low profile M2 HW
-     * 4-6in cable ties
-
-   VXB
-     * upper pulley bearing
-     * knee bearings
-
  * set up maximum pwm duty cycle based on time required
  * store serial number in eeprom
  * clean up torque notebook and blog
  * fault for temperature (possibly derate for temperature first)
+
+ * design chassis
+ * design central control board
 
  * Before building large quantities of controller board
    * Get heat spreader or Aluminum board mounting cover
@@ -62,6 +55,13 @@ Code cleanup
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-11
+ * Ordered mcmaster parts for full robot build
+ * Ordered vxb.com parts for full robot build
+ * Discovered r2 upper leg was missing countersinks... fixed in the
+   model, will just have to dremel away the first one
+ * Ordered digikey parts to populate next controller boards
 
 DONE 2019-02-10
  * finished with r1 leg errata
