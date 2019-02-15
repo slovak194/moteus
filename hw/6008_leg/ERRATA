@@ -1,8 +1,33 @@
+chassis TODO
+   * need mounting for central control board
+   * need way to attach feet (or integrated) to rest on
+   * need mounting for turret or dedicated rasbpi
+   * needs holes on the other side of all screw holes for mounting hw
+   * needs way to attach cosmetic shroud
+
+
 r3 DONE
  * added back in upper leg mounting countersinks
+ * switched lower clamp to have 8 pegs
+ * increased lower pulley hole size from 3.15mm to 3.2mm
+ * increased lower clamp separation from leg from 0.2mm to 0.3mm
+ * increased lower clamp and lower leg hole diameter to 14.05mm
+ * increased diameter of lower leg and clamp mounting holes from 3.1mm
+   to 3.15mm
+ * increased upper pulley center hole from 4.05mm to 4.1mm
+ * increased pulley shank from 4mm to 4.3mm, and decreased pulley
+   width from 7 to 6.7mm
+
+ * added wire tie harness hole to al bracket
 
 r2 ERRATA
  * bolt countersinks were broken in upper leg
+ * clamp has the wrong number of mounting pins
+ * holes in lower pulley could use to be a hair larger
+ * lower clamp and lower leg hole is sized for a shaft, not for a
+   bearing!
+ * upper pulley center hole is a tad too small
+ * upper pulley bearing binds between gear and motor
 
 r2 DONE
  * be8108 modeled
