@@ -1,17 +1,23 @@
- * set up maximum pwm duty cycle based on time required
- * store serial number in eeprom
- * clean up torque notebook and blog
- * fault for temperature (possibly derate for temperature first)
-
  * design chassis
+
  * design central control board
 
+ * controller board initial zeroing doesn't work terribly well for the
+   1.8 gear ratio... need to make sure it always picks alias closest
+   to 0
+
+ * get new controller backplate that works with new mounting hole
+   positions (may need more than one?)
+
+ * switch freecad model to assembly v3
+
  * Before building large quantities of controller board
-   * Get heat spreader or Aluminum board mounting cover
    * jump indefinitely
 
- * clean up velocity so that position control doesn't result in as much audible noise
  * implement an optional "feed-forward" torque for position control
+   * needs to fault or do something sane if it goes up against the
+     position limit
+
  * implement servo-pair link position control
    * at a minimum support feed forward
    * possibly elliptical control gain alteration
@@ -38,8 +44,10 @@
  * Get python telemetry stuff into moteus/mjlib
  * Get tview into moteus/mjlib repository
 
+ * firmware flash over rs485
+ * derate for temperature
+ * store serial number in eeprom
  * Report firmware version over serial protocol
- * Implement auto-theta/phase calibrate
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Get all mbed ticker stuff out of the link, we never want it used
@@ -56,12 +64,66 @@ Code cleanup
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
 
+DONE 2019-02-15
+ * Ordered next revision of al bracket
+ * Ordered r3 of mammal leg from shapeways
+ * Installed backplates on all controllers
+ * Did jumping experiments... seems like it should be workable
+
+DONE 2019-02-14
+ * Finished fitting r2 of mammal leg
+ * Installed al controller backplate
+   * 6008
+     * no backplate
+       * 5A  - 35C
+       * 10A - 47C
+       * 15A - 65C
+       * 20A - >70C
+     * backplate
+       * 5A  - 31C
+       * 10A - 36C
+       * 15A - 47C
+       * 20A - 57C
+       * 25A - >70C
+     * backplate w/ thermal paste
+       * 5A - 32C
+       * 10A - 35C
+       * 15A - 40C
+       * 20A - 47C
+       * 25A - 59C
+       * 30A - >70C
+   * be8108
+     * backplate with no thermal paste (be8108)
+       * 5A -
+       * 10A - 32C
+       * 15A - 42C
+       * 20A - 53C
+       * 25A - >70C
+     * backplate with thermal paste (be8108)
+       * 5A  - 26C
+       * 10A - 30C
+       * 15A - 36C
+       * 20A - 45C
+       * 25A - motor got too hot steady state (90W of power)
+
+DONE 2019-02-13
+ * received r2 of mammal leg
+   * Wow, it had even more problems than the first revision had
+   * A lot of dremeling was required to get it to all fit together
+
+
 DONE 2019-02-11
  * Ordered mcmaster parts for full robot build
  * Ordered vxb.com parts for full robot build
  * Discovered r2 upper leg was missing countersinks... fixed in the
    model, will just have to dremel away the first one
  * Ordered digikey parts to populate next controller boards
+ * Did a lot of jump testing... rattled loose bolts holding be8108
+   controller and be8108 itself.
+ * Reduced switching noise some by switching to a windowed average
+   velocity filter and adding a velocity threshold (at the expense of
+   ringing when nearly stopped).  It is unclear this can be any better
+   without a better encoder or a gear reduction.
 
 DONE 2019-02-10
  * finished with r1 leg errata
