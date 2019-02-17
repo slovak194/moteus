@@ -1,9 +1,10 @@
 chassis TODO
+   * needs holes on the other side of all screw holes for mounting hw
    * need mounting for central control board
    * need way to attach feet (or integrated) to rest on
    * need mounting for turret or dedicated rasbpi
-   * needs holes on the other side of all screw holes for mounting hw
    * needs way to attach cosmetic shroud
+   * needs routing for wires from control board to each leg
 
 
 r3 DONE
