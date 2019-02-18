@@ -1,3 +1,12 @@
+TODO
+ * draw power and ground planes
+ * align all parts
+ * rough arrange silks
+ * route power / ground
+ * route everything else
+ * fine align silks
+ * add title / copyright
+
 DESIGN
    * battery in
    * 4 leg powers out
