@@ -1,0 +1,10 @@
+DESIGN
+   * battery in
+   * 4 leg powers out
+   * 4 leg rs485 out
+   * power to computer
+   * rs485 to computer
+   * imu
+   * buck converter for stm32f4
+   * stm32f4 of some kind, w/ rs485 bridge
+   * leds
