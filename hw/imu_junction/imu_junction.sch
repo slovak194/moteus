@@ -1773,27 +1773,34 @@
 <attribute name="MPN" value="MF-RES-0402-220"/>
 </part>
 <part name="C2" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C6" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C4" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C5" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C3" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C1" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="4.7uF">
 <attribute name="MF" value="Samsung Electro-Mechanics"/>
+<attribute name="MPN" value="CL10A475KA8NQNC"/>
 </part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="4.7uF">
 <attribute name="MF" value="Samsung Electro-Mechanics"/>
+<attribute name="MPN" value="CL10A475KA8NQNC"/>
 </part>
 <part name="X1" library="controller" deviceset="CRYSTAL" device="ABM3B" value="8.0MHz">
 <attribute name="MF" value="Abracon"/>
@@ -1801,11 +1808,15 @@
 <attribute name="POPULATE" value="1"/>
 </part>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="C8" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="10pF">
-<attribute name="MF" value="Samsung Electro-Mechanics"/>
+<part name="C8" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="10pF">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MF-CAP-0603-10pF"/>
 </part>
-<part name="C9" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="10pF">
-<attribute name="MF" value="Samsung Electro-Mechanics"/>
+<part name="C9" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="10pF">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MF-CAP-0603-10pF"/>
 </part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SWD" library="controller" deviceset="JST-ZH6" device="SMT_VERT" value="JST-ZH6SMT_VERT">
@@ -1826,25 +1837,37 @@
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="C26" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
-<part name="C29" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="1uF 35V">
-<attribute name="MF" value="Samsung Electro-Mechanics"/>
+<part name="C29" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="1uF">
+<attribute name="HOUSEPART" value="YES"/>
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MF-CAP-0402-1uF"/>
 </part>
-<part name="DGND" library="controller" deviceset="PAD" device="24AWG_PAD"/>
+<part name="DGND" library="controller" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="C10" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C11" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="U2" library="imu_junction" deviceset="BMI088" device="LGA16">
 <attribute name="MF" value="Bosch Sensortec"/>
 <attribute name="MPN" value="BMI088"/>
+<attribute name="POPULATE" value="1"/>
 </part>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="U3" library="imu_junction" deviceset="TPS62177" device="WSON10"/>
+<part name="U3" library="imu_junction" deviceset="TPS62177" device="WSON10">
+<attribute name="MF" value="TI"/>
+<attribute name="MPN" value="TPS62177DQCR"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="L1" library="mfpassives" deviceset="INDUCTOR" device="_1210" value="10uH">
 <attribute name="HOUSEPART" value="1"/>
 <attribute name="MPN" value="MF-IND-1210-10uH"/>
@@ -1856,8 +1879,7 @@
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="C13" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF">
 <attribute name="HOUSEPART" value="1"/>
-<attribute name="MPN" value="
-MF-CAP-1206-10uF"/>
+<attribute name="MPN" value="MF-CAP-1206-10uF"/>
 </part>
 <part name="C14" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF">
 <attribute name="HOUSEPART" value="1"/>
@@ -1868,7 +1890,8 @@ MF-CAP-1206-10uF"/>
 <attribute name="MPN" value="GRM188R6YA225KA12D"/>
 </part>
 <part name="C15" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="J1" library="controller" deviceset="JST-PH3" device="SMT_VERT" value="JST-PH3SMT_VERT">
 <attribute name="MF" value="JST"/>
@@ -1924,8 +1947,9 @@ MF-CAP-1206-10uF"/>
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="J5" library="gimbal" deviceset="JST-XH4" device="SMT_RA">
-<attribute name="AMFPN" value="S4B-XH-SM4-TB(LF)(SN)"/>
 <attribute name="DPN" value="455-2262-1-ND"/>
+<attribute name="MPN" value="S4B-XH-SM4-TB(LF)(SN)"/>
+<attribute name="POPULATE" value="1"/>
 </part>
 <part name="SH4" library="shorts" deviceset="SHORT" device="BIG" value="SHORTBIG">
 <attribute name="POPULATE" value="0"/>
@@ -1949,16 +1973,23 @@ MF-CAP-1206-10uF"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C17" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C18" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
 <part name="C16" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF 50V">
-<attribute name="MF" value="TDK"/>
+<attribute name="MF" value="Walsin"/>
+<attribute name="MPN" value="0402B104K500CT"/>
 </part>
-<part name="DTX" library="controller" deviceset="PAD" device="24AWG_PAD"/>
-<part name="DRX" library="controller" deviceset="PAD" device="24AWG_PAD"/>
+<part name="DTX" library="controller" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="DRX" library="controller" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="U$5" library="controller" deviceset="MOUNT" device="M2" value="MOUNTM2">
 <attribute name="POPULATE" value="0"/>
 </part>
@@ -2050,7 +2081,9 @@ MF-CAP-1206-10uF"/>
 <instance part="C29" gate="G$1" x="-7.62" y="86.36">
 <attribute name="MF" x="-7.62" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="DGND" gate="G$1" x="106.68" y="-68.58"/>
+<instance part="DGND" gate="G$1" x="106.68" y="-68.58">
+<attribute name="POPULATE" x="106.68" y="-68.58" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="119.38" y="-218.44"/>
 <instance part="C10" gate="G$1" x="134.62" y="-205.74">
 <attribute name="MF" x="134.62" y="-205.74" size="1.778" layer="96" display="off"/>
@@ -2061,9 +2094,14 @@ MF-CAP-1206-10uF"/>
 <instance part="U2" gate="G$1" x="86.36" y="-195.58">
 <attribute name="MPN" x="86.36" y="-195.58" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="86.36" y="-195.58" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="86.36" y="-195.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="119.38" y="-190.5"/>
-<instance part="U3" gate="G$1" x="88.9" y="-292.1"/>
+<instance part="U3" gate="G$1" x="88.9" y="-292.1">
+<attribute name="MPN" x="88.9" y="-292.1" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="88.9" y="-292.1" size="1.778" layer="96" display="off"/>
+<attribute name="POPULATE" x="88.9" y="-292.1" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L1" gate="G$1" x="116.84" y="-281.94"/>
 <instance part="+3V2" gate="G$1" x="132.08" y="-274.32"/>
 <instance part="GND3" gate="1" x="101.6" y="-327.66"/>
@@ -2132,7 +2170,8 @@ MF-CAP-1206-10uF"/>
 </instance>
 <instance part="J5" gate="G$1" x="144.78" y="-482.6" rot="R180">
 <attribute name="DPN" x="144.78" y="-482.6" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="AMFPN" x="144.78" y="-482.6" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="144.78" y="-482.6" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="POPULATE" x="144.78" y="-482.6" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="SH4" gate="G$1" x="88.9" y="-325.12">
 <attribute name="POPULATE" x="88.9" y="-325.12" size="1.778" layer="96" display="off"/>
@@ -2164,8 +2203,12 @@ MF-CAP-1206-10uF"/>
 <instance part="C16" gate="G$1" x="17.78" y="-398.78">
 <attribute name="MF" x="17.78" y="-398.78" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="DTX" gate="G$1" x="-81.28" y="20.32" rot="R180"/>
-<instance part="DRX" gate="G$1" x="-91.44" y="17.78" rot="R180"/>
+<instance part="DTX" gate="G$1" x="-81.28" y="20.32" rot="R180">
+<attribute name="POPULATE" x="-81.28" y="20.32" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="DRX" gate="G$1" x="-91.44" y="17.78" rot="R180">
+<attribute name="POPULATE" x="-91.44" y="17.78" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="U$5" gate="G$1" x="50.8" y="124.46">
 <attribute name="POPULATE" x="50.8" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
