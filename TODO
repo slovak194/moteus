@@ -6,6 +6,9 @@
  * get new controller backplate that works with new mounting hole
    positions (may need more than one?)
 
+ * build new rpi3 hat with rs485 and 18V input
+ * build new gimbal board with rs485 and 18V input
+
  * switch freecad model to assembly v3
 
  * Before building large quantities of controller board
@@ -50,6 +53,12 @@ Code cleanup
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-18
+ * imu-junction board
+   * Tweaked dimensions of chassis to let junction board be much larger
+   * placed all parts of junction board
+   * routed power and ground and step down switcher
 
 DONE 2019-02-17
  * verified that initial position setting was wrapping as expected,
