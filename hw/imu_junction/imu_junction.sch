@@ -1575,6 +1575,181 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="mfleds">
+<packages>
+<package name="LED0603">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint for Single LEDs in 0603&lt;br/&gt;</description>
+<smd name="CATHODE" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="ANODE" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<wire x1="-1.5" y1="0.75" x2="-1.5" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="1.5" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.75" x2="-1.5" y2="0.75" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1.5" y="0.75"/>
+<vertex x="-1.7" y="0.75"/>
+<vertex x="-1.7" y="-0.75"/>
+<vertex x="-1.5" y="-0.75"/>
+</polygon>
+<text x="-1.7" y="1.1" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-0.15" y="0"/>
+<vertex x="0.15" y="0.3"/>
+<vertex x="0.15" y="-0.3"/>
+</polygon>
+</package>
+<package name="LED0805">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint for Single LEDs in 0805&lt;br/&gt;</description>
+<smd name="CATHODE" x="-1.25" y="0" dx="1.25" dy="1.1" layer="1" rot="R90"/>
+<smd name="ANODE" x="1.25" y="0" dx="1.25" dy="1.1" layer="1" rot="R90"/>
+<wire x1="-2.05" y1="0.85" x2="-2.05" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-0.85" x2="2.05" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-0.85" x2="2.05" y2="0.85" width="0.127" layer="21"/>
+<wire x1="2.05" y1="0.85" x2="-2.05" y2="0.85" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-2.05" y="0.85"/>
+<vertex x="-2.25" y="0.85"/>
+<vertex x="-2.25" y="-0.85"/>
+<vertex x="-2.05" y="-0.85"/>
+</polygon>
+<text x="-2.25" y="1.1" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-0.15" y="0"/>
+<vertex x="0.15" y="0.3"/>
+<vertex x="0.15" y="-0.3"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<description>&lt;b&gt;Description:&lt;/b&gt; Symbol for Single LEDs&lt;br/&gt;</description>
+<wire x1="1.27" y1="1.524" x2="1.27" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="-0.508" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.524" x2="-0.508" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.524" x2="1.016" y2="0" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="-0.508" y="-1.524"/>
+<vertex x="-0.508" y="1.524"/>
+<vertex x="1.016" y="0"/>
+</polygon>
+<wire x1="-0.508" y1="2.286" x2="0.508" y2="3.302" width="0.254" layer="94"/>
+<wire x1="0.508" y1="3.302" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="1.016" y2="4.826" width="0.254" layer="94"/>
+<wire x1="1.016" y1="4.826" x2="0.508" y2="4.826" width="0.254" layer="94"/>
+<wire x1="0.508" y1="4.826" x2="1.016" y2="4.318" width="0.254" layer="94"/>
+<wire x1="1.016" y1="4.318" x2="1.016" y2="4.826" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.286" x2="1.778" y2="3.302" width="0.254" layer="94"/>
+<wire x1="1.778" y1="3.302" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.81" x2="2.286" y2="4.826" width="0.254" layer="94"/>
+<wire x1="2.286" y1="4.826" x2="1.778" y2="4.826" width="0.254" layer="94"/>
+<wire x1="1.778" y1="4.826" x2="2.286" y2="4.318" width="0.254" layer="94"/>
+<wire x1="2.286" y1="4.318" x2="2.286" y2="4.826" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+<pin name="ANODE" x="-2.54" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="CATHODE" x="2.54" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LED_SINGLE" prefix="D" uservalue="yes">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_LEDs&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Device for Single LED Packages. Manufacture part number (MFG#) can be added via Attributes.&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-RED" package="LED0603">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-LED-0603-RED" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" constant="no"/>
+<attribute name="VALUE" value="MF-LED-0603-RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-RED" package="LED0805">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-LED-0805-RED" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0805-RED" constant="no"/>
+<attribute name="VALUE" value="MF-LED-0805-RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-GREEN" package="LED0603">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-LED-0603-GREEN" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-GREEN" constant="no"/>
+<attribute name="VALUE" value="MF-LED-0603-GREEN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-GREEN" package="LED0805">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="YES" constant="no"/>
+<attribute name="MPN" value="MF-LED-0805-GREEN" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0805-GREEN" constant="no"/>
+<attribute name="VALUE" value="MF-LED-0805-GREEN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603" package="LED0603">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="NO" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="LED0805">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="NO" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1788,6 +1963,17 @@ MF-CAP-1206-10uF"/>
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="D1" library="mfleds" deviceset="LED_SINGLE" device="-0603-RED" value="MF-LED-0603-RED"/>
+<part name="D2" library="mfleds" deviceset="LED_SINGLE" device="-0603-GREEN" value="MF-LED-0603-GREEN"/>
+<part name="R2" library="mfpassives" deviceset="RESISTOR" device="_0402" value="220">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-RES-0402-220"/>
+</part>
+<part name="R3" library="mfpassives" deviceset="RESISTOR" device="_0402" value="220">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-RES-0402-220"/>
+</part>
+<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1984,6 +2170,15 @@ MF-CAP-1206-10uF"/>
 <attribute name="POPULATE" x="50.8" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND8" gate="1" x="68.58" y="-215.9"/>
+<instance part="D1" gate="G$1" x="185.42" y="-86.36" rot="R270"/>
+<instance part="D2" gate="G$1" x="200.66" y="-86.36" rot="R270"/>
+<instance part="R2" gate="G$1" x="185.42" y="-76.2" rot="R180">
+<attribute name="MPN" x="185.42" y="-76.2" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="200.66" y="-76.2" rot="R180">
+<attribute name="MPN" x="200.66" y="-76.2" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="+3V7" gate="G$1" x="195.58" y="-66.04"/>
 </instances>
 <busses>
 </busses>
@@ -2139,6 +2334,16 @@ MF-CAP-1206-10uF"/>
 <wire x1="17.78" y1="-396.24" x2="17.78" y2="-375.92" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-375.92" x2="22.86" y2="-375.92" width="0.1524" layer="91"/>
 <junction x="22.86" y="-375.92"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="P$2"/>
+<wire x1="185.42" y1="-71.12" x2="185.42" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="185.42" y1="-68.58" x2="195.58" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="P$2"/>
+<wire x1="195.58" y1="-68.58" x2="200.66" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="-68.58" x2="200.66" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="195.58" y="-68.58"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2417,7 +2622,7 @@ MF-CAP-1206-10uF"/>
 <label x="119.38" y="-480.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="D2_P" class="0">
 <segment>
 <pinref part="J3" gate="A" pin="1"/>
 <wire x1="66.04" y1="-424.18" x2="104.14" y2="-424.18" width="0.1524" layer="91"/>
@@ -2425,9 +2630,10 @@ MF-CAP-1206-10uF"/>
 <wire x1="104.14" y1="-424.18" x2="124.46" y2="-424.18" width="0.1524" layer="91"/>
 <junction x="104.14" y="-424.18"/>
 <pinref part="U5" gate="G$1" pin="A"/>
+<label x="81.28" y="-424.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="D2_N" class="0">
 <segment>
 <wire x1="66.04" y1="-429.26" x2="68.58" y2="-429.26" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-429.26" x2="68.58" y2="-426.72" width="0.1524" layer="91"/>
@@ -2438,9 +2644,10 @@ MF-CAP-1206-10uF"/>
 <junction x="104.14" y="-426.72"/>
 <pinref part="U5" gate="G$1" pin="B"/>
 <wire x1="66.04" y1="-431.8" x2="66.04" y2="-429.26" width="0.1524" layer="91"/>
+<label x="81.28" y="-426.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="D1_N" class="0">
 <segment>
 <wire x1="66.04" y1="-381" x2="71.12" y2="-381" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-381" x2="71.12" y2="-378.46" width="0.1524" layer="91"/>
@@ -2451,9 +2658,10 @@ MF-CAP-1206-10uF"/>
 <junction x="104.14" y="-378.46"/>
 <pinref part="U4" gate="G$1" pin="B"/>
 <wire x1="66.04" y1="-383.54" x2="66.04" y2="-381" width="0.1524" layer="91"/>
+<label x="78.74" y="-378.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="D1_P" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="1"/>
 <wire x1="66.04" y1="-375.92" x2="104.14" y2="-375.92" width="0.1524" layer="91"/>
@@ -2461,9 +2669,10 @@ MF-CAP-1206-10uF"/>
 <wire x1="104.14" y1="-375.92" x2="124.46" y2="-375.92" width="0.1524" layer="91"/>
 <junction x="104.14" y="-375.92"/>
 <pinref part="U4" gate="G$1" pin="A"/>
+<label x="78.74" y="-375.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SLAVE_TX" class="0">
+<net name="D3_N" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="-485.14" x2="76.2" y2="-485.14" width="0.1524" layer="91"/>
@@ -2471,13 +2680,15 @@ MF-CAP-1206-10uF"/>
 <wire x1="76.2" y1="-487.68" x2="76.2" y2="-485.14" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="B"/>
 <wire x1="66.04" y1="-490.22" x2="66.04" y2="-487.68" width="0.1524" layer="91"/>
+<label x="88.9" y="-485.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SLAVE_RX" class="0">
+<net name="D3_P" class="0">
 <segment>
 <pinref part="J5" gate="G$1" pin="3"/>
 <wire x1="66.04" y1="-482.6" x2="137.16" y2="-482.6" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="A"/>
+<label x="88.9" y="-482.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V-" class="0">
@@ -2796,6 +3007,44 @@ MF-CAP-1206-10uF"/>
 <pinref part="U1" gate="G$1" pin="PC13"/>
 <wire x1="152.4" y1="10.16" x2="177.8" y2="10.16" width="0.1524" layer="91"/>
 <label x="167.64" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="P$1"/>
+<pinref part="D1" gate="G$1" pin="ANODE"/>
+<wire x1="185.42" y1="-81.28" x2="185.42" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="P$1"/>
+<pinref part="D2" gate="G$1" pin="ANODE"/>
+<wire x1="200.66" y1="-81.28" x2="200.66" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="STATUS2" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="CATHODE"/>
+<wire x1="200.66" y1="-88.9" x2="200.66" y2="-101.6" width="0.1524" layer="91"/>
+<label x="200.66" y="-99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB12"/>
+<wire x1="5.08" y1="-27.94" x2="-12.7" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-12.7" y="-27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="STATUS1" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="CATHODE"/>
+<wire x1="185.42" y1="-88.9" x2="185.42" y2="-101.6" width="0.1524" layer="91"/>
+<label x="185.42" y="-99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB13/TIM1_1N/SPI2_SCK/I2S2_CK"/>
+<wire x1="5.08" y1="-30.48" x2="-12.7" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-12.7" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
