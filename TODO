@@ -1,4 +1,5 @@
- * design central control board
+ * Find currents that allow jumping indefinitely
+
  * write C++ multiplex stream client
  * write servo protocol server
  * write servo protocol client
@@ -6,13 +7,9 @@
  * get new controller backplate that works with new mounting hole
    positions (may need more than one?)
 
- * build new rpi3 hat with rs485 and 18V input
  * build new gimbal board with rs485 and 18V input
 
  * switch freecad model to assembly v3
-
- * Before building large quantities of controller board
-   * jump indefinitely
 
  * implement an optional "feed-forward" torque for position control
    * needs to fault or do something sane if it goes up against the
@@ -53,6 +50,25 @@ Code cleanup
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 20-40
    * Gearsets
+
+DONE 2019-02-23
+ * Wrote continuous jumping test driver
+ * Rewired 485 runs on jumping fixture for improved reliability
+ * Continuously jumped for over 7 minutes!
+
+DONE 2019-02-22
+ * Received r3 of controller
+ * Installed DNP items on both r3 boards
+ * Installed r3 controller and r3 leg onto jump fixture
+   * Not sure if it is because of the new HW, but the belt doesn't
+     track as well now, and rubs against the side of the upper leg
+ * Jumped new leg a few times
+
+DONE 2019-02-21
+ * Ordered pi3 hat r2 from macrofab
+
+DONE 2019-02-19
+ * Ordered imu_junction r1 from macrofab
 
 DONE 2019-02-18
  * imu-junction board
