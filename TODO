@@ -1,24 +1,25 @@
- * Find currents that allow jumping indefinitely
-
- * write C++ multiplex stream client
- * write servo protocol server
- * write servo protocol client
+ * Figure out why shoulder joint magnet keeps drifting
+   * replace magnet and use spacer to get it closer to sensor
 
  * get new controller backplate that works with new mounting hole
    positions (may need more than one?)
 
  * build new gimbal board with rs485 and 18V input
 
- * switch freecad model to assembly v3
-
  * implement an optional "feed-forward" torque for position control
    * needs to fault or do something sane if it goes up against the
      position limit
+
+ * write C++ multiplex stream client
+ * write servo protocol server
+ * write servo protocol client
 
  * implement joint-based force and position control
    * ring topology on link port
    * position mode includes velocity and feed forward
    * possibly elliptical control gain alteration
+
+ * switch freecad model to assembly v3
 
  * Automate calibration
    * Have script do initial "d pwm" command to align motor, run cal,
@@ -48,8 +49,14 @@ Code cleanup
 # Master Plan #
  * Answer questions necessary for full mech build
  * Place orders for mech qtys
-   * Do first medium volume controller board run, qty 20-40
-   * Gearsets
+   * Do first medium volume controller board run, qty 25
+
+DONE 2019-02-24
+ * Completed endurance run twice up to 7 minutes... now twice have had
+   the shoulder joint magnet seemingly go out of calibration.  It
+   looks like it drifts semi-continuously while under load, and once
+   it gets 0.5*pi out of phase then the jump starts failing.  Most
+   mysterious, since that motor isn't even really being used.
 
 DONE 2019-02-23
  * Wrote continuous jumping test driver
