@@ -7,6 +7,9 @@ chassis TODO
    * needs routing for wires from control board to each leg
 
 
+r3 ERRATA
+ * upper pulley center mounting hole is too small
+
 r3 DONE
  * added back in upper leg mounting countersinks
  * switched lower clamp to have 8 pegs
