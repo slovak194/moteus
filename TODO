@@ -1,10 +1,16 @@
- * Figure out why shoulder joint magnet keeps drifting
-   * replace magnet and use spacer to get it closer to sensor
-
- * get new controller backplate that works with new mounting hole
-   positions (may need more than one?)
-
  * build new gimbal board with rs485 and 18V input
+
+ * order self-populated digikey parts for production controller boards
+ * release
+   * draft moteus release blog post
+   * write README.md
+
+ * repeat endurance test with new controller backplate
+
+ * build central chassis
+   * add pads so that brackets mount directly
+   * do test print to figure out if I can have top mounting holes for
+     imu-junction board
 
  * implement an optional "feed-forward" torque for position control
    * needs to fault or do something sane if it goes up against the
@@ -50,6 +56,18 @@ Code cleanup
  * Answer questions necessary for full mech build
  * Place orders for mech qtys
    * Do first medium volume controller board run, qty 25
+
+DONE 2019-02-26
+ * Designed and ordered new controller backplate
+ * Transcribed latest macrofab part selections back into eagle
+
+DONE 2019-02-25
+ * More endurance testing... came to conclusion bracket deformation
+   was causing the shoulder failure.  Will test with beefier brackets
+   once I get the heatsink plates made.
+ * Ordered production run of controller boards, 28 of them!  Sadly, I
+   will end up populating the same diode, LEDs and JST connectors,
+   since it saves 3 weeks off the time.
 
 DONE 2019-02-24
  * Completed endurance run twice up to 7 minutes... now twice have had
