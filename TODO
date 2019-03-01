@@ -1,6 +1,6 @@
- * build new gimbal board with rs485 and 18V input
-
  * order self-populated digikey parts for production controller boards
+ * order self-populated switch for gimbal board
+
  * release
    * draft moteus release blog post
    * write README.md
@@ -8,6 +8,8 @@
  * repeat endurance test with new controller backplate
 
  * build central chassis
+   * do small test print with insert
+   * switch design to inserts for all parts
    * add pads so that brackets mount directly
    * do test print to figure out if I can have top mounting holes for
      imu-junction board
@@ -52,10 +54,12 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
-# Master Plan #
- * Answer questions necessary for full mech build
- * Place orders for mech qtys
-   * Do first medium volume controller board run, qty 25
+DONE 2019-03-01
+ * Ordered mcmaster parts for full mech build
+
+DONE 2019-02-27
+ * Finished rev of gimbal board
+ * Ordered gimbal board r4 from macrofab
 
 DONE 2019-02-26
  * Designed and ordered new controller backplate
