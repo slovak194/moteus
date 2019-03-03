@@ -1,3 +1,8 @@
+ * organize moteus parts bin
+   * things actually needed for build
+     * bag or kit those up
+   * everything else
+ * order production belts and one more spare axle from sdp-si
  * order self-populated digikey parts for production controller boards
  * order self-populated switch for gimbal board
 
@@ -6,13 +11,17 @@
    * write README.md
 
  * repeat endurance test with new controller backplate
+ * redraw upper leg for i3 printing
+ * endurance test with i3 printed leg
+ * create "1 leg panel" of i3 printed parts
 
  * build central chassis
-   * do small test print with insert
-   * switch design to inserts for all parts
-   * add pads so that brackets mount directly
-   * do test print to figure out if I can have top mounting holes for
-     imu-junction board
+   * test inserts
+   * test mount the existing leg
+   * test mount the imu junction board
+
+ * write minimal bridge fw for imu junction board
+ * write minimal bridge fw for pi3 hat
 
  * implement an optional "feed-forward" torque for position control
    * needs to fault or do something sane if it goes up against the
@@ -53,6 +62,10 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-02
+ * Printed draft full leg on prusa
+ * Updated chassis for inserts instead of nuts
 
 DONE 2019-03-01
  * Ordered mcmaster parts for full mech build
