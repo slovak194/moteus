@@ -8,10 +8,8 @@
 
  * release
    * draft moteus release blog post
-   * write README.md
 
  * repeat endurance test with new controller backplate
- * redraw upper leg for i3 printing
  * endurance test with i3 printed leg
  * create "1 leg panel" of i3 printed parts
 
@@ -62,6 +60,11 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-03
+ * Printed draft chassis
+ * Redesigned upper leg to be printable on i3
+ * Drafted README.md
 
 DONE 2019-03-02
  * Printed draft full leg on prusa
