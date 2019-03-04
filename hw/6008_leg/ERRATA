@@ -1,11 +1,8 @@
-chassis TODO
-   * needs holes on the other side of all screw holes for mounting hw
-   * need mounting for central control board
-   * need way to attach feet (or integrated) to rest on
-   * need mounting for turret or dedicated rasbpi
-   * needs way to attach cosmetic shroud
-   * needs routing for wires from control board to each leg
-
+r4 DONE
+ * Updated upper leg to be printable on FDM, now it no longer tapers
+   in before going out again
+ * Extended upper leg length to 129.65mm to account for FDM shrinkage
+ * when printed on prusa. upper pulley hole of 4.1mm is just fine
 
 r3 ERRATA
  * upper pulley center mounting hole is too small
