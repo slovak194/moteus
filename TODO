@@ -1,16 +1,5 @@
- * organize moteus parts bin
-   * things actually needed for build
-     * bag or kit those up
-   * everything else
- * order production belts and one more spare axle from sdp-si
- * order self-populated digikey parts for production controller boards
- * order self-populated switch for gimbal board
+ * Run endurance test with new backplate and i3 printed leg
 
- * release
-   * draft moteus release blog post
-
- * repeat endurance test with new controller backplate
- * endurance test with i3 printed leg
  * create "1 leg panel" of i3 printed parts
 
  * build central chassis
@@ -36,12 +25,6 @@
 
  * switch freecad model to assembly v3
 
- * Automate calibration
-   * Have script do initial "d pwm" command to align motor, run cal,
-     get results, calculate calibration, and store results on device.
-   * Implement autocal for motor resistance
-   * Implement autocal for kV rating
-
  * Get AS5047 SPI sampling to be faster
 
  * Get python telemetry stuff into moteus/mjlib
@@ -61,10 +44,18 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-03-04
+ * Re-organized parts
+ * Ordered self populated digikey parts for controller boards and
+   gimbal board
+ * Implemented automatic calibration
+ * Assembled i3 printed leg w/ new brackets and backplates
+
 DONE 2019-03-03
  * Printed draft chassis
  * Redesigned upper leg to be printable on i3
  * Drafted README.md
+ * Ordered production belts and one more shaft from sdp-si
 
 DONE 2019-03-02
  * Printed draft full leg on prusa
