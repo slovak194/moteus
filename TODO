@@ -1,22 +1,22 @@
- * Run endurance test with new backplate and i3 printed leg
+ * Bring up imu junction board
+   * test power
+   * program stm32f4
+   * write minimal bridge fw for imu junction board
+   * verify rs485 bridging
 
- * create "1 leg panel" of i3 printed parts
-
- * build central chassis
-   * test inserts
-   * test mount the existing leg
-   * test mount the imu junction board
-
- * write minimal bridge fw for imu junction board
- * write minimal bridge fw for pi3 hat
-
- * implement an optional "feed-forward" torque for position control
-   * needs to fault or do something sane if it goes up against the
-     position limit
+ * bring up pi3 hat board
+   * test power
+   * write minimal bridge fw for pi3 hat
+   * test attached to pi3
 
  * write C++ multiplex stream client
  * write servo protocol server
  * write servo protocol client
+ * update mech software to command new protocol
+
+ * implement an optional "feed-forward" torque for position control
+   * needs to fault or do something sane if it goes up against the
+     position limit
 
  * implement joint-based force and position control
    * ring topology on link port
@@ -43,6 +43,12 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-05
+ * Created "one leg" panel to be printed on mk3s, kicked off a print
+ * Repeated endurance tests until I got good video
+ * Installed inserts into chassis, test mounted bracket and imu junction board
+ * Test mounted leg to chassis
 
 DONE 2019-03-04
  * Re-organized parts
