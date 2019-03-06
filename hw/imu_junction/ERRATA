@@ -1,8 +1,10 @@
 TODO
- * route everything else
- * fine align silks
 
-DONE
+r1 ERRATA
+ * 3v3 regulator failed on both boards with a short from VIN to GND
+   * likely cause was insufficient input capacitance
+
+r1 DONE
  * draw power and ground planes
  * route power / ground
  * add title / copyright
