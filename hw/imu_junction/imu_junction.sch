@@ -2009,6 +2009,9 @@
 <sheets>
 <sheet>
 <plain>
+<text x="-50.8" y="175.26" size="5.08" layer="91">(c) 2019 Josh Pieper, jjp@pobox.com
+Licensed under the Apache 2.0 License
+https://www.apache.org/licenses/LICENSE-2.0</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="76.2" y="15.24">
@@ -3095,4 +3098,10 @@
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
