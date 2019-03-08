@@ -1,8 +1,11 @@
+ * digikey list
+   * 3 pin JST PH connectors
+   * 4 pin JST XH connectors
+   * smaller heatshrink
+
  * Bring up imu junction board
    * test power
-   * program stm32f4
-   * write minimal bridge fw for imu junction board
-   * verify rs485 bridging
+   * figure out why I get resynchs when using bridge
 
  * bring up pi3 hat board
    * test power
@@ -13,6 +16,12 @@
  * write servo protocol server
  * write servo protocol client
  * update mech software to command new protocol
+
+ * Design and build battery tray
+ * Design and build outer shell
+
+ * switch battery to something with integrated protection, like from a
+   power tool
 
  * implement an optional "feed-forward" torque for position control
    * needs to fault or do something sane if it goes up against the
@@ -43,6 +52,27 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-07
+ * imu_junction
+   * Fixed numerous software problems.  Bridging appears to be working
+     about as well as necessary now, although still some seeming
+     corruption that should be investigated
+   * verified IMU was functional
+
+DONE 2019-03-06
+ * imu_junction
+   * Built harness to connect to pi3 485 port
+   * Discovered there was insufficient input capacitance to hot plug
+     the board to a power supply through a test lead. :( Doubly so
+     discovered since both boards regulators are now toast.  I have
+     extra capacitance on one now, and a blue wire attaching in to the
+     3.3v so that I can bring up the rest of the board while I wait
+     for more regulators.
+   * Disabled local echo on connector for RS485-plus4
+   * Started work on imu_junction firmware.  Got basic
+     telemetry_manager up and running, and sketched out bridge
+     functionality, but it doesn't work yet.
 
 DONE 2019-03-05
  * Created "one leg" panel to be printed on mk3s, kicked off a print
