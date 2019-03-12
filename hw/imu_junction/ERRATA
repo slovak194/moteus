@@ -3,6 +3,7 @@ TODO
 r1 ERRATA
  * 3v3 regulator failed on both boards with a short from VIN to GND
    * likely cause was insufficient input capacitance
+ * Will want connectors and drivers for fans
 
 r1 DONE
  * draw power and ground planes
