@@ -1,18 +1,13 @@
- * digikey list
-   * 3 pin JST PH connectors
-   * 4 pin JST XH connectors
-   * smaller heatshrink
-
  * Bring up imu junction board
    * install replacement regulators
    * test power
 
- * bring up pi3 hat board
-   * write minimal bridge fw for pi3 hat
-   * test attached to pi3
+ * Populate missing parts on a dozen or so r3.1 controller boards
+ * Build 4 legs
+ * Mount legs on chassis
 
+ * Integrate register server into moteus controller
  * write C++ multiplex stream client
- * write servo protocol server
  * write servo protocol client
  * update mech software to command new protocol
 
@@ -55,6 +50,21 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-03-11
+ * Wired up pi3 bridge, imu_junction board and servos
+   * Verified I could communicate with servos through pi3 hat and
+     imu_junction board
+ * Wrote multiplex register server
+ * Tried to get moteus into semaphore
+   * I need python3.6, which they don't have
+   * Trying to vendor python3.6 seems hard with current bazel, will
+     wait for 0.24 or 0.25 to see if that fixes it
+
+DONE 2019-03-10
+ * pi3_hat
+   * got bridging
+ * Improved //:host target
+
 DONE 2019-03-08
  * imu_junction
    * diagnosed errors with resynchronizations
@@ -66,6 +76,7 @@ DONE 2019-03-08
  * pi3_hat
    * got power working, after adding a 100k pullup to regulator EN
      line... powered rpi3
+   * created stub blinken-led firmware
 
 DONE 2019-03-07
  * imu_junction
