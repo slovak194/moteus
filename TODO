@@ -1,15 +1,26 @@
+ * mcmaster
+   * M2.5 inserts
+
+ * digikey
+   * 60x 3 pin PH female housings
+
  * Bring up imu junction board
    * install replacement regulators
    * test power
+
+ * Bring up first r3.1 board
+   * populate missing parts
+   * spin and power a motor
 
  * Populate missing parts on a dozen or so r3.1 controller boards
  * Build 4 legs
  * Mount legs on chassis
 
- * Integrate register server into moteus controller
  * write C++ multiplex stream client
  * write servo protocol client
  * update mech software to command new protocol
+
+ * Design and build bracket to mount pi3 directly onto chassis
 
  * Design and build battery tray
  * Design and build outer shell
@@ -49,6 +60,11 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-12
+ * Received full run of controller boards
+ * Got register server working in the servo, reads and writes from
+   moteus_tool.py seem to be working fine.
 
 DONE 2019-03-11
  * Wired up pi3 bridge, imu_junction board and servos
