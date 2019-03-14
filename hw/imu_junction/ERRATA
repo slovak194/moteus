@@ -1,5 +1,10 @@
 TODO
 
+r2 DONE
+ * Switched 2.2uF input cap to 2x 10uF 35V (and changed the output cap
+   to the same cap to minimize BOM count)
+ * Added two FAN connectors driven by discrete FETs
+
 r1 ERRATA
  * 3v3 regulator failed on both boards with a short from VIN to GND
    * likely cause was insufficient input capacitance
