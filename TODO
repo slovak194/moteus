@@ -1,20 +1,17 @@
  * mcmaster
    * M2.5 inserts
+   * M3x6 low profile
 
  * digikey
    * 60x 3 pin PH female housings
+   * 50x 4 pin XH female housings
+   * 3x fan 1053-1210-ND
 
- * Bring up imu junction board
-   * install replacement regulators
-   * test power
-
- * Bring up first r3.1 board
-   * populate missing parts
-   * spin and power a motor
-
- * Populate missing parts on a dozen or so r3.1 controller boards
+ * Build up a dozen or so r3.1 controller boards
  * Build 4 legs
  * Mount legs on chassis
+ * Get all 4 legs doing *something* together, even if it is just a
+   scripted move up or down
 
  * write C++ multiplex stream client
  * write servo protocol client
@@ -25,6 +22,9 @@
  * Design and build battery tray
  * Design and build outer shell
  * Design plastic cover for control boards in 6008 configuration
+
+ * imu junction board
+   * Bring up r2
 
  * switch battery to something with integrated protection, like from a
    power tool
@@ -60,6 +60,19 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-14
+ * Tried to rework in new regulators on the imu_junction board
+   * The first one looked fine, but drew no current
+   * The second one appeared to put 6.6V on the output, so maybe
+     something was shorted out underneath?
+   * Oh well, guess I will rev the board here quickly.
+ * Completed local assembly of controller r3.1 SN 20
+   * Got it mounted on a motor and calibrated!
+
+DONE 2019-03-13
+ * Worked towards asio and C++ client implementations of the multiplex
+   register protocol.  Much refactoring and importing ensued.
 
 DONE 2019-03-12
  * Received full run of controller boards
