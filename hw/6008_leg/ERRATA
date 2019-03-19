@@ -1,3 +1,7 @@
+TODO
+ * Chassis obstructs installing RS485 connector for lateral leg, would
+   be nice to have some free space to work with.
+
 r4 DONE
  * Updated upper leg to be printable on FDM, now it no longer tapers
    in before going out again
