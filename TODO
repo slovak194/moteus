@@ -1,25 +1,37 @@
- * mcmaster
-   * M2.5 inserts
-   * M3x6 low profile
-
- * digikey
-   * 60x 3 pin PH female housings
-   * 50x 4 pin XH female housings
-   * 3x fan 1053-1210-ND
-
- * Build up a dozen or so r3.1 controller boards
- * Build 4 legs
- * Mount legs on chassis
- * Get all 4 legs doing *something* together, even if it is just a
-   scripted move up or down
+ * firmware flash over rs485
+ * remount sensors back into correct position on chassis
 
  * write C++ multiplex stream client
  * write servo protocol client
- * update mech software to command new protocol
+ * wire up battery
+ * try scripted motion of all servos
 
+ * bringup procedure needs to automatically verify temperature is
+   sane, including when powering motor
+
+ * servo 10 has faulty temperature sensor
+ * zeroing procedure needs a way to verify it online
+ * yaw servos need stronger p and d term, pretty wobbly
+
+ * always store calibrations on host computer
+ * recalibrate servo id 1
+
+mcmaster
+ * 200x M3x6 low profile
+ * even more M3x8 low profile
+
+amazon
+ * 14AWG silicone wire
+
+digikey
+ * 3/16" heatshrink
+
+ * update mech software to command new protocol
  * Design and build bracket to mount pi3 directly onto chassis
 
  * Design and build battery tray
+ * Design belt tensioning mechanism
+ * Design fixture to hold chassis during assembly
  * Design and build outer shell
  * Design plastic cover for control boards in 6008 configuration
 
@@ -45,10 +57,11 @@
  * Get python telemetry stuff into moteus/mjlib
  * Get tview into moteus/mjlib repository
 
- * firmware flash over rs485
  * derate for temperature
  * store serial number in eeprom
  * Report firmware version over serial protocol
+ * also report stm32 unique ID
+ * Store and report firmware version
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Get all mbed ticker stuff out of the link, we never want it used
@@ -61,6 +74,34 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-03-19
+ * Diagnosed 485 comms problem.  Turns out I had failed to properly
+   assign servo 6 a non-1 ID
+ * Fixed some other problems that turned up with 12 servos on the bus
+   at the same time
+ * Powered all the servos simultaneously for the first time!
+
+DONE 2019-03-18
+ * Ordered XT30 PCB mount connectors for eval
+ * Built all robot-wide harnesses
+ * Mounted all legs onto chassis
+
+DONE 2019-03-17
+ * Assembled and calibrated all 12 leg motors
+ * Assembled legs except for pressing the shafts
+
+DONE 2019-03-15
+ * Populated all 27 remaining r3.1 controller boards
+ * For one quad's worth of boards
+   * Installed power leads
+   * Applied Kapton
+ * For half of the boards
+   * Installed bullet connectors and heatshrink
+   * (ran out of bullet connectors)
+ * For all motors
+   * Mounted magnets
+   * Mounted in brackets
+
 DONE 2019-03-14
  * Tried to rework in new regulators on the imu_junction board
    * The first one looked fine, but drew no current
@@ -69,6 +110,8 @@ DONE 2019-03-14
    * Oh well, guess I will rev the board here quickly.
  * Completed local assembly of controller r3.1 SN 20
    * Got it mounted on a motor and calibrated!
+ * Made McMaster and digikey order
+ * ordered more 14awg wire and 3.5mm bullet connectors
 
 DONE 2019-03-13
  * Worked towards asio and C++ client implementations of the multiplex
