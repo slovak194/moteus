@@ -16,10 +16,6 @@
  * always store calibrations on host computer
  * recalibrate servo id 1
 
-mcmaster
- * 200x M3x6 low profile
- * even more M3x8 low profile
-
 amazon
  * 14AWG silicone wire
 
@@ -65,6 +61,7 @@ digikey
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Get all mbed ticker stuff out of the link, we never want it used
+ * use less power when driver is not active
 
  * design and build controller automated test fixture
 
@@ -73,6 +70,9 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-20
+ * Worked on multiplex bootloader
 
 DONE 2019-03-19
  * Diagnosed 485 comms problem.  Turns out I had failed to properly
