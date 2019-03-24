@@ -1,17 +1,17 @@
- * firmware flash over rs485
  * remount sensors back into correct position on chassis
-
- * write C++ multiplex stream client
- * write servo protocol client
- * wire up battery
+ * implement stop position
+ * implement feedforward torque
+ * derate torque when outside of position limits
  * try scripted motion of all servos
+
+ * wire up battery
 
  * bringup procedure needs to automatically verify temperature is
    sane, including when powering motor
 
  * servo 10 has faulty temperature sensor
  * zeroing procedure needs a way to verify it online
- * yaw servos need stronger p and d term, pretty wobbly
+ * yaw servos need stronger p and d term, pretty wobbly, maybe just an i term
 
  * always store calibrations on host computer
  * recalibrate servo id 1
@@ -37,22 +37,17 @@ digikey
  * switch battery to something with integrated protection, like from a
    power tool
 
- * implement an optional "feed-forward" torque for position control
-   * needs to fault or do something sane if it goes up against the
-     position limit
-
  * implement joint-based force and position control
    * ring topology on link port
    * position mode includes velocity and feed forward
    * possibly elliptical control gain alteration
-
- * switch freecad model to assembly v3
 
  * Get AS5047 SPI sampling to be faster
 
  * Get python telemetry stuff into moteus/mjlib
  * Get tview into moteus/mjlib repository
 
+ * Make moteus_tool servo auto-detection more robust
  * derate for temperature
  * store serial number in eeprom
  * Report firmware version over serial protocol
@@ -60,6 +55,8 @@ digikey
  * Store and report firmware version
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
+ * Figure out why using strtol in bootloader caused crc calculation to
+   stop working
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
 
@@ -70,6 +67,20 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-24
+ * Continued work on multiplex reading/writing
+   * first working console test of multiplex_tool
+ * Finally identified and fixed why startup offset wasn't always
+   working, the AS5047 takes up to 10ms to start working
+
+DONE 2019-03-22
+ * Work towards asio based multiplex reading/writing
+
+DONE 2019-03-21
+ * Got flashing over rs485 working!
+ * Fixed resuming a flash
+ * Test flashed all 12 servos
 
 DONE 2019-03-20
  * Worked on multiplex bootloader
