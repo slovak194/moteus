@@ -1,20 +1,36 @@
- * remount sensors back into correct position on chassis
- * implement stop position
- * implement feedforward torque
- * derate torque when outside of position limits
- * try scripted motion of all servos
+ * install tether mount
+ * do a 4 leg jump of some sort with multiplex tool
 
+ * BE8108 gearbox
+  * order sun gear shaft
+  * order planet gear dowels
+  * remove stator backing from stator
+  * dremel off rotor inner ring
+  * model it all up
+  * 3d print prototypes
+  * figure out what type of puller/pusher (like a three jaw puller),
+    can get the rotor off more easily
+
+ * update mech software to command new protocol
+
+ * Design and build battery tray
  * wire up battery
+ * Design and build bracket to mount pi3 directly onto chassis
 
- * bringup procedure needs to automatically verify temperature is
-   sane, including when powering motor
 
- * servo 10 has faulty temperature sensor
- * zeroing procedure needs a way to verify it online
- * yaw servos need stronger p and d term, pretty wobbly, maybe just an i term
+ * Tools
+   * Tool to write a config or set of console commands to all servos,
+     maybe just in multiplex_tool?
 
- * always store calibrations on host computer
- * recalibrate servo id 1
+ * Bringup improvements
+   * bringup procedure needs to automatically verify temperature is
+     sane, including when powering motor
+   * always store calibrations on host computer
+   * zeroing procedure needs a way to verify it online
+
+ * Servo maintenance
+   * servo 10 has a faulty temperature sensor of some sort
+   * servo 1 needs to be recalibrated
 
 amazon
  * 14AWG silicone wire
@@ -22,10 +38,7 @@ amazon
 digikey
  * 3/16" heatshrink
 
- * update mech software to command new protocol
- * Design and build bracket to mount pi3 directly onto chassis
 
- * Design and build battery tray
  * Design belt tensioning mechanism
  * Design fixture to hold chassis during assembly
  * Design and build outer shell
@@ -68,11 +81,26 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-03-26
+ * Experimented with disassembling a BE8108 and modeling up an
+   internal gearbox for it
+
+DONE 2019-03-25
+ * Re-zeroed all servos and fixed yet another bug in the zeroing
+   code... maybe it is good now?
+ * Fiddled with lateral servo gains... got it to at least stand
+   unassisted, although it is unclear if there is sufficient control
+   bandwidth to walk usefully.  Very limited by noise on velocity
+   measurement.
+ * Added sleeps to multiplex_tool
+
 DONE 2019-03-24
  * Continued work on multiplex reading/writing
    * first working console test of multiplex_tool
  * Finally identified and fixed why startup offset wasn't always
    working, the AS5047 takes up to 10ms to start working
+ * Implemented stop position and feedforward torque
+ * Remounted sensors back into correct position on chassis
 
 DONE 2019-03-22
  * Work towards asio based multiplex reading/writing
