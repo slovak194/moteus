@@ -1,4 +1,13 @@
 TODO
+ * Add physical switch connected to stm32
+ * Add pre-charge fet/driver/resistor
+ * Add power switch/ driver for motors and for PC
+ * flyback diode ?
+
+ * Maybe use TPH1R204PL,L1Q for FET switches
+   * MIC4416 driver
+   * 12V regulator ZXTR2012Z
+
 
 r2 DONE
  * Switched 2.2uF input cap to 2x 10uF 35V (and changed the output cap
