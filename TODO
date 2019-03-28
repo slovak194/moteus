@@ -1,12 +1,10 @@
+
  * install tether mount
  * do a 4 leg jump of some sort with multiplex tool
 
  * BE8108 gearbox
-  * order sun gear shaft
-  * order planet gear dowels
   * remove stator backing from stator
-  * dremel off rotor inner ring
-  * model it all up
+  * drill out rotor center
   * 3d print prototypes
   * figure out what type of puller/pusher (like a three jaw puller),
     can get the rotor off more easily
@@ -46,6 +44,8 @@ digikey
 
  * imu junction board
    * Bring up r2
+   * add power switch
+   * add precharge circuit
 
  * switch battery to something with integrated protection, like from a
    power tool
@@ -80,6 +80,14 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-27
+ * Designed fixture for holding rotor while drilling out
+   center... kicked off a print
+ * Ordered mcmaster parts
+ * Feature complete modeling of the be8108 gearbox
+ * Ordered shafts (dowel pins for now) for be8108 gearbox
+ * Ordered all other gears and bearings
 
 DONE 2019-03-26
  * Experimented with disassembling a BE8108 and modeling up an
