@@ -1,0 +1,61 @@
+# Custom parts #
+
+ * Front housing
+ * Planet Output
+ * Planet Input
+ * Spur gear holder
+ * Back housing
+ * Controller cover
+
+# Gearset #
+
+## Option 1 - Misumi/KHK w/ 3D Printed ##
+
+Gears/Bearings
+
+ * Sun gear - GEABN0.5-20-8-K-4
+ * Planet gear - 3x GEFHB0.5-40-5-8-W0
+ * Internal gear - SI0.5-100 KHK (post-machined)
+ * 3x 4x20mm dowel pin from mcmaster for planets
+ * 1x 4x24mm dowel pin from mcmaster for sun gear
+ * HK0408 needle bearing for planets
+ * Output Bearing - 40x50x6mm 6708-2rs
+ * Planet Input Bearing - 15x24x5mm 6802ZZ
+ * Planet Output Bearing - 4x13x5mm 624-Z
+ * Rotor bearing - 15x21x4mm 6702ZZ
+
+Fasteners
+
+ * 19x M3 heat set inserts
+   * 8x front plate
+   * 8x back plate
+   * 3x front plate
+ * 14x M2.5 heat set inserts
+   * 8x back housing radially
+   * 6x back housing for cover
+ * 4x M2 heat set inserts
+   * 4x back housing for controller
+
+ * 14x M2.5x5mm flat socket head screws
+   * 8x attach front and back housing
+   * 6x attach controller back cover
+ * 4x M2x6mm hex head screw low profile
+   * attach controller
+ * 3x M3x6mm hex head screw low profile
+   * attach planets together
+
+
+## Option 2 - SDP/SI w/ 3D Printed ##
+
+ * Sun gear - A 1Y 2MY05020
+ * Planet gear - 3x S12N05M040S0510
+ * Internal gear - SI0.5-100 KHK (post-machined)
+ * 3x 4x20mm dowel pin from mcmaster for planets
+ * 1x 4x24mm dowel pin from mcmaster for sun gear
+ * Planet bearing - 4x10x4mm SMR104-ZZ
+ * Output Bearing - 40x50x6mm 6708-2rs
+ * Planet Input Bearing - 15x24x5mm 6802ZZ
+ * Planet Output Bearing - 4x13x5mm 624-Z
+ * Rotor bearing - 15x21x4mm 6702ZZ
+
+Fasteners TODO
