@@ -1,11 +1,20 @@
+ * Install anti-spark female XT90's on batteries
 
- * install tether mount
- * do a 4 leg jump of some sort with multiplex tool
+ * Build 8020 tether fixture
+   * do a 4 leg jump of some sort with multiplex tool
 
  * BE8108 gearbox
+  * test 80 tooth mandrel
+  * turn down 80 tooth gear on lathe
+  * design 100 tooth mandrel
+  * install bearings and shafts onto plastic parts
   * remove stator backing from stator
   * drill out rotor center
   * 3d print prototypes
+    * try doing design around SDP planets and spur gear
+
+    * re-print front housing with clamp holes
+    * design phase wire clamp
   * figure out what type of puller/pusher (like a three jaw puller),
     can get the rotor off more easily
 
@@ -30,11 +39,10 @@
    * servo 10 has a faulty temperature sensor of some sort
    * servo 1 needs to be recalibrated
 
-amazon
- * 14AWG silicone wire
-
 digikey
  * 3/16" heatshrink
+ * 12V fans, maybe slightly bigger than the previous ones
+ * 2 pin JST-PH housings
 
 
  * Design belt tensioning mechanism
@@ -42,10 +50,6 @@ digikey
  * Design and build outer shell
  * Design plastic cover for control boards in 6008 configuration
 
- * imu junction board
-   * Bring up r2
-   * add power switch
-   * add precharge circuit
 
  * switch battery to something with integrated protection, like from a
    power tool
@@ -80,6 +84,26 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-03-29
+ * Continued iteration on be8108 gearbox parts
+ * Ordered an SDP-SI variant of the planets and spur gears, since it
+   will probably still get here faster
+ * Wrote up a draft BOM
+
+DONE 2019-03-28
+ * Installed tether mount in mech
+ * Ordered 8020 for mech tether fixture
+ * Brought up imu junction r2... all seems to work, except the fans I
+   have cannot be PWMed
+ * Started work on a junction board r3 to add switching and
+   pre-charging.  It was going to be either annoying, or possibly
+   toast the 485 transceivers on power up.  Decided to try with just a
+   spark arresting connector for now.
+ * Printed up first samples of be8108 gearbox parts
+ * Designed and started printing mandrel to turn down 80 tooth inner
+   gear, seems like it will work, although will need a custom fixture
+   to remove the part afterwards
 
 DONE 2019-03-27
  * Designed fixture for holding rotor while drilling out
