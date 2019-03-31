@@ -4,17 +4,17 @@
    * do a 4 leg jump of some sort with multiplex tool
 
  * BE8108 gearbox
-  * test 80 tooth mandrel
   * turn down 80 tooth gear on lathe
-  * design 100 tooth mandrel
-  * install bearings and shafts onto plastic parts
-  * remove stator backing from stator
+  * turn down 100 tooth gear to 55mm
   * drill out rotor center
   * 3d print prototypes
     * try doing design around SDP planets and spur gear
 
-    * re-print front housing with clamp holes
     * design phase wire clamp
+    * re-print sun gear holder w/ support
+    * re-print front housing with clamp holes, tweaked stator
+      tolerance(s)
+    * re-print controller cover w/ even bigger link/swd cutout
   * figure out what type of puller/pusher (like a three jaw puller),
     can get the rotor off more easily
 
@@ -85,11 +85,19 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-03-30
+ * Liberated stator from BE8108!
+ * Received 100 tooth internal gear, started printing mandrel for it
+ * Named all joints in be8108 f360 model
+ * Fixed front housing errata
+
 DONE 2019-03-29
  * Continued iteration on be8108 gearbox parts
- * Ordered an SDP-SI variant of the planets and spur gears, since it
-   will probably still get here faster
- * Wrote up a draft BOM
+   * Ordered an SDP-SI variant of the planets and spur gears, since it
+     will probably still get here faster
+   * Wrote up a draft BOM
+    * Test fit bearings and planets onto plastic parts
+ * Recorded video for lateral authority problems
 
 DONE 2019-03-28
  * Installed tether mount in mech
