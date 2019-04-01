@@ -6,6 +6,14 @@
  * Spur gear holder
  * Back housing
  * Controller cover
+ * moteus controller
+ * absolute position sensing board
+
+# Magnets #
+
+ * Rotor sense magnet: K&J Magnetics D42DIA 1/4"x1/8" N42 Dia Magnetized
+ * Absolute position magnet: 3x K&J Magnetics D201-N52 1/8" x 1/32"
+   N52 axially magnetized
 
 # Gearset #
 

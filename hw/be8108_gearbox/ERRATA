@@ -1,9 +1,48 @@
 TODO
- * Fix front housing main body extrusion to go until it hits the back
-   controller plate, not just for a fixed distance
- * Leave room for a 6.35mm flex PCB absolute position sensor around
-   the planet output, along with a hole to run the wires down along
-   with the phase wires
+ * add weight cutouts
+   * front housing
+     * front side
+     * sides
+   * back housing
+
+
+TODO to switch to Aluminum
+
+ * change general tolerances on all bearing interfaces, shaft
+   interfaces, and front/back housing interface
+   * output bearing
+     * output planet
+     * front housing
+   * planet input bearing
+   * spur gear output bearing
+   * rotor bearing
+     * spur gear holder
+     * back housing
+   * planet shaft holes
+     * planet input and output
+   * front/back interface
+
+ * all holes where bolts fit through loosely need size adjusted to
+   handle 0.005" tolerance of mating hole location
+
+
+ * Switch all threads from inserts to threaded holes
+   * front housing
+     * main mounting holes
+   * back housing
+     * main mounting holes
+     * cover mounting holes
+     * controller mounting holes
+     * front housing mounting holes
+   * planet output
+     * link stud thread
+
+
+DONE 2019-03-31
+ * organized overall timeline... holy smokes fusion does not make
+   that easy
+ * Add lip for back housing to rest in front housing
+ * Added absolute position board and wire channel
 
 DONE 2019-03-30
  * Switched internal gear to 55mm outer diameter
