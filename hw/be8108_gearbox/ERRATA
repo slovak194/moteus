@@ -1,5 +1,16 @@
 TODO
 
+ * Sun gear holder outer bearing interface needs to require virtually
+   zero pressure, since you also have to mate the gears when you
+   insert it
+
+ * Sun gear holder needs to be printed with gear cavity up, to reduce
+   the amount of support that needs to be cleared out.
+ * Back housing rotor bearing cavity prints out too small, needs to
+   print bigger... maybe just needs a chamfer around the bottom lip
+ * sun gear holder extraction hole should be big enough for a 4mm
+   dowel
+
 TODO to switch to Aluminum
 
  * change general tolerances on all bearing interfaces, shaft
@@ -30,6 +41,8 @@ TODO to switch to Aluminum
      * front housing mounting holes
    * planet output
      * link stud thread
+
+ * make a note that all sharp edges should be chamfered
 
 
 DONE 2019-03-31
