@@ -3,6 +3,7 @@ TODO
  * Add pre-charge fet/driver/resistor
  * Add power switch/ driver for motors and for PC
  * flyback diode ?
+ * Switch to use XT30 right angle connectors for joint power
 
  * Maybe use TPH1R204PL,L1Q for FET switches
    * MIC4416 driver
