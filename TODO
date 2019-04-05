@@ -1,29 +1,38 @@
- * Install anti-spark female XT90's on batteries
+ * BE8108 gearbox
+  * to be CNCd
+    * Planet input
+    * Front housing
+    * Back housing
+    * Maybe controller cover
+  * test al gearbox for function
+  * order enough gears and shafts for 4x more gearboxes
+  * modify enough rotors and stators for 4x more gearboxes
+  * turn down at least 3x more internal gears
 
  * Build 8020 tether fixture
    * do a 4 leg jump of some sort with multiplex tool
 
- * BE8108 gearbox
-  * turn down 80 tooth gear on lathe
-  * turn down 100 tooth gear to 55mm
-  * drill out rotor center
-  * 3d print prototypes
-    * try doing design around SDP planets and spur gear
-
-    * design phase wire clamp
-    * re-print sun gear holder w/ support
-    * re-print front housing with clamp holes, tweaked stator
-      tolerance(s)
-    * re-print controller cover w/ even bigger link/swd cutout
   * figure out what type of puller/pusher (like a three jaw puller),
     can get the rotor off more easily
 
  * update mech software to command new protocol
 
- * Design and build battery tray
- * wire up battery
- * Design and build bracket to mount pi3 directly onto chassis
+ * Gearbox chassis
+   * Attach motors to chassis in model
+   * Add stiffener to chassis
+   * Add mounting holes for turret / computer
+   * Add holes for leg power and data wires
+   * Design bottom cover.
+   * Add mounting holes for junction board
+   * Add mounting holes for lift studs
+   * Add battery terminals
+   * Figure out some "shore-power" solution
 
+   * Design and build battery tray
+   * Install anti-spark female XT90's on batteries
+   * wire up battery
+
+ * Design and build bracket to mount pi3 directly onto chassis
 
  * Tools
    * Tool to write a config or set of console commands to all servos,
@@ -41,18 +50,8 @@
 
 digikey
  * 3/16" heatshrink
- * 12V fans, maybe slightly bigger than the previous ones
- * 2 pin JST-PH housings
-
 
  * Design belt tensioning mechanism
- * Design fixture to hold chassis during assembly
- * Design and build outer shell
- * Design plastic cover for control boards in 6008 configuration
-
-
- * switch battery to something with integrated protection, like from a
-   power tool
 
  * implement joint-based force and position control
    * ring topology on link port
@@ -84,6 +83,32 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-05
+ * Made up 2D drawing of planet output, sent out for mfg
+
+DONE 2019-04-04
+ * Turned down 2x of the 100tooth gears to 55mm
+ * Test fit the plastic gearbox... sure enough, the plastic flexes
+   enough that the rotor isn't held away from the stator
+ * Made a 2D drawing for the sun gear holder and sent it off to be
+   CNCd as a test article
+
+DONE 2019-04-03
+ * Finished post-machining rotor, installed sun gear holder
+ * Did test turn down of 80 tooth gear... seemed OK
+ * Finished design and printed test battery stud for gearbox chassis,
+   post-machined some problems, seems to fit and be likely strong
+   enough at 20% infill
+
+DONE 2019-04-01
+ * First attempt at drilling out rotor... turns out my biggest bit was
+   1/2" and I needed 5/8" to get the center stud completely out.
+   Guess I'll wait for another bit.
+ * Test fit 100 tooth gear onto mandrel
+ * Modeled phase wire clamp in 8108 gearbox
+ * Finished an SDP planet/spur modification to the gearbox, kicked off
+   a print of all the gearbox parts
 
 DONE 2019-03-30
  * Liberated stator from BE8108!
