@@ -1,32 +1,25 @@
+ * update mech software to use mjlib
+ * update mech software to command new protocol
+
  * BE8108 gearbox
-  * to be CNCd
-    * Planet input
-    * Front housing
-    * Back housing
-    * Maybe controller cover
   * test al gearbox for function
   * order enough gears and shafts for 4x more gearboxes
   * modify enough rotors and stators for 4x more gearboxes
   * turn down at least 3x more internal gears
 
- * Build 8020 tether fixture
-   * do a 4 leg jump of some sort with multiplex tool
+ * do a 4 leg jump of some sort with multiplex tool
 
-  * figure out what type of puller/pusher (like a three jaw puller),
-    can get the rotor off more easily
+ * design new absolute position sense board
 
- * update mech software to command new protocol
+ * test hot inserting one-plus battery with progessively more
+   batteries on the scope to see if it is feasible
+   * if not, finish rev-ing imu junction with soft-start
 
  * Gearbox chassis
-   * Attach motors to chassis in model
-   * Add stiffener to chassis
-   * Add mounting holes for turret / computer
-   * Add holes for leg power and data wires
-   * Design bottom cover.
-   * Add mounting holes for junction board
-   * Add mounting holes for lift studs
-   * Add battery terminals
-   * Figure out some "shore-power" solution
+   * Finalize battery stud, get a print of both sides
+   * Add hole(s) for top data and power
+   * Test chassis print
+
 
    * Design and build battery tray
    * Install anti-spark female XT90's on batteries
@@ -64,6 +57,7 @@ digikey
  * Get tview into moteus/mjlib repository
 
  * Make moteus_tool servo auto-detection more robust
+   * especially in the face of things spewing
  * derate for temperature
  * store serial number in eeprom
  * Report firmware version over serial protocol
@@ -84,8 +78,38 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-04-09
+ * gearbox chassis
+   * iterated on battery stud contact terminal mount
+   * started a print of a hopefully working terminal stud
+ * assembled 8020 robot stand
+ * briefly tried to jump on the power supply using new frame
+   * the 25A supply limit isn't really enough to do anything useful
+
+DONE 2019-04-08
+ * gearbox chassis CAD
+   * mounted motors to chassis
+   * Add stiffener to chassis
+   * Add mounting holes for junction board
+   * Add mounting holes for turret / compute
+   * Add mounting holes for lift studs
+   * Add holes for leg power and data wires
+
+DONE 2019-04-07
+ * Test printed and fit a cheaper front housing that requires another
+   external housing... but which can likely be plastic for now.
+   * Made up 2D drawing and sent for mfg
+ * Ordered a 3 jaw bearing puller for rotor extraction
+
 DONE 2019-04-05
  * Made up 2D drawing of planet output, sent out for mfg
+ * Discovered that front housing was going to be prohibitively
+   expensive to get manufactured.  Need to rethink how much of it
+   needs to be metal and how much I can get away with being plastic.
+   * Much experimentation to find a front housing design that won't
+     break the budget... likely settling on a central core of
+     aluminum, with a plastic outer housing and initially a continued
+     plastic back plate.
 
 DONE 2019-04-04
  * Turned down 2x of the 100tooth gears to 55mm
