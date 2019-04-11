@@ -1,8 +1,21 @@
- * update mech software to use mjlib
  * update mech software to command new protocol
 
  * BE8108 gearbox
+  * planet output
+    * measure output bearing interface
+    * measure shaft bearing interface
+    * test fit shaft bearing
+    * test fit output bearing
+    * test fit onto planet input
+  * front housing
+    * measure output bearing interface
+    * measure stator interface
+    * measure internal gear interface
+    * test fit stator
+    * test fit internal gear
+
   * test al gearbox for function
+
   * order enough gears and shafts for 4x more gearboxes
   * modify enough rotors and stators for 4x more gearboxes
   * turn down at least 3x more internal gears
@@ -77,6 +90,15 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-11
+ * Measured all sun gear holders
+ * Shrink fit first sun gear into holder
+ * Got mjmech building and running on rpi using mjlib
+
+DONE 2019-04-10
+ * mostly got mjmech working against mjlib
+ * received sun gear holders
 
 DONE 2019-04-09
  * gearbox chassis
