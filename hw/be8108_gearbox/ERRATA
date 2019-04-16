@@ -1,45 +1,5 @@
 TODO
 
- * outer housing could use to be 0.1mm smaller in diameter at the back
-   housing lip for a slightly snugger fit
-
- * phase clamp wire hits the rotor, needs to be 2mm closer to the back
-   of outer housing
-
- * back cover does not have enough room for 3.5mm bullet to escape
-
-
-TODO to switch to Aluminum
-
- * change general tolerances on all bearing interfaces, shaft
-   interfaces, and front/back housing interface
-   * output bearing
-     * output planet
-     * front housing
-   * planet input bearing
-   * spur gear output bearing
-   * rotor bearing
-     * spur gear holder
-     * back housing
-   * planet shaft holes
-     * planet input and output
-   * front/back interface
-
- * all holes where bolts fit through loosely need size adjusted to
-   handle 0.005" tolerance of mating hole location
-
-
- * Switch all threads from inserts to threaded holes
-   * front housing
-     * main mounting holes
-   * back housing
-     * main mounting holes
-     * cover mounting holes
-     * controller mounting holes
-     * front housing mounting holes
-   * planet output
-     * link stud thread
-
 
 DONE 2019-04-16
  * sun gear holder could use some slight cutouts so that you could
@@ -55,6 +15,13 @@ DONE 2019-04-16
    shrink fit rather than a slip fit... maybe +0.03 -0.02?
  * sun gear rotor bearing and input bearing should both be slip fits,
    so probably -0.01 -0.06
+ * outer housing could use to be 0.1mm smaller in diameter at the back
+   housing lip for a slightly snugger fit... reduced to OD+0.15mm
+ * phase clamp wire hits the rotor, needs to be 2mm closer to the back
+   of outer housing... moved 2.5mm closer to back
+ * back cover does not have enough room for 3.5mm bullet to
+   escape... increased from 5mm diameter to 5.75mm diameter (actual
+   bullet appears to be 5.65mm diameter)
 
 
 DONE 2019-03-31
