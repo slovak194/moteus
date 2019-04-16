@@ -1,24 +1,25 @@
  * update mech software to command new protocol
 
  * BE8108 gearbox
-  * planet output
-    * measure output bearing interface
-    * measure shaft bearing interface
-    * test fit shaft bearing
-    * test fit output bearing
-    * test fit onto planet input
-  * front housing
-    * measure output bearing interface
-    * measure stator interface
-    * measure internal gear interface
-    * test fit stator
-    * test fit internal gear
-
-  * test al gearbox for function
+  * build adapter to go from gearbox to existing 2dof leg, M3 mounting
+    holes and holes for gearbox shafts, M3 inserts for exiting
+    brackets
+  * rev sun gear holder, get new CNC parts made
 
   * order enough gears and shafts for 4x more gearboxes
   * modify enough rotors and stators for 4x more gearboxes
   * turn down at least 3x more internal gears
+
+  * build planet output removal fixture
+    * cylinder just bigger than the planet output, deeper than it, and
+      very beefy
+  * build planet input removal fixture
+    * some kind of cylinder with an unthreaded hole, and a little disk
+      with three rotating levers that engage next to the support
+      columns
+    * the levers could just be machined out of 2mm thick aluminum with
+      a lever hole and a notch for grabbing the part
+
 
  * do a 4 leg jump of some sort with multiplex tool
 
@@ -29,8 +30,6 @@
    * if not, finish rev-ing imu junction with soft-start
 
  * Gearbox chassis
-   * Finalize battery stud, get a print of both sides
-   * Add hole(s) for top data and power
    * Test chassis print
 
 
@@ -57,7 +56,16 @@
 digikey
  * 3/16" heatshrink
 
+mcmaster
+ * M3 dowels for removal of M4 dowels
+ * M2.5x4 flat head hex screws for outer housing to front plate 93395A172
+ * M2.5x6 flat head hex screws
+ * M3x14 hex head
+
  * Design belt tensioning mechanism
+
+ * Add a "brake" mode that just shorts the terminals all to ground
+ * Test the "zero-velocity" command
 
  * implement joint-based force and position control
    * ring topology on link port
@@ -90,6 +98,24 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-15
+ * Installed controller board into gearbox, basic functionality test
+   seems A-OK!
+
+DONE 2019-04-14
+ * much assembly and disassembly
+ * have a gearbox seemingly functional and all assembled minus
+   soldering the phase wires on and power wires onto a moteus board
+
+DONE 2019-04-12
+ * received front plate and planet output
+   * basic measurements taken, parts filed away
+   * needed to rework outer housing to give more tolerance... it fit
+     before because both pieces were plastic and shrunk the same
+     amount, where the aluminum is not shrunk at all
+   * worked on assembly order and figuring out what fixtures I need to
+     take it apart again
 
 DONE 2019-04-11
  * Measured all sun gear holders
