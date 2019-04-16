@@ -6,7 +6,7 @@
  * Outer housing
  * Planet Output
  * Planet Input
- * 3x Planet gear adapter
+ * 3x Planet gear adapter/bushing
  * Spur gear holder
  * Back housing
  * Controller cover
@@ -26,7 +26,7 @@
  * Internal gear - SI0.5-100 KHK (post-machined)
  * 3x 4x20mm dowel pin from mcmaster for planets
  * 1x 4x24mm dowel pin from mcmaster for sun gear
- * Planet bearing - 4x10x4mm SMR104-ZZ
+ * Planet bearing - HK0408 needle bearing
  * Output Bearing - 40x50x6mm 6708-2rs
  * Planet Input Bearing - 15x24x5mm 6802ZZ
  * Planet Output Bearing - 4x13x5mm 624-Z
