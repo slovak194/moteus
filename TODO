@@ -1,15 +1,28 @@
+ * print chassis
+ * print lateral adapter
+ * print shore power battery adapter, test it
+
+ * experiment with dowel vs shaft into shaft end bearing
+ * Get terminals and wires onto existing battery stud mount
+
+ * test hot inserting one-plus battery with progessively more
+   batteries on the scope to see if it is feasible
+   * if not, finish rev-ing imu junction with soft-start
+
+ * gearbox mfg
+   * print 4x more gearbox parts
+     * outer housing
+     * planet inputs
+     * phase wire clamp
+     * 3x planet bushings
+     * back housing
+     * controller cover
+   * modify enough rotors and stators for 4x more gearboxes
+   * turn down at least 3x more internal gears
+
  * update mech software to command new protocol
 
  * BE8108 gearbox
-  * build adapter to go from gearbox to existing 2dof leg, M3 mounting
-    holes and holes for gearbox shafts, M3 inserts for exiting
-    brackets
-  * rev sun gear holder, get new CNC parts made
-
-  * order enough gears and shafts for 4x more gearboxes
-  * modify enough rotors and stators for 4x more gearboxes
-  * turn down at least 3x more internal gears
-
   * build planet output removal fixture
     * cylinder just bigger than the planet output, deeper than it, and
       very beefy
@@ -20,22 +33,11 @@
     * the levers could just be machined out of 2mm thick aluminum with
       a lever hole and a notch for grabbing the part
 
-
  * do a 4 leg jump of some sort with multiplex tool
+ * investigate better enamel stripping options from eraser.com
 
  * design new absolute position sense board
 
- * test hot inserting one-plus battery with progessively more
-   batteries on the scope to see if it is feasible
-   * if not, finish rev-ing imu junction with soft-start
-
- * Gearbox chassis
-   * Test chassis print
-
-
-   * Design and build battery tray
-   * Install anti-spark female XT90's on batteries
-   * wire up battery
 
  * Design and build bracket to mount pi3 directly onto chassis
 
@@ -55,13 +57,9 @@
 
 digikey
  * 3/16" heatshrink
+ * more battery terminals: 36-5205-ND
 
 mcmaster
- * M3 dowels for removal of M4 dowels
- * M2.5x4 flat head hex screws for outer housing to front plate 93395A172
- * M2.5x6 flat head hex screws
- * M3x14 hex head
-
  * Design belt tensioning mechanism
 
  * Add a "brake" mode that just shorts the terminals all to ground
@@ -99,9 +97,26 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-04-16
+ * Ordered planet gears, spur gears and sun shafts from sdp-si... only
+   6 planets in stock... combined with the 3 or 4 misumi ones I have,
+   I guess that means I can make 4 gearboxes with stuff in stock at
+   least.
+ * Sent out revised sun gear holder for mfg
+ * Fixed remaining outstanding gearbox errata
+ * designed adapter to go from gearbox to existing 2dof leg, M3 mounting
+    holes and holes for gearbox shafts, M3 inserts for exiting
+    brackets
+ * whittled down battery stud until battery seems to fit decently in
+   it
+ * designed up a battery shore plug
+
 DONE 2019-04-15
  * Installed controller board into gearbox, basic functionality test
    seems A-OK!
+ * Ordered full quantity of internal gears from KHK
+ * Ordered full quantity of bearings from vxb (at least first 5) and
+   aliexpress (for some of the bulk ones)
 
 DONE 2019-04-14
  * much assembly and disassembly
