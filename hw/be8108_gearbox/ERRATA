@@ -6,24 +6,6 @@ TODO
  * phase clamp wire hits the rotor, needs to be 2mm closer to the back
    of outer housing
 
- * sun gear holder could use some slight cutouts so that you could
-   still bolt into some of the remaining rotor screws to assist in
-   removal
-
- * sun gear holder needs some easier way to remove magnet, maybe just
-   have a few wedges that actually contact it?  It shouldn't need much
-   contact area.
-
- * sun gear holder rotor mount holes need to be smaller so that it
-   holds the rotor in position better and maybe fine alignment won't
-   be necessary?
-
- * sun gear holder sun gear tolerance should lean more towards a
-   shrink fit rather than a slip fit... maybe +0.03 -0.02?
-
- * sun gear rotor bearing and input bearing should both be slip fits,
-   so probably -0.01 -0.06
-
  * back cover does not have enough room for 3.5mm bullet to escape
 
 
@@ -57,6 +39,22 @@ TODO to switch to Aluminum
      * front housing mounting holes
    * planet output
      * link stud thread
+
+
+DONE 2019-04-16
+ * sun gear holder could use some slight cutouts so that you could
+   still bolt into some of the remaining rotor screws to assist in
+   removal
+ * sun gear holder needs some easier way to remove magnet, maybe just
+   have a few wedges that actually contact it?  It shouldn't need much
+   contact area.
+ * sun gear holder rotor mount holes need to be smaller so that it
+   holds the rotor in position better and maybe fine alignment won't
+   be necessary?
+ * sun gear holder sun gear tolerance should lean more towards a
+   shrink fit rather than a slip fit... maybe +0.03 -0.02?
+ * sun gear rotor bearing and input bearing should both be slip fits,
+   so probably -0.01 -0.06
 
 
 DONE 2019-03-31
