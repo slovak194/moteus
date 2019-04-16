@@ -1,0 +1,6 @@
+TODO
+
+ * Battery stud contact mounting faces are collectively about 1mm too
+   thick, so 0.5mm or 0.4mm needs to be taken off each side.
+   * also need to taper the top of the outer face more, so that the
+     contact can rest closer to the surface
