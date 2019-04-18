@@ -3670,11 +3670,19 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="MPN" value="ATTINY44ASSU"/>
 <attribute name="POPULATE" value="1"/>
 </part>
-<part name="JP1" library="pinhead" deviceset="PINHD-2X3" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-2X3" device="">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="mfleds" deviceset="LED_SINGLE" device="-0603"/>
-<part name="R1" library="mfpassives" deviceset="RESISTOR" device="_0603" value="220"/>
+<part name="D1" library="mfleds" deviceset="LED_SINGLE" device="-0603">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-LED-0603-RED"/>
+</part>
+<part name="R1" library="mfpassives" deviceset="RESISTOR" device="_0603" value="220">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-RES-0603-220"/>
+</part>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="U1" library="imu_junction" deviceset="ZXTR2012Z" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -3687,7 +3695,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
-<part name="C3" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="2.2uF"/>
+<part name="C3" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="2.2uF">
+<attribute name="MF" value="KEMET"/>
+<attribute name="MPN" value="C0603C225K8PACTU"/>
+</part>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U2" library="precharge" deviceset="LP2985" device="SOT-23-5">
 <attribute name="MF" value="TI"/>
@@ -3702,10 +3713,22 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="POPULATE" value="1"/>
 </part>
 <part name="P+6" library="supply1" deviceset="+18V" device=""/>
-<part name="R3" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%"/>
-<part name="R4" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%"/>
-<part name="R5" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%"/>
-<part name="R6" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%"/>
+<part name="R3" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%">
+<attribute name="MF" value="VISHAY"/>
+<attribute name="MPN" value="CRCW0603100KFKEA"/>
+</part>
+<part name="R4" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%">
+<attribute name="MF" value="PANASONIC"/>
+<attribute name="MPN" value="ERT-J1VG103FA"/>
+</part>
+<part name="R5" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%">
+<attribute name="MF" value="VISHAY"/>
+<attribute name="MPN" value="CRCW0603100KFKEA"/>
+</part>
+<part name="R6" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%">
+<attribute name="MF" value="PANASONIC"/>
+<attribute name="MPN" value="ERT-J1VG103FA"/>
+</part>
 <part name="P+8" library="supply1" deviceset="+18V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -3724,11 +3747,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="P+10" library="supply1" deviceset="+18V" device=""/>
-<part name="C5" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
-<part name="C6" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
+<part name="C5" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-CAP-0603-0.1uF"/>
+</part>
+<part name="C6" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-CAP-0603-0.1uF"/>
+</part>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
+<part name="C4" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-CAP-0603-0.1uF"/>
+</part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="1uF 50V">
 <attribute name="MF" value="SAMSUNG"/>
@@ -3746,9 +3778,23 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U$4" library="controller" deviceset="MOUNT" device="M2" value="MOUNTM2">
 <attribute name="POPULATE" value="0"/>
 </part>
-<part name="D2" library="mfleds" deviceset="LED_SINGLE" device="-0603"/>
-<part name="R2" library="mfpassives" deviceset="RESISTOR" device="_0603" value="220"/>
+<part name="D2" library="mfleds" deviceset="LED_SINGLE" device="-0603">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-LED-0603-RED"/>
+</part>
+<part name="R2" library="mfpassives" deviceset="RESISTOR" device="_0603" value="220">
+<attribute name="HOUSEPART" value="1"/>
+<attribute name="MPN" value="MF-RES-0603-220"/>
+</part>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
+<part name="R8" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%">
+<attribute name="MF" value="VISHAY"/>
+<attribute name="MPN" value="CRCW0603100KFKEA"/>
+</part>
+<part name="R9" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%">
+<attribute name="MF" value="VISHAY"/>
+<attribute name="MPN" value="CRCW0603100KFKEA"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3771,7 +3817,9 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <attribute name="MF" x="-73.66" y="38.1" size="1.778" layer="96" display="off"/>
 <attribute name="POPULATE" x="-73.66" y="38.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP1" gate="A" x="-86.36" y="-22.86"/>
+<instance part="JP1" gate="A" x="-86.36" y="-22.86">
+<attribute name="POPULATE" x="-86.36" y="-22.86" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+1" gate="VCC" x="-91.44" y="68.58"/>
 <instance part="GND1" gate="1" x="-10.16" y="10.16"/>
 <instance part="D1" gate="G$1" x="-5.08" y="60.96" rot="R270"/>
@@ -3787,7 +3835,9 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="P+3" gate="1" x="45.72" y="50.8"/>
 <instance part="GND2" gate="1" x="50.8" y="83.82"/>
 <instance part="P+7" gate="VCC" x="86.36" y="127"/>
-<instance part="C3" gate="G$1" x="86.36" y="111.76"/>
+<instance part="C3" gate="G$1" x="86.36" y="111.76">
+<attribute name="MF" x="86.36" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND3" gate="1" x="86.36" y="104.14"/>
 <instance part="U2" gate="G$1" x="50.8" y="111.76">
 <attribute name="POPULATE" x="50.8" y="111.76" size="1.778" layer="96" display="off"/>
@@ -3802,10 +3852,18 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <attribute name="MF" x="132.08" y="15.24" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="P+6" gate="1" x="132.08" y="27.94"/>
-<instance part="R3" gate="G$1" x="-88.9" y="-73.66" rot="R180"/>
-<instance part="R4" gate="G$1" x="-88.9" y="-86.36" rot="R180"/>
-<instance part="R5" gate="G$1" x="-30.48" y="-68.58" rot="R180"/>
-<instance part="R6" gate="G$1" x="-30.48" y="-83.82" rot="R180"/>
+<instance part="R3" gate="G$1" x="-88.9" y="-73.66" rot="R180">
+<attribute name="MF" x="-88.9" y="-73.66" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="-88.9" y="-86.36" rot="R180">
+<attribute name="MF" x="-88.9" y="-86.36" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R5" gate="G$1" x="-30.48" y="-68.58" rot="R180">
+<attribute name="MF" x="-30.48" y="-68.58" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R6" gate="G$1" x="-30.48" y="-83.82" rot="R180">
+<attribute name="MF" x="-30.48" y="-83.82" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="P+8" gate="1" x="-88.9" y="-60.96"/>
 <instance part="GND6" gate="1" x="-88.9" y="-96.52"/>
 <instance part="GND7" gate="1" x="-30.48" y="-93.98"/>
@@ -3826,8 +3884,8 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="P+10" gate="1" x="12.7" y="187.96"/>
 <instance part="C5" gate="G$1" x="50.8" y="22.86"/>
 <instance part="C6" gate="G$1" x="50.8" y="-15.24"/>
-<instance part="GND10" gate="1" x="50.8" y="15.24"/>
-<instance part="GND11" gate="1" x="50.8" y="-22.86"/>
+<instance part="GND10" gate="1" x="50.8" y="10.16"/>
+<instance part="GND11" gate="1" x="50.8" y="-25.4"/>
 <instance part="C4" gate="G$1" x="-83.82" y="50.8"/>
 <instance part="GND12" gate="1" x="-83.82" y="43.18"/>
 <instance part="C1" gate="G$1" x="-40.64" y="111.76">
@@ -3848,6 +3906,12 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="D2" gate="G$1" x="2.54" y="60.96" rot="R270"/>
 <instance part="R2" gate="G$1" x="2.54" y="71.12" rot="R180"/>
 <instance part="P+11" gate="VCC" x="2.54" y="81.28"/>
+<instance part="R8" gate="G$1" x="33.02" y="22.86" rot="R180">
+<attribute name="MF" x="33.02" y="22.86" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R9" gate="G$1" x="33.02" y="-15.24" rot="R180">
+<attribute name="MF" x="33.02" y="-15.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3942,12 +4006,21 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="P$2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="50.8" y1="-17.78" x2="50.8" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-17.78" x2="50.8" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="P$1"/>
+<wire x1="33.02" y1="-20.32" x2="33.02" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-22.86" x2="50.8" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="50.8" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="P$2"/>
-<wire x1="50.8" y1="17.78" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="12.7" x2="50.8" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="P$1"/>
+<wire x1="50.8" y1="15.24" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="17.78" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="15.24" x2="50.8" y2="15.24" width="0.1524" layer="91"/>
+<junction x="50.8" y="15.24"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="P$2"/>
@@ -4162,8 +4235,12 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <net name="FET_PRECHARGE" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CTL"/>
-<wire x1="20.32" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <label x="20.32" y="30.48" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="P$2"/>
+<wire x1="33.02" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="30.48" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
+<junction x="33.02" y="30.48"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="PB1"/>
@@ -4174,8 +4251,12 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <net name="FET_MAIN" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="CTL"/>
-<wire x1="17.78" y1="-7.62" x2="53.34" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-7.62" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
 <label x="17.78" y="-7.62" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="P$2"/>
+<wire x1="33.02" y1="-7.62" x2="53.34" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-7.62" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="33.02" y="-7.62"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="PB0"/>
