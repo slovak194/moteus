@@ -1,13 +1,4 @@
- * print chassis
- * print lateral adapter
- * print shore power battery adapter, test it
-
  * experiment with dowel vs shaft into shaft end bearing
- * Get terminals and wires onto existing battery stud mount
-
- * test hot inserting one-plus battery with progessively more
-   batteries on the scope to see if it is feasible
-   * if not, finish rev-ing imu junction with soft-start
 
  * gearbox mfg
    * print 4x more gearbox parts
@@ -96,6 +87,22 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-17
+ * Unpacked test chassis print
+ * Printed adapter plate, mounted leg to gearbox
+ * Mounted gearbox to chassis
+ * Mounted battery stud into chassis
+ * Wired up power and one servo to imu_junction r2
+ * Printed shore power stud for battery terminal... post-machined to
+   make it actually fit
+ * Experimented with hot-plugging the battery with the lab supply and
+   scope... doesn't look like it would survive as is.  With 12V, I saw
+   a spike of up to 20V on the input.  And that is with just the
+   imu_junction board, and no servos.  Will need additional
+   mitigations
+ * Designed and sent off for mfg a standalone pre-charge
+   board... maybe will get here in time?
 
 DONE 2019-04-16
  * Ordered planet gears, spur gears and sun shafts from sdp-si... only
