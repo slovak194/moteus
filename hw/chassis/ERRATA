@@ -1,5 +1,8 @@
 TODO
 
+ * Long part of stiffener could use to have more routing holes for
+   wires further up from the bottom (well top) of the chassis
+
  * Battery stud contact mounting faces are collectively about 1mm too
    thick, so 0.5mm or 0.4mm needs to be taken off each side.
    * also need to taper the top of the outer face more, so that the
