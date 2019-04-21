@@ -1,6 +1,5 @@
- * experiment with dowel vs shaft into shaft end bearing
-
  * gearbox mfg
+   * Extract 5 stators
    * print 4x more gearbox parts
      * outer housing
      * planet inputs
@@ -8,12 +7,19 @@
      * 3x planet bushings
      * back housing
      * controller cover
-   * modify enough rotors and stators for 4x more gearboxes
-   * turn down at least 3x more internal gears
 
  * update mech software to command new protocol
 
+ * experiment with dowel vs shaft into shaft end bearing
+
+ * bring up precharge boards when they arrive, test, then install and
+   test whole mech with battery
+
+
  * BE8108 gearbox
+  * Design and print rotor insertion press fixture
+    * big disk with central hole big enough to allow planet output and
+      planet shafts to not hit
   * build planet output removal fixture
     * cylinder just bigger than the planet output, deeper than it, and
       very beefy
@@ -49,8 +55,13 @@
 digikey
  * 3/16" heatshrink
  * more battery terminals: 36-5205-ND
+ * 2x4 0.1" male male pin header
 
 mcmaster
+ * M2.5 nut
+ * 200x M2.5 inserts 94180A321
+ * 100x M3 inserts 94180A331
+
  * Design belt tensioning mechanism
 
  * Add a "brake" mode that just shorts the terminals all to ground
@@ -87,6 +98,34 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-20
+ * Printed more servo plastic parts
+
+DONE 2019-04-19
+ * Ordered more filament
+ * Inventoried inserts for servo build
+ * Turned down 4 more internal gears
+ * Got mech software to command the servos for the first time, and
+   kinda walk!
+   * servo 12 lost was out of electrical phase calibration... maybe it
+     got bumped?
+   * Added broadcast address, so we can disable everything with one
+     command
+   * Will likely need feedforward current, so that when some legs are
+     up, we don't sag so much
+   * 12 lost calibration again with just a tiny bit of
+     kinda-walking... something is definitely messed up with it
+
+
+DONE 2019-04-18
+ * Separated 5 rotors and stators
+ * Machined out 5 rotors
+ * Tried to dremel out a stator... got most of the way through, but it
+   wasn't going to be as clean as the hacksaw was, and still made an
+   enormous mess.  Ordered some aluminum stock I can use to make a
+   vise fixture, although with stock that could be used to prototype
+   the other parts.
 
 DONE 2019-04-17
  * Unpacked test chassis print
