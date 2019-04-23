@@ -24,9 +24,9 @@
  * Sun gear - A 1Y 2MY05020
  * Planet gear - 3x S12N05M040S0510
  * Internal gear - SI0.5-100 KHK (post-machined)
- * 3x 4x20mm dowel pin from mcmaster for planets
- * 1x 4x24mm dowel pin from mcmaster for sun gear
- * Planet bearing - HK0408 needle bearing
+ * 3x 4x22mm dowel pin from mcmaster for planets
+ * 1x 4x25mm shaft from SDP-SI for sun gear
+ * Planet bearing - 3x HK0408 needle bearing
  * Output Bearing - 40x50x6mm 6708-2rs
  * Planet Input Bearing - 15x24x5mm 6802ZZ
  * Planet Output Bearing - 4x13x5mm 624-Z
@@ -34,47 +34,61 @@
 
 ## Fasteners ##
 
- * 19x M3 heat set inserts
+ * 8x M3 heat set inserts
    * 8x back plate
- * 14x M2.5 heat set inserts
-   * 8x back housing radially
+ * 13x M2.5 heat set inserts
+   * 7x back housing radially
    * 6x back housing for cover
  * 4x M2 heat set inserts
    * 4x back housing for controller
 
- * 6x M2.5x4mm flat socket head screws
+ * 4x M3x6mm flat socket screws
+   * attach sun gear holder to rotor
+
+ * 6x M2.5x6mm flat socket head screws
    * attach outer housing to front housing
- * 14x M2.5x5mm flat socket head screws
-   * 8x attach front and back housing
+ * 15x M2.5x5mm flat socket head screws
+   * 7x attach front and back housing
    * 6x attach controller back cover
+   * 2x for phase clamp
  * 4x M2x6mm hex head screw low profile
    * attach controller
- * 3x M3x6mm hex head screw low profile
+ * 3x M3x8mm hex head screw low profile
    * attach planets together
 
 
 # Assembly #
 
-1. Install output bearing into front housing with retaining compound
-2. Install internal gear in front housing with retaining compound
-3. Install outer housing onto front housing
-4. Install shaft bearing into planet output with retaining compound
-5. Install planet output into output bearing
-6. Install sun gear into sun gear holder using heat and cold to make a shrink fit
-7. Install sun gear holder onto rotor
-8. Press input bearing into planet input
-9. Install planet bushings into planets
-10. Press needle bearings into planet bushings
-11. Drop planet shafts into planet output while resting on back
-12. Slide planets onto shafts, with bushing fat end near planet output
-13. Install planet input, press onto planet shafts, then use M3 bolts to attach
-14. Install stator onto front housing using cold for a shrink fit
-15. Press M4x24 dowel into sun gear holder / sun gear until it hits
+1. Install inserts in back housing
+2. Install output bearing into front housing with retaining compound
+3. Install internal gear in front housing with retaining compound
+4. Install outer housing onto front housing IN CORRECT ORIENTATION
+5. Install shaft bearing into planet output with retaining compound
+6. Install planet output into output bearing
+7. Install sun gear into sun gear holder using heat and cold to make a shrink fit
+8. Install sun gear holder onto rotor
+9. Press input bearing into planet input
+10. Install planet bushings into planets
+11. Press needle bearings into planet bushings
+12. Drop planet shafts into planet output while resting on back
+13. Slide planets onto shafts, with bushing fat end near planet output
+14. Install planet input, press onto planet shafts, w/ not-yet-created
+    ring fixture, then use M3 bolts to attach
+15. Install stator onto front housing using cold for a shrink fit
+16. Press M4x24 dowel into sun gear holder / sun gear until it hits
     back of sun gear
-16. Install rotor into gearbox.  Use M3 dowel to press shaft into
+17. Install rotor into gearbox.  Use M3 dowel to press shaft into
     front shaft bearing
-17. Align rotor and stator using paper strips
-18. Pick @!!@#% shards of metal out of rotor using microscope
+18. Align rotor and stator using paper strips
+19. Install phase clamp w/ M2.5 bolts
+20. Apply grease
+21. Install position sense magnet w/ hot glue in one of the recesses
+22. Install back housing plate w/ 7x M2.5 circumferential bolts
+23. Install power wires in controller
+24. Cut phase wires, strip enamel
+25. Solder phase wires to controller
+26. Install controller w/ M2x6 bolts
+27. Install back cover w/ 6x M2.5x6 flat head bolts
 
 
 

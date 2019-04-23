@@ -1,4 +1,12 @@
 TODO
+  * figure out how to register the rotor back and forth... right now,
+    it is just a loose press fit onto the shaft in the sun gear and
+    the output shaft bearing, which allows it to relatively easily be
+    pressed towards the front of the housing (the back is constrained
+    by the back housing bearing lip)
+  * back housing circumferential M2.5 bolts somehow are no longer in
+    the center of the back housing!
+  * planet output could use a tighter fit for output shaft bearing
 
 DONE 2019-04-18
  * Added protrusion to back housing controller mount holes, so
