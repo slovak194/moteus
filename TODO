@@ -1,16 +1,8 @@
- * gearbox mfg
-   * Extract 5 stators
-   * print 4x more gearbox parts
-     * outer housing
-     * planet inputs
-     * phase wire clamp
-     * 3x planet bushings
-     * back housing
-     * controller cover
+ * assemble 4x gearboxes
+
+ * build busbar boards and internal wiring for gearbox chassis
 
  * update mech software to command new protocol
-
- * experiment with dowel vs shaft into shaft end bearing
 
  * bring up precharge boards when they arrive, test, then install and
    test whole mech with battery
@@ -29,6 +21,7 @@
       columns
     * the levers could just be machined out of 2mm thick aluminum with
       a lever hole and a notch for grabbing the part
+  * fix errata
 
  * do a 4 leg jump of some sort with multiplex tool
  * investigate better enamel stripping options from eraser.com
@@ -61,6 +54,7 @@ mcmaster
  * M2.5 nut
  * 200x M2.5 inserts 94180A321
  * 100x M3 inserts 94180A331
+ * M2.5x5 flat head
 
  * Design belt tensioning mechanism
 
@@ -98,6 +92,14 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-22
+ * Extracted 4 stators, destroyed 1
+ * Received 2nd revision of sun gear holder, measured all outer
+   dimensions
+ * finished 5th printed parts run
+ * Mostly assembled a new gearbox using brand new components, recorded
+   wide and close angle video
 
 DONE 2019-04-20
  * Printed more servo plastic parts
