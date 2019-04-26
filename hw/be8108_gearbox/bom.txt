@@ -62,8 +62,8 @@
 1. Install inserts in back housing
 2. Install output bearing into front housing with retaining compound
 3. Install internal gear in front housing with retaining compound
-4. Install outer housing onto front housing IN CORRECT ORIENTATION
-5. Install shaft bearing into planet output with retaining compound
+4. Install shaft bearing into planet output with retaining compound
+5. Install outer housing onto front housing IN CORRECT ORIENTATION
 6. Install planet output into output bearing
 7. Install sun gear into sun gear holder using heat and cold to make a shrink fit
 8. Install sun gear holder onto rotor
@@ -72,10 +72,10 @@
 11. Press needle bearings into planet bushings
 12. Drop planet shafts into planet output while resting on back
 13. Slide planets onto shafts, with bushing fat end near planet output
-14. Install planet input, press onto planet shafts, w/ not-yet-created
-    ring fixture, then use M3 bolts to attach
+14. Install planet input, press onto planet shafts, use M3x10 bolts to
+bring it closer, then remove and switch for M3x8 bolts
 15. Install stator onto front housing using cold for a shrink fit
-16. Press M4x24 dowel into sun gear holder / sun gear until it hits
+16. Press M4x25 shaft into sun gear holder / sun gear until it hits
     back of sun gear
 17. Install rotor into gearbox.  Use M3 dowel to press shaft into
     front shaft bearing

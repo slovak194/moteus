@@ -7,6 +7,13 @@ TODO
   * back housing circumferential M2.5 bolts somehow are no longer in
     the center of the back housing!
   * planet output could use a tighter fit for output shaft bearing
+  * flat screws in sun gear holder can protrude more than the bearing
+    lip... at a minimum, need some clearance in the back housing so
+    they can spin freely
+
+  * need some way of identifying when stator is all the way installed
+    properly... otherwise really hard to know if it is stuck, or
+    seated
 
 DONE 2019-04-18
  * Added protrusion to back housing controller mount holes, so
