@@ -1,4 +1,21 @@
 TODO
+ * Split into multiple flat(er) plates for ease of assembly
+  * front and back motor mounts
+  * bottom plate
+  * side plates
+  * stiffeners
+  * the side and front/back plates would bolt into inserts in the bottom plate
+  * the stiffeners would have inserts, which would be screwed into
+    from the front/back plate and bottom plate
+
+ * maybe move imu junction board to be vertical and on one of the
+   motor mount sides to make it easier to route cables out the front
+   and top
+
+ * Will want hard mounts for busbar boards
+
+ * Motor bolt holes behind upper support bolt hole are unreachable
+ * Motor bolt holes behind battery stud are nearly unreachable
 
  * Long part of stiffener could use to have more routing holes for
    wires further up from the bottom (well top) of the chassis

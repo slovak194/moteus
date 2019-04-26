@@ -1,0 +1,18 @@
+Chassis
+ * For now, one giant chassis print
+
+battery stud holder
+
+inserts
+
+imu-junction board
+pre-charge board
+
+busbars
+ * From left to right, ground on bottom
+ * 7.5cm input
+ * 7.5cm inner motor
+ * 25cm outside inner motor
+ * 32cm outside outer motor
+
+4x legs
