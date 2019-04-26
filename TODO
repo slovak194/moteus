@@ -1,6 +1,5 @@
- * assemble 4x gearboxes
-
- * build busbar boards and internal wiring for gearbox chassis
+ * assemble 1x more gearbox
+ * replace SN1 gearbox with a R2 one
 
  * update mech software to command new protocol
 
@@ -9,9 +8,6 @@
 
 
  * BE8108 gearbox
-  * Design and print rotor insertion press fixture
-    * big disk with central hole big enough to allow planet output and
-      planet shafts to not hit
   * build planet output removal fixture
     * cylinder just bigger than the planet output, deeper than it, and
       very beefy
@@ -27,7 +23,6 @@
  * investigate better enamel stripping options from eraser.com
 
  * design new absolute position sense board
-
 
  * Design and build bracket to mount pi3 directly onto chassis
 
@@ -46,15 +41,8 @@
    * servo 1 needs to be recalibrated
 
 digikey
- * 3/16" heatshrink
- * more battery terminals: 36-5205-ND
- * 2x4 0.1" male male pin header
 
 mcmaster
- * M2.5 nut
- * 200x M2.5 inserts 94180A321
- * 100x M3 inserts 94180A331
- * M2.5x5 flat head
 
  * Design belt tensioning mechanism
 
@@ -92,6 +80,25 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-25
+ * realized 24V supply never came/got ordered.  Ordered another.
+ * Wired up all motors into the gearbox chassis
+   * built busbars
+   * built data wires
+   * cable management
+ * Installed suspension strings into test fixture
+ * Assigned IDs and set up config for all lateral servos
+ * Identified that the junction board crashes when attempting to talk
+   to everything at once w/ tview
+
+DONE 2019-04-24
+ * Made McMaster order
+ * Assembled gearbox SN4
+
+DONE 2019-04-23
+ * Finished assembling and calibrating gearbox SN2
+ * Assembled gearbox SN3
 
 DONE 2019-04-22
  * Extracted 4 stators, destroyed 1
