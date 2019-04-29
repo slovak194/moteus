@@ -1,11 +1,8 @@
  * assemble 1x more gearbox
  * replace SN1 gearbox with a R2 one
 
- * update mech software to command new protocol
-
  * bring up precharge boards when they arrive, test, then install and
    test whole mech with battery
-
 
  * BE8108 gearbox
   * build planet output removal fixture
@@ -19,16 +16,9 @@
       a lever hole and a notch for grabbing the part
   * fix errata
 
- * do a 4 leg jump of some sort with multiplex tool
  * investigate better enamel stripping options from eraser.com
 
  * design new absolute position sense board
-
- * Design and build bracket to mount pi3 directly onto chassis
-
- * Tools
-   * Tool to write a config or set of console commands to all servos,
-     maybe just in multiplex_tool?
 
  * Bringup improvements
    * bringup procedure needs to automatically verify temperature is
@@ -45,6 +35,10 @@ digikey
 mcmaster
 
  * Design belt tensioning mechanism
+
+ * Make stm32f466_async_uart turn around the receive pin faster, so
+   that the bootloader doesn't need a delay hack in it and we can have
+   faster RTT with devices
 
  * Add a "brake" mode that just shorts the terminals all to ground
  * Test the "zero-velocity" command
@@ -80,6 +74,12 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-04-26
+ * Debugged various UART problems with high speed data to get junction
+   board working with all servos
+ * Discovered servo 5's encoder calibration had drifted :(
+ * First walking!  (really crappy walking, but walking!)
 
 DONE 2019-04-25
  * realized 24V supply never came/got ordered.  Ordered another.
