@@ -1,3 +1,6 @@
+ * get moteus_tool's flash operation to be more robust in the face of
+   re-synchs (or fix the junction board's turnaround time)
+
  * assemble 1x more gearbox
  * replace SN1 gearbox with a R2 one
 
