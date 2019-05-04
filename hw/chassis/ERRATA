@@ -8,9 +8,13 @@ TODO
   * the stiffeners would have inserts, which would be screwed into
     from the front/back plate and bottom plate
 
+ * bottom plate needs to have bolts on both the inside and
+   outside... just a retaining lip results in it popping out
+   frequently
+
  * maybe move imu junction board to be vertical and on one of the
    motor mount sides to make it easier to route cables out the front
-   and top
+   and top (but need to fit battery!)
 
  * Will want hard mounts for busbar boards
 
