@@ -1,9 +1,6 @@
  * assemble 1x more gearbox
  * replace SN1 gearbox with a R2 one
 
- * bring up precharge boards when they arrive, test, then install and
-   test whole mech with battery
-
  * BE8108 gearbox
   * build planet output removal fixture
     * cylinder just bigger than the planet output, deeper than it, and
@@ -25,14 +22,12 @@
      sane, including when powering motor
    * always store calibrations on host computer
    * zeroing procedure needs a way to verify it online
+   * Investigate improving the repeatability of the V/Hz calibration
+     procedure
 
  * Servo maintenance
    * servo 10 has a faulty temperature sensor of some sort
    * servo 1 needs to be recalibrated
-
-digikey
-
-mcmaster
 
  * Design belt tensioning mechanism
 
@@ -74,6 +69,12 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-05-03
+ * Brought up pre-charge board, installed in mech.  It works!
+ * Switched all power terms when in position control mode to be in
+   terms of torque instead of current.  Measured torque with my scale
+   and added a kPi fudge factor to get it to come out right.
 
 DONE 2019-04-26
  * Debugged various UART problems with high speed data to get junction
