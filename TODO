@@ -1,3 +1,6 @@
+ * managed to trip the AtomicEventQueue limit in the UART.. maybe need
+   to make it a bit bigger again
+
  * assemble 1x more gearbox
  * replace SN1 gearbox with a R2 one
 
