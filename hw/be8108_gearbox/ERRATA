@@ -14,6 +14,8 @@ TODO
   * need some way of identifying when stator is all the way installed
     properly... otherwise really hard to know if it is stuck, or
     seated
+  * back housing, when 3d printed, needs a chamfer on the bottom
+    printed surface and on the rotor bearing surface
 
 DONE 2019-04-18
  * Added protrusion to back housing controller mount holes, so
