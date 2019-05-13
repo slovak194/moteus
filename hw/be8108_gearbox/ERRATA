@@ -1,21 +1,35 @@
 TODO
+
+  * Controller cover still has a very narrow spot near the phase wire
+    channel for one of the controller cover bolts.
   * figure out how to register the rotor back and forth... right now,
     it is just a loose press fit onto the shaft in the sun gear and
     the output shaft bearing, which allows it to relatively easily be
     pressed towards the front of the housing (the back is constrained
     by the back housing bearing lip)
-  * back housing circumferential M2.5 bolts somehow are no longer in
-    the center of the back housing!
   * planet output could use a tighter fit for output shaft bearing
-  * flat screws in sun gear holder can protrude more than the bearing
-    lip... at a minimum, need some clearance in the back housing so
-    they can spin freely
-
   * need some way of identifying when stator is all the way installed
     properly... otherwise really hard to know if it is stuck, or
     seated
-  * back housing, when 3d printed, needs a chamfer on the bottom
-    printed surface and on the rotor bearing surface
+
+DONE 2019-05-12
+ * Added margin voids for the sun gear holder in back housing
+  * flat screws in sun gear holder can protrude more than the bearing
+    lip... at a minimum, need some clearance in the back housing so
+    they can spin freely...
+    * Also, the bearing surface generally is too close to the sun gear
+      holder... either it should be maybe a mm back further into the
+      housing or the whole back plate should be a mm further back
+    * This is likely because it is really hard to get the stator all
+      the way installed, but having a little extra margin here
+      wouldn't hurt in any case.
+ * back housing, when 3d printed, needs a chamfer on the bottom
+   printed surface and on the rotor bearing surface
+  * outer housing, when 3d printed, needs a chamfer on the surface
+    that meets with the front housing, since it gets squished out
+
+DONE 2019-05-08
+ * Fixed back housing circumferential M2.5 bolts to be back in the center.
 
 DONE 2019-04-18
  * Added protrusion to back housing controller mount holes, so

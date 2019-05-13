@@ -83,12 +83,13 @@ bring it closer, then remove and switch for M3x8 bolts
 19. Install phase clamp w/ M2.5 bolts
 20. Apply grease
 21. Install position sense magnet w/ hot glue in one of the recesses
-22. Install back housing plate w/ 7x M2.5 circumferential bolts
-23. Install power wires in controller
-24. Cut phase wires, strip enamel
-25. Solder phase wires to controller
-26. Install controller w/ M2x6 bolts
-27. Install back cover w/ 6x M2.5x6 flat head bolts
+22. Install rotor bearings into back housings
+23. Install back housing plate w/ 7x M2.5 circumferential bolts
+24. Install power wires in controller
+25. Cut phase wires, strip enamel
+26. Solder phase wires to controller
+27. Install controller w/ M2x6 bolts
+28. Install back cover w/ 6x M2.5x6 flat head bolts
 
 
 

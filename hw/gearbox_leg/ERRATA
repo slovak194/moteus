@@ -1,0 +1,33 @@
+DONE 2019-05-11
+
+ * Made upper leg 0.5 shorter than optimal instead of 3mm shorter.
+   Quick triangle math says that means the belt needs to be deflected
+   about 5mm to reach full tension now.
+ * Added chamfer on both sides of knee stud
+ * Added 0.4mm gap between tension slideway and tension bracket
+ * Added some chamfers to support the upper tension hole
+ * Made upper bearing hole .5mm diameter bigger
+ * Made tension bracket alignment tab 4mm, to match the shaft diameter
+ * Added 1mm chamfer to bottom of tension bracket
+ * tension bracket bottom needs chamfer, especially alignment pin, as
+   it won't fit into the slot otherwise
+ * increased tension bracket bolt void from 3mm to 4mm
+ * split lower leg back into two parts so it can be printed laying
+   down
+ * chamfered the lower pulley by a mm
+
+r1 problems
+
+
+r1 DONE
+ * knee stud needs chamfer on bottom
+ * tension slot could probably use a little margin
+ * upper leg, the insert hole for tension screw didn't print well at
+   all on top, it had no support
+ * upper bearing hole needs to be bigger
+ * tension bracket alignment pin should be as wide as the shaft or a
+   tad bit wider, so it doesn't matter if the shaft sticks out.
+ * hole in bottom of tension bracket didn't come out big enough for a
+   screw to go in
+ * the lower leg has an unmanageable amount of support
+ * the lower pulley is squished out a lot on the bottom surface
