@@ -1,3 +1,4 @@
+ * moteus_tool needs to check for faults after doing the velocity config
  * managed to trip the AtomicEventQueue limit in the UART.. maybe need
    to make it a bit bigger again
 
@@ -72,6 +73,9 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-05-14
+ * Switched position control to be in terms of torque, not current
 
 DONE 2019-05-03
  * Brought up pre-charge board, installed in mech.  It works!
