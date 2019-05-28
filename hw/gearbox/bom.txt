@@ -14,6 +14,3 @@
    * housing retained nuts: 4x M3
    * output stud retained nuts: 4x M3
    * sense magnet: K&J Magnetics D42DIA 1/4"x1/8" N42 Dia Magnetized
-
- * Leg
-   * angular contact bearing 5x14x7mm - vxb.com 30-5ZZ
