@@ -1,23 +1,24 @@
+ * Calibration goes forever if the magnet is axially magnetized or
+   insufficiently magnetized
+
+ * Figure out why I had to update the minimum PWM time.
+
+ * need to do something better if starting position control outside
+   the absolute limit, than slew as hard as possible to get into the
+   limit.  Perhaps the control_position should have a special mode for
+   when it is started outside?
+
  * moteus_tool needs to check for faults after doing the velocity config
  * managed to trip the AtomicEventQueue limit in the UART.. maybe need
-   to make it a bit bigger again
-
- * assemble 1x more gearbox
- * replace SN1 gearbox with a R2 one
+   to make it a bit bigger again, or see if I can reproduce and figure
+   out what is going too slow
 
  * BE8108 gearbox
-  * build planet output removal fixture
-    * cylinder just bigger than the planet output, deeper than it, and
-      very beefy
-  * build planet input removal fixture
-    * some kind of cylinder with an unthreaded hole, and a little disk
-      with three rotating levers that engage next to the support
-      columns
-    * the levers could just be machined out of 2mm thick aluminum with
-      a lever hole and a notch for grabbing the part
-  * fix errata
+  * sun gear in pocketnc
+    * Re-do outer bearing interfaces with more cutter comp to get
+      bearing to fit easily
+    * Continue proofing program starting from front finish
 
- * investigate better enamel stripping options from eraser.com
 
  * design new absolute position sense board
 
@@ -27,13 +28,8 @@
    * always store calibrations on host computer
    * zeroing procedure needs a way to verify it online
    * Investigate improving the repeatability of the V/Hz calibration
-     procedure
-
- * Servo maintenance
-   * servo 10 has a faulty temperature sensor of some sort
-   * servo 1 needs to be recalibrated
-
- * Design belt tensioning mechanism
+     procedure (it seems it may currently depend on the unwrapped
+     position scale too)
 
  * Make stm32f466_async_uart turn around the receive pin faster, so
    that the bootloader doesn't need a delay hack in it and we can have
@@ -49,8 +45,10 @@
 
  * Get AS5047 SPI sampling to be faster
 
- * Get python telemetry stuff into moteus/mjlib
- * Get tview into moteus/mjlib repository
+ * mjlib
+   * Get python telemetry stuff into moteus/mjlib
+   * Get tview into moteus/mjlib repository
+   * Clean up telemetry protocol and format with lessons learned
 
  * Make moteus_tool servo auto-detection more robust
    * especially in the face of things spewing
@@ -73,6 +71,22 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-06-14
+ * Tried machining another sun gear holder
+   * Kept having tool pullout problems
+     * First was I think on the very first pass, dropped load to 0.2mm
+     * Second was on another sliver.  Discovered
+       https://forums.autodesk.com/t5/hsm-ideas/adaptive-machining-improvement/idi-p/7090365/page/2#comments
+       and the undocumented "curve in radius", which when I added an
+       extra 1mm to it in the "Compare and Edit" dialog, seems to have
+       much improved the behavior around those thin slivers.
+
+DONE 2019-06-06
+ * sun gear holder
+   * refined tool paths, watched start of everything at 1x
+     * tweaked radial bores to be 0.3mm pitch
+ * Ordered an aliexpress special enamel wire stripper
 
 DONE 2019-05-14
  * Switched position control to be in terms of torque, not current
