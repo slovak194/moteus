@@ -1,6 +1,5 @@
  * Calibration goes forever if the magnet is axially magnetized or
    insufficiently magnetized
-
  * Figure out why I had to update the minimum PWM time.
 
  * need to do something better if starting position control outside
@@ -18,7 +17,6 @@
     * Re-do outer bearing interfaces with more cutter comp to get
       bearing to fit easily
     * Continue proofing program starting from front finish
-
 
  * design new absolute position sense board
 
