@@ -1,3 +1,16 @@
+ * New telemetry format
+   * C++ <-> Binary (including mapped reading)
+   * C++ <-> JSON
+   * Binary <-> JSON
+   * Javascript <-> Binary
+   * Python <-> Binary
+   * C++ file writer
+   * C++ network server
+   * Javascript tree viewer from network
+   * Javascript file reader
+   * Javascript live + logged analysis tool
+
+
  * Calibration goes forever if the magnet is axially magnetized or
    insufficiently magnetized
  * Figure out why I had to update the minimum PWM time.
