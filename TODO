@@ -1,10 +1,12 @@
  * New telemetry format
-   * C++ <-> Binary (including mapped reading)
-   * C++ <-> JSON
+   * Binary -> Javascript
+   * Binary -> Python
+   * C++ file writer
+
+   * Json -> Binary
    * Binary <-> JSON
    * Javascript <-> Binary
-   * Python <-> Binary
-   * C++ file writer
+   * Python -> Binary
    * C++ network server
    * Javascript tree viewer from network
    * Javascript file reader
