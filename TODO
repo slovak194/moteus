@@ -1,7 +1,6 @@
- * Anytime mode is set, clear entire command
- * Re-order register map so that position, velocity, and feedforward
-   torque are next to each other
- * Re-order so position, velocity, and torque are next to each other
+ * control cycle sometimes jitters so that two cycles happen
+   immediately back to back
+
  * Reduce turnaround time from 140us to something smaller
 
  * Get frameless rotor and stator
@@ -91,10 +90,6 @@
  * Make moteus_tool servo auto-detection more robust
    * especially in the face of things spewing
  * derate for temperature
- * store serial number in eeprom
- * Report firmware version over serial protocol
- * also report stm32 unique ID
- * Store and report firmware version
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Figure out why using strtol in bootloader caused crc calculation to
@@ -109,6 +104,14 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2109-09-06
+ * Re-order register map so that position, velocity, and feedforward
+   torque are next to each other
+ * Re-order so position, velocity, and torque are next to each other
+ * Reported serial number and firmware version
+ * Anytime mode is set, clear entire command
+
 
 DONE 2019-09-05
  * Got custom rotor and stator hopefully in production
