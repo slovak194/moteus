@@ -1,3 +1,20 @@
+ * Anytime mode is set, clear entire command
+ * Re-order register map so that position, velocity, and feedforward
+   torque are next to each other
+ * Re-order so position, velocity, and torque are next to each other
+ * Reduce turnaround time from 140us to something smaller
+
+ * Get frameless rotor and stator
+ * Get pre-production gearset
+
+ * Finish designing v2 gearbox
+
+ * When rotor and stator come in, measure, then get the necessary
+   pieces machined to test it
+
+ * Rev moteus board
+ * Rev gearbox
+
  * New telemetry format
    * Binary -> Javascript
    * Binary -> Python
@@ -13,6 +30,21 @@
    * Javascript live + logged analysis tool
 
 
+ * BE8108 gearbox v2
+   * Make planet input on pocket NC
+   * Make planet output on pocket NC
+   * finish CAD for gbx v2
+   * Devise strategy for front housing, back housing, and outer
+     housing on pocket NC
+   * design new absolute position sense board
+
+ * chassis
+   * New revision to:
+     * Make more rigid
+       * attach to all available bolt holes on motors
+     * Make more maintainable... need to be able to access all screws
+       for all motors with a regular tool somehow
+
  * Calibration goes forever if the magnet is axially magnetized or
    insufficiently magnetized
  * Figure out why I had to update the minimum PWM time.
@@ -27,13 +59,6 @@
    to make it a bit bigger again, or see if I can reproduce and figure
    out what is going too slow
 
- * BE8108 gearbox
-  * sun gear in pocketnc
-    * Re-do outer bearing interfaces with more cutter comp to get
-      bearing to fit easily
-    * Continue proofing program starting from front finish
-
- * design new absolute position sense board
 
  * Bringup improvements
    * bringup procedure needs to automatically verify temperature is
@@ -84,6 +109,21 @@ Code cleanup
  * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-09-05
+ * Got custom rotor and stator hopefully in production
+ * Implemented "dumb" IMU firmware
+
+DONE 2019-08-29
+ * Sent out initial queries to a bunch of gear mfgrs
+ * Made up gear drawings
+
+DONE 2019-08-28
+ * Designed up custom rotor and created dimensioned drawings
+
+DONE 2019-08-27
+ * Worked on getting a functioning pocketnc program for the sun gear
+ * Started quoting frameless motors
 
 DONE 2019-06-14
  * Tried machining another sun gear holder
