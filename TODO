@@ -1,7 +1,12 @@
+ * optimize CRC calculation in micro, boost seems slow
+ * micro_server.cc needs to report a kReadMultiple using kReplyMultiple
  * control cycle sometimes jitters so that two cycles happen
    immediately back to back
 
  * Reduce turnaround time from 140us to something smaller
+
+ * Updating to mbed 5.13.2 causes the drv8323 not to be configured
+   properly... unclear what is going on
 
  * Get frameless rotor and stator
  * Get pre-production gearset
@@ -101,7 +106,6 @@
 
 
 Code cleanup
- * Make StaticFunction not so expensive to call
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
@@ -111,7 +115,7 @@ DONE 2109-09-06
  * Re-order so position, velocity, and torque are next to each other
  * Reported serial number and firmware version
  * Anytime mode is set, clear entire command
-
+ * Replaced StaticFunction with something much faster and more conformant
 
 DONE 2019-09-05
  * Got custom rotor and stator hopefully in production
