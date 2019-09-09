@@ -1,12 +1,8 @@
- * optimize CRC calculation in micro, boost seems slow
- * micro_server.cc needs to report a kReadMultiple using kReplyMultiple
+ * Get AS5047 SPI sampling to be faster
  * control cycle sometimes jitters so that two cycles happen
    immediately back to back
 
  * Reduce turnaround time from 140us to something smaller
-
- * Updating to mbed 5.13.2 causes the drv8323 not to be configured
-   properly... unclear what is going on
 
  * Get frameless rotor and stator
  * Get pre-production gearset
@@ -85,8 +81,6 @@
    * position mode includes velocity and feed forward
    * possibly elliptical control gain alteration
 
- * Get AS5047 SPI sampling to be faster
-
  * mjlib
    * Get python telemetry stuff into moteus/mjlib
    * Get tview into moteus/mjlib repository
@@ -106,8 +100,26 @@
 
 
 Code cleanup
+ * Updating to mbed 5.13.2 causes the drv8323 not to be configured
+   properly... unclear what is going on
+ * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-09-09
+ * Sent in PO for gears
+ * Got something working with the hardware CRC on the STM32.  It
+   required changing the CRC, and w/o DMA still took 64 cycles for a
+   26 byte CRC.  So a bit better than the 210cycle boost software one.
+   Still, probably not worth re-flashing all the bootloaders for.
+
+DONE 2019-09-08
+ * Sent request for updated gear quote
+
+DONE 2019-09-07
+ * Made read multiple use reply multiple
+ * Tried to improve upon the boost ccitt crc... my hand written
+   assembly was one instruction slower per byte than boost. :(
 
 DONE 2109-09-06
  * Re-order register map so that position, velocity, and feedforward
