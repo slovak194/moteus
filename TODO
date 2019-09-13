@@ -1,8 +1,6 @@
- * Design actual non-asio API
+ * Make ThreadedClient work reliably
 
  * Get frameless rotor and stator
- * Get pre-production gearset
- * Get pre-production bearings
 
  * Finish designing v2 gearbox
 
@@ -104,6 +102,10 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-09-13
+ * Ordered pre-production bearings
+ * Implemented ThreadedClient and got initial debugging done
 
 DONE 2019-09-12
  * Got C++ moteus_tool flashing things
