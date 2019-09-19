@@ -1,7 +1,4 @@
- * Make ThreadedClient work reliably
-
  * Get frameless rotor and stator
-
  * Finish designing v2 gearbox
 
  * When rotor and stator come in, measure, then get the necessary
@@ -88,8 +85,6 @@
  * derate for temperature
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
- * Figure out why using strtol in bootloader caused crc calculation to
-   stop working
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
 
@@ -102,6 +97,12 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-09-18
+ * discovered some bootloader flakiness was due to not re-zeroing bss
+   and stomping on the beginning of BSS while setting interrupts.  The
+   primary symptom was that the boost crc table was left in a corrupt
+   state, resulting in all crc checks failing
 
 DONE 2019-09-13
  * Ordered pre-production bearings
