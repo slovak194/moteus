@@ -98,6 +98,10 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-09-19
+ * Finished update rate work
+ * Added support for rezeroing to positions other than nominal
+
 DONE 2019-09-18
  * discovered some bootloader flakiness was due to not re-zeroing bss
    and stomping on the beginning of BSS while setting interrupts.  The
