@@ -3847,13 +3847,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 </classes>
 <parts>
 <part name="U4" library="imu_junction" deviceset="MIC4416" device=""/>
-<part name="Q1" library="imu_junction" deviceset="TPH1R204PL" device=""/>
+<part name="Q1" library="imu_junction" deviceset="TPH1R204PL" device="">
+<attribute name="MPN" value="TPH1R204PL,L1Q"/>
+</part>
 <part name="R7" library="mfpassives" deviceset="RESISTOR" device="_1206" value="10 1W">
 <attribute name="MF" value="Susumu"/>
 <attribute name="MPN" value="HRG3216Q-10R0-D-T1"/>
 </part>
 <part name="U5" library="imu_junction" deviceset="MIC4416" device=""/>
-<part name="Q2" library="imu_junction" deviceset="TPH1R204PL" device=""/>
+<part name="Q2" library="imu_junction" deviceset="TPH1R204PL" device="">
+<attribute name="MPN" value="TPH1R204PL,L1Q"/>
+</part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="mfleds" deviceset="LED_SINGLE" device="-0603">
 <attribute name="HOUSEPART" value="1"/>
@@ -3864,7 +3868,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MPN" value="MF-RES-0603-220"/>
 </part>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="U1" library="imu_junction" deviceset="ZXTR2012Z" device=""/>
+<part name="U1" library="imu_junction" deviceset="ZXTR2012Z" device="">
+<attribute name="MPN" value="ZXTR2012Z-13"/>
+</part>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+18V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
@@ -4073,7 +4079,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MPN" value="B4B-PH-SM4-TB(LF)(SN)"/>
 <attribute name="POPULATE" value="1"/>
 </part>
-<part name="Q3" library="imu_junction" deviceset="TPH1R204PL" device=""/>
+<part name="Q3" library="imu_junction" deviceset="TPH1R204PL" device="">
+<attribute name="MPN" value="TPH1R204PL,L1Q"/>
+</part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="D12" library="precharge" deviceset="PAD" device="24AWG_PAD">
 <attribute name="POPULATE" value="0"/>
