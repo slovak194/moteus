@@ -3946,20 +3946,39 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MF" value="VISHAY"/>
 <attribute name="MPN" value="CRCW0603100KFKEA"/>
 </part>
-<part name="P7" library="precharge" deviceset="XT90" device="PW-M"/>
-<part name="P1" library="precharge" deviceset="XT30" device="P"/>
-<part name="P2" library="precharge" deviceset="XT30" device="P"/>
-<part name="P3" library="precharge" deviceset="XT30" device="P"/>
-<part name="P4" library="precharge" deviceset="XT30" device="P"/>
-<part name="P5" library="precharge" deviceset="XT30" device="P"/>
-<part name="P6" library="precharge" deviceset="XT30" device="P"/>
-<part name="U2" library="precharge" deviceset="MAX15062" device="8TDFN"/>
+<part name="P7" library="precharge" deviceset="XT90" device="PW-M">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P1" library="precharge" deviceset="XT30" device="P">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P2" library="precharge" deviceset="XT30" device="P">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P3" library="precharge" deviceset="XT30" device="P">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P4" library="precharge" deviceset="XT30" device="P">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P5" library="precharge" deviceset="XT30" device="P">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P6" library="precharge" deviceset="XT30" device="P">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="U2" library="precharge" deviceset="MAX15062" device="8TDFN">
+<attribute name="MF" value="MAXIM"/>
+<attribute name="MPN" value="MAX15062AATA+T"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="P+12" library="supply1" deviceset="+18V" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="mfpassives" deviceset="INDUCTOR" device="_1210" value="33uH">
 <attribute name="MF" value="TDK"/>
 <attribute name="MPN" value="NLFV32T-330K-EF"/>
+<attribute name="POPULATE" value="1"/>
 </part>
 <part name="C7" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 35V">
 <attribute name="MF" value="TDK"/>
@@ -3974,7 +3993,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MPN" value="CL10A105KB8NNNC"/>
 </part>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
-<part name="U3" library="precharge" deviceset="STM32G474CEU6" device=""/>
+<part name="U3" library="precharge" deviceset="STM32G474CEU6" device="">
+<attribute name="MF" value="ST"/>
+<attribute name="MPN" value="STM32G474CEU6"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="C3" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF">
 <attribute name="HOUSEPART" value="1"/>
 <attribute name="MPN" value="MF-CAP-0402-0.1uF"/>
@@ -4003,7 +4026,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MF" value="TDK"/>
 <attribute name="MPN" value="CGA5L1X7R1V106K160AC"/>
 </part>
-<part name="J1" library="precharge" deviceset="JST-ZH6" device="SMT_VERT"/>
+<part name="J1" library="precharge" deviceset="JST-ZH6" device="SMT_VERT">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B6B-ZR-SM4-TF(LF)(SN)"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -4013,9 +4040,21 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
 <part name="P+16" library="supply1" deviceset="VCC" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="U6" library="precharge" deviceset="TCAN334G" device=""/>
-<part name="CAN1" library="precharge" deviceset="JST-PH3" device="SMT_VERT"/>
-<part name="CAN2" library="precharge" deviceset="JST-PH3" device="SMT_VERT"/>
+<part name="U6" library="precharge" deviceset="TCAN334G" device="">
+<attribute name="MF" value="TI"/>
+<attribute name="MPN" value="TCAN334GDCNR"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="CAN1" library="precharge" deviceset="JST-PH3" device="SMT_VERT">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B3B-PH-SM4-TB(LF)(SN)"/>
+<attribute name="POPULATE" value="1"/>
+</part>
+<part name="CAN2" library="precharge" deviceset="JST-PH3" device="SMT_VERT">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B3B-PH-SM4-TB(LF)(SN)"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="mfpassives" deviceset="CAPACITOR_NP" device="_0402" value="0.1uF">
@@ -4029,12 +4068,22 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MPN" value="MF-RES-0603-220"/>
 </part>
 <part name="P+17" library="supply1" deviceset="VCC" device=""/>
-<part name="J2" library="precharge" deviceset="JST-PH4" device="SMT_VERT"/>
+<part name="J2" library="precharge" deviceset="JST-PH4" device="SMT_VERT">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="B4B-PH-SM4-TB(LF)(SN)"/>
+<attribute name="POPULATE" value="1"/>
+</part>
 <part name="Q3" library="imu_junction" deviceset="TPH1R204PL" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="D12" library="precharge" deviceset="PAD" device="24AWG_PAD"/>
-<part name="D3V3" library="precharge" deviceset="PAD" device="24AWG_PAD"/>
-<part name="DG" library="precharge" deviceset="PAD" device="24AWG_PAD"/>
+<part name="D12" library="precharge" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="D3V3" library="precharge" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="DG" library="precharge" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="P+18" library="supply1" deviceset="VCC" device=""/>
 <part name="P+19" library="supply1" deviceset="+12V" device=""/>
@@ -4151,15 +4200,32 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="R9" gate="G$1" x="-15.24" y="-43.18" rot="R180">
 <attribute name="MF" x="-15.24" y="-43.18" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="P7" gate="G$1" x="-53.34" y="137.16"/>
-<instance part="P1" gate="G$1" x="15.24" y="139.7" rot="MR0"/>
-<instance part="P2" gate="G$1" x="27.94" y="139.7" rot="MR0"/>
-<instance part="P3" gate="G$1" x="40.64" y="139.7" rot="MR0"/>
-<instance part="P4" gate="G$1" x="53.34" y="139.7" rot="MR0"/>
-<instance part="P5" gate="G$1" x="66.04" y="139.7" rot="MR0"/>
-<instance part="P6" gate="G$1" x="81.28" y="139.7" rot="MR0"/>
+<instance part="P7" gate="G$1" x="-53.34" y="137.16">
+<attribute name="POPULATE" x="-53.34" y="137.16" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
+<instance part="P1" gate="G$1" x="15.24" y="139.7" rot="MR0">
+<attribute name="POPULATE" x="15.24" y="139.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
+<instance part="P2" gate="G$1" x="27.94" y="139.7" rot="MR0">
+<attribute name="POPULATE" x="27.94" y="139.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
+<instance part="P3" gate="G$1" x="40.64" y="139.7" rot="MR0">
+<attribute name="POPULATE" x="40.64" y="139.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
+<instance part="P4" gate="G$1" x="53.34" y="139.7" rot="MR0">
+<attribute name="POPULATE" x="53.34" y="139.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
+<instance part="P5" gate="G$1" x="66.04" y="139.7" rot="MR0">
+<attribute name="POPULATE" x="66.04" y="139.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
+<instance part="P6" gate="G$1" x="81.28" y="139.7" rot="MR0">
+<attribute name="POPULATE" x="81.28" y="139.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
 <instance part="U2" gate="A" x="264.16" y="152.4" smashed="yes">
 <attribute name="NAME" x="254" y="177.8" size="2.54" layer="95" font="vector" ratio="10"/>
+<attribute name="POPULATE" x="264.16" y="152.4" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MPN" x="264.16" y="152.4" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MF" x="264.16" y="152.4" size="1.778" layer="96" font="vector" display="off"/>
 </instance>
 <instance part="P+12" gate="1" x="228.6" y="175.26"/>
 <instance part="GND14" gate="1" x="231.14" y="127"/>
@@ -4177,7 +4243,11 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <attribute name="MF" x="233.68" y="142.24" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+13" gate="VCC" x="327.66" y="170.18"/>
-<instance part="U3" gate="G$1" x="447.04" y="152.4"/>
+<instance part="U3" gate="G$1" x="447.04" y="152.4">
+<attribute name="POPULATE" x="447.04" y="152.4" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MPN" x="447.04" y="152.4" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MF" x="447.04" y="152.4" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
 <instance part="C3" gate="G$1" x="411.48" y="129.54"/>
 <instance part="C10" gate="G$1" x="444.5" y="187.96"/>
 <instance part="C11" gate="G$1" x="523.24" y="157.48"/>
@@ -4187,7 +4257,11 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="C15" gate="G$1" x="497.84" y="88.9">
 <attribute name="MF" x="497.84" y="88.9" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J1" gate="A" x="368.3" y="147.32"/>
+<instance part="J1" gate="A" x="368.3" y="147.32">
+<attribute name="POPULATE" x="368.3" y="147.32" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MPN" x="368.3" y="147.32" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MF" x="368.3" y="147.32" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="375.92" y="129.54"/>
 <instance part="P+7" gate="VCC" x="381" y="165.1"/>
 <instance part="GND3" gate="1" x="411.48" y="119.38"/>
@@ -4197,9 +4271,21 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="P+15" gate="VCC" x="523.24" y="167.64"/>
 <instance part="P+16" gate="VCC" x="495.3" y="111.76"/>
 <instance part="GND18" gate="1" x="477.52" y="78.74"/>
-<instance part="U6" gate="G$1" x="383.54" y="17.78"/>
-<instance part="CAN1" gate="A" x="457.2" y="12.7" rot="MR0"/>
-<instance part="CAN2" gate="A" x="482.6" y="12.7" rot="MR0"/>
+<instance part="U6" gate="G$1" x="383.54" y="17.78">
+<attribute name="POPULATE" x="383.54" y="17.78" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MPN" x="383.54" y="17.78" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MF" x="383.54" y="17.78" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
+<instance part="CAN1" gate="A" x="457.2" y="12.7" rot="MR0">
+<attribute name="POPULATE" x="457.2" y="12.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+<attribute name="MPN" x="457.2" y="12.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+<attribute name="MF" x="457.2" y="12.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
+<instance part="CAN2" gate="A" x="482.6" y="12.7" rot="MR0">
+<attribute name="POPULATE" x="482.6" y="12.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+<attribute name="MPN" x="482.6" y="12.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+<attribute name="MF" x="482.6" y="12.7" size="1.778" layer="96" font="vector" rot="MR0" display="off"/>
+</instance>
 <instance part="GND1" gate="1" x="426.72" y="-5.08"/>
 <instance part="GND12" gate="1" x="368.3" y="-5.08"/>
 <instance part="C4" gate="G$1" x="368.3" y="10.16"/>
@@ -4207,12 +4293,22 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="GND19" gate="1" x="426.72" y="-68.58"/>
 <instance part="R10" gate="G$1" x="429.26" y="-43.18" rot="R180"/>
 <instance part="P+17" gate="VCC" x="429.26" y="-33.02"/>
-<instance part="J2" gate="A" x="408.94" y="-58.42"/>
+<instance part="J2" gate="A" x="408.94" y="-58.42">
+<attribute name="POPULATE" x="408.94" y="-58.42" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MPN" x="408.94" y="-58.42" size="1.778" layer="96" font="vector" display="off"/>
+<attribute name="MF" x="408.94" y="-58.42" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
 <instance part="Q3" gate="G$1" x="83.82" y="-27.94"/>
 <instance part="GND20" gate="1" x="447.04" y="-7.62"/>
-<instance part="D12" gate="G$1" x="307.34" y="-12.7"/>
-<instance part="D3V3" gate="G$1" x="307.34" y="-22.86"/>
-<instance part="DG" gate="G$1" x="307.34" y="-33.02"/>
+<instance part="D12" gate="G$1" x="307.34" y="-12.7">
+<attribute name="POPULATE" x="307.34" y="-12.7" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
+<instance part="D3V3" gate="G$1" x="307.34" y="-22.86">
+<attribute name="POPULATE" x="307.34" y="-22.86" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
+<instance part="DG" gate="G$1" x="307.34" y="-33.02">
+<attribute name="POPULATE" x="307.34" y="-33.02" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
 <instance part="GND21" gate="1" x="289.56" y="-35.56"/>
 <instance part="P+18" gate="VCC" x="287.02" y="-17.78"/>
 <instance part="P+19" gate="1" x="287.02" y="-5.08"/>
