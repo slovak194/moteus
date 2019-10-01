@@ -4048,7 +4048,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="U6" library="precharge" deviceset="TCAN334G" device="">
 <attribute name="MF" value="TI"/>
-<attribute name="MPN" value="TCAN334GDCNR"/>
+<attribute name="MPN" value="TCAN334GDR"/>
 <attribute name="POPULATE" value="1"/>
 </part>
 <part name="CAN1" library="precharge" deviceset="JST-PH3" device="SMT_VERT">

@@ -1112,7 +1112,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="U6" library="precharge" package="SOT23-8" value="TCAN334G" x="41.9" y="5.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.2234" y="8.265" size="0.6" layer="25" ratio="10" rot="SR0"/>
 <attribute name="POPULATE" value="1" x="41.9" y="5.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="TCAN334GDCNR" x="41.9" y="5.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="TCAN334GDR" x="41.9" y="5.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="TI" x="41.9" y="5.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="CAN1" library="precharge" package="JST_B3B_PH-SM4-TB(LF)(SN)" value="JST-PH3SMT_VERT" x="23.4" y="6.2" smashed="yes" rot="R90">
