@@ -1,11 +1,13 @@
- * Get frameless rotor and stator
- * Finish designing v2 gearbox
+ * stm32g4 bringup
+   * test FDCAN peripheral
+   * test ADC simultaneous sampling
+   * test PWM output
+
+ * Implement communications watchdog, enter a "brake" mode that will
+   let the system down somewhat gently if it triggers
 
  * When rotor and stator come in, measure, then get the necessary
    pieces machined to test it
-
- * Rev moteus board
- * Rev gearbox
 
  * New telemetry format
    * Binary -> Javascript
@@ -39,6 +41,7 @@
      * Make more maintainable... need to be able to access all screws
        for all motors with a regular tool somehow
 
+ * Hard-fault or assert needs to reset the device and latch a fault
  * Calibration goes forever if the magnet is axially magnetized or
    insufficiently magnetized
  * Figure out why I had to update the minimum PWM time.
@@ -97,6 +100,20 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-10-02
+ * Populated all the TCAN334 breakout boards
+ * Got basic CAN communicating between two boards, although not at the
+   correct bitrate, and not FDCAN high bitrates yet
+
+DONE 2019-09-30
+ * Ordered revised power distribution board from macrofab
+ * received HK0408 bearings
+
+DONE 2019-09-26
+ * Got stm32g4 nucleo board running code
+ * Got FDCAN library running, but need transceivers and more boards to
+   test
 
 DONE 2019-09-19
  * Finished update rate work
