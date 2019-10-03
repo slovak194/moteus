@@ -1,10 +1,12 @@
- * stm32g4 bringup
-   * test FDCAN peripheral
-   * test ADC simultaneous sampling
-   * test PWM output
+ * Port controller to STM32G4
+   * FD-CAN
+   * PWM
+   * ADC
+   * bootloader
 
- * Implement communications watchdog, enter a "brake" mode that will
-   let the system down somewhat gently if it triggers
+ * Build USB->FDCAN solution for deskwork
+   * Try using the teensy 4.0
+   * Maybe build something custom using another stm32g474
 
  * When rotor and stator come in, measure, then get the necessary
    pieces machined to test it
@@ -27,19 +29,13 @@
    * Implement calibration
 
  * BE8108 gearbox v2
+   * update to new controller form factor
    * Make planet input on pocket NC
    * Make planet output on pocket NC
    * finish CAD for gbx v2
    * Devise strategy for front housing, back housing, and outer
      housing on pocket NC
    * design new absolute position sense board
-
- * chassis
-   * New revision to:
-     * Make more rigid
-       * attach to all available bolt holes on motors
-     * Make more maintainable... need to be able to access all screws
-       for all motors with a regular tool somehow
 
  * Hard-fault or assert needs to reset the device and latch a fault
  * Calibration goes forever if the magnet is axially magnetized or
@@ -100,6 +96,19 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-10-03
+ * Verified that I can communicate with FD-CAN at higher bitrates on
+   the stm32g474
+ * rev moteus board
+   * at least 36V input, w/ protection up to 50V
+   * FD-CAN
+   * XT30 power connectors
+   * External rated 3 pin connector for CAN
+   * More, cheaper capacitance
+   * Lower cost
+   * Design for post-assembly test
+ * Implemented watchdog
 
 DONE 2019-10-02
  * Populated all the TCAN334 breakout boards
