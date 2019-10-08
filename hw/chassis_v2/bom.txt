@@ -1,0 +1,24 @@
+Chassis - 3d printed
+ * Front plate
+ * Back plate
+ * Top
+ * Left
+ * Right
+ * Switch plate
+ * Bottom left
+ * Bottom right
+ * Battery left
+ * Battery right
+ * Stiffener left
+ * Stiffener right
+
+Inserts
+ * x a lot M3 insert
+
+Modules
+ * 4x legs
+ * Power distribution board
+ * Rpi + hat
+
+Power
+ * Switch
