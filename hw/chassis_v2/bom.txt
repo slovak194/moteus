@@ -7,10 +7,15 @@ Chassis - 3d printed
  * Switch plate
  * Bottom left
  * Bottom right
- * Battery left
- * Battery right
  * Stiffener left
  * Stiffener right
+
+Battery
+ * Battery 3d print left
+ * Battery 3d print right
+ * 2x terminals - digikey 36-5305-ND
+ * 2x wires
+ * XT90 connector
 
 Inserts
  * x a lot M3 insert

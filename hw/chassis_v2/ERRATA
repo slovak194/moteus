@@ -1,0 +1,17 @@
+r2 DONE
+ * Battery stud
+   * fixed wire escape channel
+ * M3 holes
+   * Switched everything to M3LooseOD_1
+ * Made bottom plate extend to other bolts
+ * Added insert mounting pattern on top plate
+
+r1 ERRATA
+
+* Top plate
+  * Needs mounting inserts for turret or other top features
+* Battery stud
+  * wire escape channel doesn't go all the way to the edge
+* Nearly all M3 holes need to be M3 loose, not M3 tight
+* Bottom plates
+  * should be wider at the ends to attach to all bottom bolts
