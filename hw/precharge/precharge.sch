@@ -3075,10 +3075,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <library name="precharge">
 <packages>
 <package name="XT90PW-M">
-<pad name="2" x="5.45" y="0" drill="6"/>
-<pad name="1" x="-5.45" y="0" drill="6"/>
-<pad name="S1" x="-9.45" y="9.4" drill="3"/>
-<pad name="S2" x="9.45" y="9.4" drill="3"/>
+<pad name="2" x="5.45" y="0" drill="3.6"/>
+<pad name="1" x="-5.45" y="0" drill="3.6"/>
+<pad name="S1" x="-9.45" y="9.4" drill="2"/>
+<pad name="S2" x="9.45" y="9.4" drill="2"/>
 <wire x1="-10.4" y1="-4" x2="-10.4" y2="23" width="0.127" layer="21"/>
 <wire x1="-10.4" y1="23" x2="10.4" y2="23" width="0.127" layer="21"/>
 <wire x1="10.4" y1="23" x2="10.4" y2="-4" width="0.127" layer="21"/>
@@ -3452,40 +3452,40 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pin name="PA5" x="7.62" y="-45.72" length="middle" rot="R90"/>
 <pin name="PA6" x="10.16" y="-45.72" length="middle" rot="R90"/>
 <pin name="PA7" x="12.7" y="-45.72" length="middle" rot="R90"/>
-<pin name="PB0" x="15.24" y="-45.72" length="middle" rot="R90"/>
-<pin name="PB1" x="17.78" y="-45.72" length="middle" rot="R90"/>
-<pin name="PB2" x="20.32" y="-45.72" length="middle" rot="R90"/>
-<pin name="VSSA" x="22.86" y="-45.72" length="middle" rot="R90"/>
+<pin name="PB0" x="17.78" y="-45.72" length="middle" rot="R90"/>
+<pin name="PB1" x="20.32" y="-45.72" length="middle" rot="R90"/>
+<pin name="PB2" x="22.86" y="-45.72" length="middle" rot="R90"/>
 <pin name="VREF+" x="25.4" y="-45.72" length="middle" rot="R90"/>
 <pin name="VDDA" x="27.94" y="-45.72" length="middle" rot="R90"/>
 <pin name="PB10" x="30.48" y="-45.72" length="middle" rot="R90"/>
-<pin name="VSS_1" x="33.02" y="-45.72" length="middle" rot="R90"/>
-<pin name="VDD_1" x="35.56" y="-45.72" length="middle" rot="R90"/>
-<pin name="VDD_2" x="45.72" y="0" length="middle" rot="R180"/>
-<pin name="VSS_2" x="45.72" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD_1" x="33.02" y="-45.72" length="middle" rot="R90"/>
+<pin name="VDD_2" x="45.72" y="-2.54" length="middle" rot="R180"/>
 <pin name="PA12" x="45.72" y="-5.08" length="middle" rot="R180"/>
 <pin name="PA11" x="45.72" y="-7.62" length="middle" rot="R180"/>
 <pin name="PA10" x="45.72" y="-10.16" length="middle" rot="R180"/>
 <pin name="PA9" x="45.72" y="-12.7" length="middle" rot="R180"/>
 <pin name="PA8" x="45.72" y="-15.24" length="middle" rot="R180"/>
-<pin name="PB15" x="45.72" y="-17.78" length="middle" rot="R180"/>
-<pin name="PB14" x="45.72" y="-20.32" length="middle" rot="R180"/>
-<pin name="PB13" x="45.72" y="-22.86" length="middle" rot="R180"/>
-<pin name="PB12" x="45.72" y="-25.4" length="middle" rot="R180"/>
-<pin name="PB11" x="45.72" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB15" x="45.72" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB14" x="45.72" y="-22.86" length="middle" rot="R180"/>
+<pin name="PB13" x="45.72" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB12" x="45.72" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB11" x="35.56" y="-45.72" length="middle" rot="R90"/>
 <pin name="THERMALPAD" x="7.62" y="22.86" length="middle" rot="R270"/>
 <pin name="VDD_3" x="10.16" y="22.86" length="middle" rot="R270"/>
-<pin name="VSS_3" x="12.7" y="22.86" length="middle" rot="R270"/>
-<pin name="PB9" x="15.24" y="22.86" length="middle" rot="R270"/>
-<pin name="PB8-BOOT0" x="17.78" y="22.86" length="middle" rot="R270"/>
-<pin name="PB7" x="20.32" y="22.86" length="middle" rot="R270"/>
-<pin name="PB6" x="22.86" y="22.86" length="middle" rot="R270"/>
-<pin name="PB5" x="25.4" y="22.86" length="middle" rot="R270"/>
-<pin name="PB4" x="27.94" y="22.86" length="middle" rot="R270"/>
-<pin name="PB3" x="30.48" y="22.86" length="middle" rot="R270"/>
-<pin name="PA15" x="33.02" y="22.86" length="middle" rot="R270"/>
-<pin name="PA14" x="35.56" y="22.86" length="middle" rot="R270"/>
-<pin name="PA13" x="38.1" y="22.86" length="middle" rot="R270"/>
+<pin name="PB9" x="12.7" y="22.86" length="middle" rot="R270"/>
+<pin name="PB8-BOOT0" x="15.24" y="22.86" length="middle" rot="R270"/>
+<pin name="PB7" x="17.78" y="22.86" length="middle" rot="R270"/>
+<pin name="PB6" x="20.32" y="22.86" length="middle" rot="R270"/>
+<pin name="PB5" x="22.86" y="22.86" length="middle" rot="R270"/>
+<pin name="PB4" x="25.4" y="22.86" length="middle" rot="R270"/>
+<pin name="PB3" x="27.94" y="22.86" length="middle" rot="R270"/>
+<pin name="PA15" x="35.56" y="22.86" length="middle" rot="R270"/>
+<pin name="PA14" x="38.1" y="22.86" length="middle" rot="R270"/>
+<pin name="PA13" x="45.72" y="0" length="middle" rot="R180"/>
+<pin name="PC4" x="15.24" y="-45.72" length="middle" rot="R90"/>
+<pin name="PC6" x="45.72" y="-17.78" length="middle" rot="R180"/>
+<pin name="PC10" x="33.02" y="22.86" length="middle" rot="R270"/>
+<pin name="PC11" x="30.48" y="22.86" length="middle" rot="R270"/>
 </symbol>
 <symbol name="CON06">
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.1524" layer="94"/>
@@ -3632,9 +3632,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <connect gate="G$1" pin="PA10" pad="32"/>
 <connect gate="G$1" pin="PA11" pad="33"/>
 <connect gate="G$1" pin="PA12" pad="34"/>
-<connect gate="G$1" pin="PA13" pad="37"/>
-<connect gate="G$1" pin="PA14" pad="38"/>
-<connect gate="G$1" pin="PA15" pad="39"/>
+<connect gate="G$1" pin="PA13" pad="36"/>
+<connect gate="G$1" pin="PA14" pad="37"/>
+<connect gate="G$1" pin="PA15" pad="38"/>
 <connect gate="G$1" pin="PA2" pad="10"/>
 <connect gate="G$1" pin="PA3" pad="11"/>
 <connect gate="G$1" pin="PA4" pad="12"/>
@@ -3643,39 +3643,39 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <connect gate="G$1" pin="PA7" pad="15"/>
 <connect gate="G$1" pin="PA8" pad="30"/>
 <connect gate="G$1" pin="PA9" pad="31"/>
-<connect gate="G$1" pin="PB0" pad="16"/>
-<connect gate="G$1" pin="PB1" pad="17"/>
+<connect gate="G$1" pin="PB0" pad="17"/>
+<connect gate="G$1" pin="PB1" pad="18"/>
 <connect gate="G$1" pin="PB10" pad="22"/>
-<connect gate="G$1" pin="PB11" pad="25"/>
-<connect gate="G$1" pin="PB12" pad="26"/>
-<connect gate="G$1" pin="PB13" pad="27"/>
-<connect gate="G$1" pin="PB14" pad="28"/>
-<connect gate="G$1" pin="PB15" pad="29"/>
-<connect gate="G$1" pin="PB2" pad="18"/>
-<connect gate="G$1" pin="PB3" pad="40"/>
-<connect gate="G$1" pin="PB4" pad="41"/>
-<connect gate="G$1" pin="PB5" pad="42"/>
-<connect gate="G$1" pin="PB6" pad="43"/>
-<connect gate="G$1" pin="PB7" pad="44"/>
-<connect gate="G$1" pin="PB8-BOOT0" pad="45"/>
-<connect gate="G$1" pin="PB9" pad="46"/>
+<connect gate="G$1" pin="PB11" pad="24"/>
+<connect gate="G$1" pin="PB12" pad="25"/>
+<connect gate="G$1" pin="PB13" pad="26"/>
+<connect gate="G$1" pin="PB14" pad="27"/>
+<connect gate="G$1" pin="PB15" pad="28"/>
+<connect gate="G$1" pin="PB2" pad="19"/>
+<connect gate="G$1" pin="PB3" pad="41"/>
+<connect gate="G$1" pin="PB4" pad="42"/>
+<connect gate="G$1" pin="PB5" pad="43"/>
+<connect gate="G$1" pin="PB6" pad="44"/>
+<connect gate="G$1" pin="PB7" pad="45"/>
+<connect gate="G$1" pin="PB8-BOOT0" pad="46"/>
+<connect gate="G$1" pin="PB9" pad="47"/>
+<connect gate="G$1" pin="PC10" pad="39"/>
+<connect gate="G$1" pin="PC11" pad="40"/>
 <connect gate="G$1" pin="PC13" pad="2"/>
 <connect gate="G$1" pin="PC14-OSC32_IN" pad="3"/>
 <connect gate="G$1" pin="PC15-OSC32_OUT" pad="4"/>
+<connect gate="G$1" pin="PC4" pad="16"/>
+<connect gate="G$1" pin="PC6" pad="29"/>
 <connect gate="G$1" pin="PF0-OSC_IN" pad="5"/>
 <connect gate="G$1" pin="PF1-OSC_OUT" pad="6"/>
 <connect gate="G$1" pin="PG10-NRST" pad="7"/>
 <connect gate="G$1" pin="THERMALPAD" pad="49"/>
 <connect gate="G$1" pin="VBAT" pad="1"/>
 <connect gate="G$1" pin="VDDA" pad="21"/>
-<connect gate="G$1" pin="VDD_1" pad="24"/>
-<connect gate="G$1" pin="VDD_2" pad="36"/>
+<connect gate="G$1" pin="VDD_1" pad="23"/>
+<connect gate="G$1" pin="VDD_2" pad="35"/>
 <connect gate="G$1" pin="VDD_3" pad="48"/>
 <connect gate="G$1" pin="VREF+" pad="20"/>
-<connect gate="G$1" pin="VSSA" pad="19"/>
-<connect gate="G$1" pin="VSS_1" pad="23"/>
-<connect gate="G$1" pin="VSS_2" pad="35"/>
-<connect gate="G$1" pin="VSS_3" pad="47"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4095,6 +4095,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="P+18" library="supply1" deviceset="VCC" device=""/>
 <part name="P+19" library="supply1" deviceset="+12V" device=""/>
+<part name="DI" library="precharge" deviceset="PAD" device="24AWG_PAD">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="P+20" library="supply1" deviceset="+18V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4178,7 +4182,7 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="GND6" gate="1" x="185.42" y="-33.02"/>
 <instance part="GND7" gate="1" x="228.6" y="-30.48"/>
 <instance part="GND8" gate="1" x="-30.48" y="127"/>
-<instance part="P+9" gate="1" x="-30.48" y="160.02"/>
+<instance part="P+9" gate="1" x="-38.1" y="160.02"/>
 <instance part="P+10" gate="1" x="-5.08" y="157.48"/>
 <instance part="C5" gate="G$1" x="2.54" y="-5.08"/>
 <instance part="C6" gate="G$1" x="2.54" y="-43.18"/>
@@ -4320,6 +4324,10 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <instance part="GND21" gate="1" x="289.56" y="-35.56"/>
 <instance part="P+18" gate="VCC" x="287.02" y="-17.78"/>
 <instance part="P+19" gate="1" x="287.02" y="-5.08"/>
+<instance part="DI" gate="G$1" x="307.34" y="10.16">
+<attribute name="POPULATE" x="307.34" y="10.16" size="1.778" layer="96" font="vector" display="off"/>
+</instance>
+<instance part="P+20" gate="1" x="284.48" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -4408,10 +4416,10 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <junction x="2.54" y="-12.7"/>
 </segment>
 <segment>
-<pinref part="P7" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="-48.26" y1="137.16" x2="-30.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="137.16" x2="-30.48" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="139.7" x2="-30.48" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="P7" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="139.7" x2="-30.48" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="P$2"/>
@@ -4452,20 +4460,11 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <wire x1="444.5" y1="182.88" x2="454.66" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="182.88" x2="454.66" y2="175.26" width="0.1524" layer="91"/>
 <junction x="444.5" y="182.88"/>
-<pinref part="U3" gate="G$1" pin="VSS_3"/>
-<wire x1="454.66" y1="182.88" x2="459.74" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="182.88" x2="459.74" y2="175.26" width="0.1524" layer="91"/>
-<junction x="454.66" y="182.88"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VSS_2"/>
-<wire x1="492.76" y1="149.86" x2="513.08" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="513.08" y1="149.86" x2="513.08" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="513.08" y1="152.4" x2="523.24" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="P$2"/>
 <wire x1="523.24" y1="152.4" x2="523.24" y2="154.94" width="0.1524" layer="91"/>
-<junction x="523.24" y="152.4"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="P$2"/>
@@ -4473,8 +4472,7 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <pinref part="C15" gate="G$1" pin="P$2"/>
 <wire x1="459.74" y1="83.82" x2="469.9" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="83.82" x2="477.52" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="477.52" y1="83.82" x2="480.06" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="83.82" x2="482.6" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="83.82" x2="482.6" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="482.6" y1="83.82" x2="497.84" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="83.82" x2="497.84" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="P$2"/>
@@ -4486,14 +4484,6 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="477.52" y1="83.82" x2="477.52" y2="81.28" width="0.1524" layer="91"/>
 <junction x="477.52" y="83.82"/>
-<pinref part="U3" gate="G$1" pin="VSS_1"/>
-<wire x1="480.06" y1="106.68" x2="480.06" y2="96.52" width="0.1524" layer="91"/>
-<junction x="480.06" y="83.82"/>
-<pinref part="U3" gate="G$1" pin="VSSA"/>
-<wire x1="480.06" y1="96.52" x2="480.06" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="469.9" y1="106.68" x2="469.9" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="469.9" y1="96.52" x2="480.06" y2="96.52" width="0.1524" layer="91"/>
-<junction x="480.06" y="96.52"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="GND"/>
@@ -4574,14 +4564,14 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <junction x="457.2" y="193.04"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VDD_2"/>
-<wire x1="492.76" y1="152.4" x2="508" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="508" y1="152.4" x2="508" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="508" y1="149.86" x2="508" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="P$1"/>
 <wire x1="508" y1="160.02" x2="523.24" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P+15" gate="VCC" pin="VCC"/>
 <wire x1="523.24" y1="160.02" x2="523.24" y2="165.1" width="0.1524" layer="91"/>
 <junction x="523.24" y="160.02"/>
+<pinref part="U3" gate="G$1" pin="VDD_2"/>
+<wire x1="492.76" y1="149.86" x2="508" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="P$1"/>
@@ -4590,7 +4580,8 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <wire x1="459.74" y1="93.98" x2="469.9" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="93.98" x2="472.44" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="93.98" x2="474.98" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="474.98" y1="93.98" x2="482.6" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="474.98" y1="93.98" x2="480.06" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="93.98" x2="482.6" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="482.6" y1="93.98" x2="495.3" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="495.3" y1="93.98" x2="497.84" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="93.98" x2="497.84" y2="91.44" width="0.1524" layer="91"/>
@@ -4603,14 +4594,15 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <pinref part="P+16" gate="VCC" pin="VCC"/>
 <wire x1="495.3" y1="109.22" x2="495.3" y2="93.98" width="0.1524" layer="91"/>
 <junction x="495.3" y="93.98"/>
-<pinref part="U3" gate="G$1" pin="VDD_1"/>
-<wire x1="482.6" y1="106.68" x2="482.6" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VDDA"/>
 <wire x1="474.98" y1="106.68" x2="474.98" y2="93.98" width="0.1524" layer="91"/>
 <junction x="474.98" y="93.98"/>
 <pinref part="U3" gate="G$1" pin="VREF+"/>
 <wire x1="472.44" y1="106.68" x2="472.44" y2="93.98" width="0.1524" layer="91"/>
 <junction x="472.44" y="93.98"/>
+<pinref part="U3" gate="G$1" pin="VDD_1"/>
+<wire x1="480.06" y1="106.68" x2="480.06" y2="93.98" width="0.1524" layer="91"/>
+<junction x="480.06" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="VCC"/>
@@ -4661,9 +4653,9 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 </segment>
 <segment>
 <pinref part="P+9" gate="1" pin="+18V"/>
-<pinref part="P7" gate="G$1" pin="1"/>
-<wire x1="-48.26" y1="139.7" x2="-30.48" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="139.7" x2="-30.48" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="137.16" x2="-38.1" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="P7" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="137.16" x2="-48.26" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+12" gate="1" pin="+18V"/>
@@ -4699,6 +4691,12 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <pinref part="P6" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
 <junction x="60.96" y="139.7"/>
+</segment>
+<segment>
+<pinref part="P+20" gate="1" pin="+18V"/>
+<wire x1="284.48" y1="15.24" x2="284.48" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="DI" gate="G$1" pin="P$1"/>
+<wire x1="284.48" y1="10.16" x2="299.72" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="1">
@@ -4903,7 +4901,7 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <label x="388.62" y="149.86" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA13"/>
+<pinref part="U3" gate="G$1" pin="PA14"/>
 <wire x1="485.14" y1="175.26" x2="485.14" y2="203.2" width="0.1524" layer="91"/>
 <label x="485.14" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
 </segment>
@@ -4915,7 +4913,7 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <label x="388.62" y="144.78" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA14"/>
+<pinref part="U3" gate="G$1" pin="PA15"/>
 <wire x1="482.6" y1="175.26" x2="482.6" y2="203.2" width="0.1524" layer="91"/>
 <label x="482.6" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
 </segment>
