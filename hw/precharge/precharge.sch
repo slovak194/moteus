@@ -3893,7 +3893,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 </part>
 <part name="R4" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%">
 <attribute name="MF" value="PANASONIC"/>
-<attribute name="MPN" value="P10.0KHDKR-ND"/>
+<attribute name="MPN" value="ERJ-3EKF1002V"/>
 </part>
 <part name="R5" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%">
 <attribute name="MF" value="VISHAY"/>
@@ -3901,7 +3901,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 </part>
 <part name="R6" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%">
 <attribute name="MF" value="PANASONIC"/>
-<attribute name="MPN" value="P10.0KHDKR-ND"/>
+<attribute name="MPN" value="ERJ-3EKF1002V"/>
 </part>
 <part name="P+8" library="supply1" deviceset="+18V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
