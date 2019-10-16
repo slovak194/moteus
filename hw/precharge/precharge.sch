@@ -3246,7 +3246,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <smd name="2" x="-2.25" y="-2" dx="0.7" dy="4.2" layer="1"/>
 <smd name="1" x="-3.75" y="-2" dx="0.7" dy="4.2" layer="1"/>
 </package>
-<package name="SOT23-8">
+<package name="SOIC8">
 <smd name="1" x="-2.7" y="1.905" dx="1.5494" dy="0.6096" layer="1"/>
 <smd name="2" x="-2.7" y="0.635" dx="1.5494" dy="0.6096" layer="1"/>
 <smd name="3" x="-2.7" y="-0.635" dx="1.5494" dy="0.6096" layer="1"/>
@@ -3728,7 +3728,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <gate name="G$1" symbol="TCAN334GDCNT" x="-20.32" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="SOT23-8">
+<device name="" package="SOIC8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -3893,7 +3893,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 </part>
 <part name="R4" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%">
 <attribute name="MF" value="PANASONIC"/>
-<attribute name="MPN" value="ERT-J1VG103FA"/>
+<attribute name="MPN" value="P10.0KHDKR-ND"/>
 </part>
 <part name="R5" library="mfpassives" deviceset="RESISTOR" device="_0603" value="100k 1%">
 <attribute name="MF" value="VISHAY"/>
@@ -3901,7 +3901,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 </part>
 <part name="R6" library="mfpassives" deviceset="RESISTOR" device="_0603" value="10k 1%">
 <attribute name="MF" value="PANASONIC"/>
-<attribute name="MPN" value="ERT-J1VG103FA"/>
+<attribute name="MPN" value="P10.0KHDKR-ND"/>
 </part>
 <part name="P+8" library="supply1" deviceset="+18V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>

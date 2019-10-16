@@ -458,7 +458,7 @@ power distribution r2</text>
 <smd name="2" x="-2.25" y="-2" dx="0.7" dy="4.2" layer="1"/>
 <smd name="1" x="-3.75" y="-2" dx="0.7" dy="4.2" layer="1"/>
 </package>
-<package name="SOT23-8">
+<package name="SOIC8">
 <smd name="1" x="-2.7" y="1.905" dx="1.5494" dy="0.6096" layer="1"/>
 <smd name="2" x="-2.7" y="0.635" dx="1.5494" dy="0.6096" layer="1"/>
 <smd name="3" x="-2.7" y="-0.635" dx="1.5494" dy="0.6096" layer="1"/>
@@ -834,7 +834,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="R4" library="mfpassives" package="R0603" value="10k 1%" x="33.4" y="13.4" smashed="yes" rot="R90">
 <attribute name="HOUSEPART" value="" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TOLERANCE" value="" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="ERT-J1VG103FA" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="P10.0KHDKR-ND" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULATE" value="1" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE" value="" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="URL" value="" x="70.23" y="40.07" size="1.778" layer="27" rot="R90" display="off"/>
@@ -856,7 +856,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="R6" library="mfpassives" package="R0603" value="10k 1%" x="61.5" y="18.8" smashed="yes" rot="R90">
 <attribute name="HOUSEPART" value="" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TOLERANCE" value="" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="ERT-J1VG103FA" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="P10.0KHDKR-ND" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULATE" value="1" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLTAGE" value="" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="URL" value="" x="98.33" y="53.09" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1110,7 +1110,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="MPN" value="B6B-ZR-SM4-TF(LF)(SN)" x="67.6" y="15.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="JST" x="67.6" y="15.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U6" library="precharge" package="SOT23-8" value="TCAN334G" x="41.9" y="5.3" smashed="yes" rot="R180">
+<element name="U6" library="precharge" package="SOIC8" value="TCAN334G" x="41.9" y="5.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.2234" y="8.265" size="0.6" layer="25" ratio="10" rot="SR0"/>
 <attribute name="POPULATE" value="1" x="41.9" y="5.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TCAN334GDR" x="41.9" y="5.3" size="1.778" layer="27" rot="R180" display="off"/>

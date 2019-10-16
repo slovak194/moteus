@@ -2,12 +2,14 @@ r2 DONE
  * updated XT90 pins to be correct diameter
  * updated AMASS input to have correct polarity
  * fixed STM32 pinout to use QFN pinout instead of LQFP... stupid digikey
+ * switched 10k 1% to actually be 10k 1% instead of a 10k thermistor
 
 r1
  * main pins for XT90 right angle are approximately double the
    necessary diameter
  * input AMASS connector has wrong polarity
  * STM32 pinout doesn't match datasheet... grrrrh digikey
+ * both resistor dividers have thermistors instead of 1% 10k resistors
 
 ---- OLD "precharge" board
 
