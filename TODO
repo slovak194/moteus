@@ -4,10 +4,6 @@
    * ADC
    * bootloader
 
- * Build USB->FDCAN solution for deskwork
-   * Try using the teensy 4.0
-   * Maybe build something custom using another stm32g474
-
  * When rotor and stator come in, measure, then get the necessary
    pieces machined to test it
 
@@ -96,6 +92,23 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-10-15
+ * Received power distribution board r1
+ * Discovered the digikey pinout for the STM32G4 was wrong. :( Fixed
+   it and sent out another rev of the board.  I have a lot of
+   paperweights on the way now.
+
+DONE 2019-10-11
+ * First attempt at foaming in a foot... probably used too much foam.
+   I think I filled it a bit more than half full, which put a lot of
+   pressure trying to evacuate the foot adapter.  I suppose I might
+   also tip it upside down to cure as well, or maybe just sideways so
+   that air can escape, or perhaps first swirl it around to get foam
+   on all of the interior surfaces.
+
+DONE 2019-10-08
+ * Draft of new lower leg and foot mechanism
 
 DONE 2019-10-03
  * Verified that I can communicate with FD-CAN at higher bitrates on
