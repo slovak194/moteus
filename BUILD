@@ -19,7 +19,6 @@ package(default_visibility = ["//visibility:public"])
 test_suite(
     name = "host",
     tests = [
-        "//mjlib:host",
         "//moteus:host",
     ],
 )

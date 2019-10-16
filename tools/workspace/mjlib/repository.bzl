@@ -1,6 +1,6 @@
-#!/usr/bin/python3 -B
+# -*- python -*-
 
-# Copyright 2019 Josh Pieper, jjp@pobox.com.
+# Copyright 2018-2019 Josh Pieper, jjp@pobox.com.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,18 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import io
-import unittest
+load("//tools/workspace:github_archive.bzl", "github_archive")
 
-import mjlib.micro.multiplex_protocol as mp
-
-
-class MultiplexProtocolTest(unittest.TestCase):
-    def test_read_varuint(self):
-        stream = io.BytesIO([0x00])
-        result = mp.read_varuint(stream)
-        self.assertEqual(result, 0)
-
-
-if __name__ == '__main__':
-    unittest.main()
+def mjlib_repository(name):
+    github_archive(
+        name = name,
+        repo = "mjbots/mjlib",
+        commit = "9b97d0cf984743856905ad92f9f682a7b761d0f3",
+        sha256 = "9712a4636dd3fba8b400095c4beed02eef84013d91ffad065e226c7de86fdb7a",
+    )
