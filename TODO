@@ -8,9 +8,9 @@
    pieces machined to test it
 
  * New telemetry format
-   * Binary -> Javascript
    * Binary -> Python
    * C++ file writer
+   * Binary -> Javascript
 
    * Json -> Binary
    * Binary <-> JSON
@@ -92,6 +92,9 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-10-16
+ * Installed the switch into the new chassis
 
 DONE 2019-10-15
  * Received power distribution board r1
