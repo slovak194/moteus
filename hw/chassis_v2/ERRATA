@@ -1,3 +1,11 @@
+r2 ERRATA
+ * Battery stud
+   * Battery has a really hard time snapping into place.  Possibly the
+     retaining edges need to be a bit smaller?
+   * Battery terminals don't mate with dummy plug without a fair
+     amount of fiddling.  Also, really hard to solder in a battery
+     terminal without finagling, as the plastic all melts
+
 r2 DONE
  * Battery stud
    * fixed wire escape channel
