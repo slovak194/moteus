@@ -87,11 +87,12 @@
 
 
 Code cleanup
- * Updating to mbed 5.13.2 causes the drv8323 not to be configured
-   properly... unclear what is going on
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-10-28
+ * Implemented flux braking
 
 DONE 2019-10-16
  * Installed the switch into the new chassis
