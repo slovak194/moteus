@@ -150,7 +150,7 @@
 <wire x1="70" y1="45" x2="0" y2="45" width="0" layer="20"/>
 <wire x1="0" y1="45" x2="0" y2="0" width="0" layer="20"/>
 <text x="27.8" y="22.4" size="1" layer="21" font="vector">moteus 
-power distribution r2</text>
+power distribution r3</text>
 <text x="27.8" y="19" size="0.8" layer="21" font="vector" ratio="10">(c) 2019</text>
 <text x="27.8" y="20.8" size="0.8" layer="21" font="vector" ratio="10">jjp@pobox.com</text>
 <text x="8.4" y="6" size="1" layer="21" rot="R180">3V</text>
@@ -1510,6 +1510,10 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="49.2" y1="16.95" x2="49.25" y2="17" width="0.3048" layer="1"/>
 <wire x1="46.45" y1="10.75" x2="46.45" y2="9.4" width="0.3048" layer="1"/>
 <wire x1="46.45" y1="9.4" x2="46.65" y2="9.4" width="0.3048" layer="1"/>
+<contactref element="U3" pad="1"/>
+<via x="47" y="18.6" extent="1-16" drill="0.3048"/>
+<wire x1="46.95" y1="17.65" x2="47" y2="17.65" width="0.254" layer="1"/>
+<wire x1="47" y1="17.65" x2="47" y2="18.6" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="P$1"/>
@@ -1790,47 +1794,55 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </signal>
 <signal name="SWDIO">
 <contactref element="J1" pad="3"/>
-<contactref element="U3" pad="37"/>
-<wire x1="49.1" y1="11.5" x2="47.7" y2="11.5" width="0.127" layer="1"/>
-<wire x1="49.2" y1="11.6" x2="49.1" y2="11.5" width="0.127" layer="1"/>
-<wire x1="53" y1="11.6" x2="49.2" y2="11.6" width="0.127" layer="1"/>
-<wire x1="53" y1="9.7" x2="53" y2="11.6" width="0.127" layer="1"/>
-<wire x1="53.7" y1="9" x2="53" y2="9.7" width="0.127" layer="1"/>
-<wire x1="68.7" y1="9" x2="53.7" y2="9" width="0.127" layer="1"/>
+<contactref element="U3" pad="36"/>
+<wire x1="49.1" y1="10.7" x2="47" y2="10.7" width="0.127" layer="1"/>
+<wire x1="51.7" y1="8.1" x2="49.1" y2="10.7" width="0.127" layer="1"/>
+<wire x1="52.1" y1="8.1" x2="51.7" y2="8.1" width="0.127" layer="1"/>
+<wire x1="52.1" y1="2.9" x2="52.1" y2="8.1" width="0.127" layer="1"/>
+<wire x1="52.9" y1="2.1" x2="52.1" y2="2.9" width="0.127" layer="1"/>
+<wire x1="54.7" y1="2.1" x2="52.9" y2="2.1" width="0.127" layer="1"/>
+<wire x1="54.7" y1="8" x2="54.7" y2="2.1" width="0.127" layer="1"/>
+<wire x1="55.7" y1="9" x2="54.7" y2="8" width="0.127" layer="1"/>
+<wire x1="68.7" y1="9" x2="55.7" y2="9" width="0.127" layer="1"/>
 <wire x1="68.7" y1="15.4" x2="68.7" y2="9" width="0.127" layer="1"/>
 <wire x1="67.6" y1="16.5" x2="68.7" y2="15.4" width="0.127" layer="1"/>
 <wire x1="65.6" y1="16.5" x2="67.6" y2="16.5" width="0.127" layer="1"/>
-<wire x1="47.7" y1="11.5" x2="47.65" y2="11.45" width="0.127" layer="1"/>
+<wire x1="47" y1="10.7" x2="46.95" y2="10.75" width="0.127" layer="1"/>
 <wire x1="65.6" y1="16.5" x2="65.6" y2="16.55" width="0.127" layer="1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="J1" pad="5"/>
-<contactref element="U3" pad="38"/>
-<wire x1="53.3" y1="11.9" x2="47.7" y2="11.9" width="0.127" layer="1"/>
-<wire x1="53.3" y1="9.8" x2="53.3" y2="11.9" width="0.127" layer="1"/>
+<contactref element="U3" pad="37"/>
+<wire x1="49.1" y1="11.5" x2="47.7" y2="11.5" width="0.127" layer="1"/>
+<wire x1="49.2" y1="11.6" x2="49.1" y2="11.5" width="0.127" layer="1"/>
+<wire x1="53.3" y1="11.6" x2="49.2" y2="11.6" width="0.127" layer="1"/>
+<wire x1="53.3" y1="9.8" x2="53.3" y2="11.6" width="0.127" layer="1"/>
 <wire x1="53.5" y1="9.6" x2="53.3" y2="9.8" width="0.127" layer="1"/>
 <wire x1="63.3" y1="9.6" x2="53.5" y2="9.6" width="0.127" layer="1"/>
 <wire x1="63.3" y1="12.5" x2="63.3" y2="9.6" width="0.127" layer="1"/>
 <wire x1="64.3" y1="13.5" x2="63.3" y2="12.5" width="0.127" layer="1"/>
 <wire x1="65.6" y1="13.5" x2="64.3" y2="13.5" width="0.127" layer="1"/>
-<wire x1="47.7" y1="11.9" x2="47.65" y2="11.95" width="0.127" layer="1"/>
+<wire x1="47.7" y1="11.5" x2="47.65" y2="11.45" width="0.127" layer="1"/>
 <wire x1="65.6" y1="13.5" x2="65.6" y2="13.55" width="0.127" layer="1"/>
 </signal>
 <signal name="LED1">
 <contactref element="D1" pad="CATHODE"/>
-<contactref element="U3" pad="4"/>
-<wire x1="45.5" y1="19" x2="53.95" y2="19" width="0.127" layer="1"/>
-<wire x1="45.5" y1="17.7" x2="45.5" y2="19" width="0.127" layer="1"/>
-<wire x1="45.5" y1="17.7" x2="45.45" y2="17.65" width="0.127" layer="1"/>
+<contactref element="U3" pad="47"/>
+<wire x1="51.3" y1="16.4" x2="53.9" y2="19" width="0.127" layer="1"/>
+<wire x1="47.7" y1="16.4" x2="51.3" y2="16.4" width="0.127" layer="1"/>
+<wire x1="53.9" y1="19" x2="53.95" y2="19" width="0.127" layer="1"/>
+<wire x1="47.7" y1="16.4" x2="47.65" y2="16.45" width="0.127" layer="1"/>
 </signal>
 <signal name="LED2">
 <contactref element="D2" pad="CATHODE"/>
-<contactref element="U3" pad="3"/>
-<wire x1="51.5" y1="17.2" x2="53.95" y2="17.2" width="0.127" layer="1"/>
-<wire x1="50.4" y1="18.3" x2="51.5" y2="17.2" width="0.127" layer="1"/>
-<wire x1="46" y1="18.3" x2="50.4" y2="18.3" width="0.127" layer="1"/>
-<wire x1="46" y1="17.7" x2="46" y2="18.3" width="0.127" layer="1"/>
-<wire x1="46" y1="17.7" x2="45.95" y2="17.65" width="0.127" layer="1"/>
+<contactref element="U3" pad="45"/>
+<wire x1="52.5" y1="17.2" x2="53.95" y2="17.2" width="0.127" layer="1"/>
+<wire x1="51.1" y1="15.8" x2="52.5" y2="17.2" width="0.127" layer="1"/>
+<wire x1="48.3" y1="15.8" x2="51.1" y2="15.8" width="0.127" layer="1"/>
+<wire x1="48.3" y1="15.7" x2="48.3" y2="15.8" width="0.127" layer="1"/>
+<wire x1="48.1" y1="15.5" x2="48.3" y2="15.7" width="0.127" layer="1"/>
+<wire x1="47.7" y1="15.5" x2="48.1" y2="15.5" width="0.127" layer="1"/>
+<wire x1="47.7" y1="15.5" x2="47.65" y2="15.45" width="0.127" layer="1"/>
 </signal>
 <signal name="CAN_RX">
 <contactref element="U6" pad="4"/>

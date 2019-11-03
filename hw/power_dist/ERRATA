@@ -1,3 +1,13 @@
+r3 DONE
+ * Fixed SWDIO and SWCLK
+ * Drove VBAT
+ * Moved LEDS
+
+r2 ERRATA
+ * SWDIO and SWCLK are on wrong pins!
+ * VBAT needs to be connected to VCC
+ * PC13/15 cannot drive LEDs
+
 r2 DONE
  * updated XT90 pins to be correct diameter
  * updated AMASS input to have correct polarity

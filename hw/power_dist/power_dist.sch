@@ -4099,11 +4099,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="POPULATE" value="0"/>
 </part>
 <part name="P+20" library="supply1" deviceset="+18V" device=""/>
+<part name="P+21" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-78.74" y="218.44" size="5.08" layer="91">moteus power dist
+<text x="-78.74" y="218.44" size="5.08" layer="91">moteus power dist r3
 (c) 2019 Josh Pieper, jjp@pobox.com
 Licensed under the Apache 2.0 License
 https://www.apache.org/licenses/LICENSE-2.0</text>
@@ -4328,6 +4329,7 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <attribute name="POPULATE" x="307.34" y="10.16" size="1.778" layer="96" font="vector" display="off"/>
 </instance>
 <instance part="P+20" gate="1" x="284.48" y="17.78"/>
+<instance part="P+21" gate="VCC" x="441.96" y="157.48"/>
 </instances>
 <busses>
 </busses>
@@ -4623,6 +4625,12 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <pinref part="D3V3" gate="G$1" pin="P$1"/>
 <wire x1="287.02" y1="-22.86" x2="299.72" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+21" gate="VCC" pin="VCC"/>
+<wire x1="441.96" y1="154.94" x2="441.96" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VBAT"/>
+<wire x1="441.96" y1="152.4" x2="447.04" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -4901,9 +4909,10 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <label x="388.62" y="149.86" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA14"/>
-<wire x1="485.14" y1="175.26" x2="485.14" y2="203.2" width="0.1524" layer="91"/>
-<label x="485.14" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
+<pinref part="U3" gate="G$1" pin="PA13"/>
+<wire x1="492.76" y1="152.4" x2="497.84" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="497.84" y1="152.4" x2="497.84" y2="198.12" width="0.1524" layer="91"/>
+<label x="497.84" y="190.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
@@ -4913,9 +4922,9 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <label x="388.62" y="144.78" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA15"/>
-<wire x1="482.6" y1="175.26" x2="482.6" y2="203.2" width="0.1524" layer="91"/>
-<label x="482.6" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
+<pinref part="U3" gate="G$1" pin="PA14"/>
+<wire x1="485.14" y1="175.26" x2="485.14" y2="198.12" width="0.1524" layer="91"/>
+<label x="485.14" y="190.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -4925,9 +4934,9 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <label x="147.32" y="-35.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PC15-OSC32_OUT"/>
-<wire x1="447.04" y1="144.78" x2="424.18" y2="144.78" width="0.1524" layer="91"/>
-<label x="424.18" y="144.78" size="1.778" layer="95" font="vector"/>
+<pinref part="U3" gate="G$1" pin="PB9"/>
+<wire x1="459.74" y1="175.26" x2="459.74" y2="187.96" width="0.1524" layer="91"/>
+<label x="459.74" y="182.88" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LED2" class="0">
@@ -4937,9 +4946,9 @@ https://www.apache.org/licenses/LICENSE-2.0</text>
 <label x="157.48" y="-35.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PC14-OSC32_IN"/>
-<wire x1="447.04" y1="147.32" x2="424.18" y2="147.32" width="0.1524" layer="91"/>
-<label x="424.18" y="147.32" size="1.778" layer="95" font="vector"/>
+<pinref part="U3" gate="G$1" pin="PB7"/>
+<wire x1="464.82" y1="175.26" x2="464.82" y2="187.96" width="0.1524" layer="91"/>
+<label x="464.82" y="182.88" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
