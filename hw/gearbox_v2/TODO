@@ -1,0 +1,41 @@
+* Prepare front housing and outer housing stock on manual machines
+  * outer housing
+    * ID 95mm
+    * OD 100mm
+    * Length: 30.7mm
+  * front housing
+    * 22mm height
+    * 5/8" center hole at least
+    * 6mm front lip
+    * 60mm max diameter past front lip
+    * 46mm ID
+
+* Planet Input
+ * figure out what caused the pullout in op2 from the video
+
+* Overall
+ * phase wire clamp
+ * back cover
+ * get primary shaft to be correct length
+ * make back housing out of Al
+   * add weight cutouts in support ring
+
+* Front housing
+ * Strategy
+   * Use the asylum's manual to face both sides of stock to a precision height
+   * Drill a hole in the center
+   * Create a fixture that mounts to the pocketNC and has a bolt hole in the middle
+   * Hold the stock w/ hole to that
+   * do the primary mounting holes/threads and outer housing holes/threads
+   * Create a second fixture which bolts to the primary mounting holes
+     using only 2 or 3 threads and then bolts to the pocket NC table
+   * Do everything else in that setup
+
+DONE 2019-10-31
+ * Alignment indicates that I need to re-home before op2, as the B
+   axis was mis-encoded
+ * Tweaked toolpaths to spend less time clearing nothings and give
+   slightly more clearance on moves
+
+DONE 2019-10-30
+ * front housing needs room for phase wires to come down
