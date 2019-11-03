@@ -1,11 +1,17 @@
+ * power dist
+   * get script to set boot pins properly
+   * Test CAN
+   * Implement basic firmware
+
+ * test new battery stud
+
+ * When rotor and stator come in, measure, then get the necessary
+   pieces machined to test it
  * Port controller to STM32G4
    * FD-CAN
    * PWM
    * ADC
    * bootloader
-
- * When rotor and stator come in, measure, then get the necessary
-   pieces machined to test it
 
  * New telemetry format
    * Binary -> Python
@@ -25,9 +31,7 @@
    * Implement calibration
 
  * BE8108 gearbox v2
-   * update to new controller form factor
    * Make planet input on pocket NC
-   * Make planet output on pocket NC
    * finish CAD for gbx v2
    * Devise strategy for front housing, back housing, and outer
      housing on pocket NC
@@ -44,10 +48,6 @@
    when it is started outside?
 
  * moteus_tool needs to check for faults after doing the velocity config
- * managed to trip the AtomicEventQueue limit in the UART.. maybe need
-   to make it a bit bigger again, or see if I can reproduce and figure
-   out what is going too slow
-
 
  * Bringup improvements
    * bringup procedure needs to automatically verify temperature is
@@ -63,17 +63,6 @@
    faster RTT with devices
 
  * Add a "brake" mode that just shorts the terminals all to ground
- * Test the "zero-velocity" command
-
- * implement joint-based force and position control
-   * ring topology on link port
-   * position mode includes velocity and feed forward
-   * possibly elliptical control gain alteration
-
- * mjlib
-   * Get python telemetry stuff into moteus/mjlib
-   * Get tview into moteus/mjlib repository
-   * Clean up telemetry protocol and format with lessons learned
 
  * Make moteus_tool servo auto-detection more robust
    * especially in the face of things spewing
@@ -90,6 +79,20 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-11-01
+ * Manually machined 1x outer housing to correct ID/OD and height
+ * Manually machined 1x front housing to correct height and added center hole
+ * Diagnosed pullout issue with planet input op2 roughing... looks
+   like another sliver.  Maybe have a better way to handle it now,
+   that is even more general.  Lie to fusion and say the tool is 20
+   microns smaller in diameter than it actually is?
+ * Made 3x planet input op1
+ * Received r2 of power distribution board.  The chip isn't shorted
+   out!
+
+DONE 2019-10-30
+ * Got stock for front housing and outer housing
 
 DONE 2019-10-28
  * Implemented flux braking
