@@ -1,24 +1,6 @@
-* Prepare front housing and outer housing stock on manual machines
-  * outer housing
-    * ID 95mm
-    * OD 100mm
-    * Length: 30.7mm
-  * front housing
-    * 22mm height
-    * 5/8" center hole at least
-    * 6mm front lip
-    * 60mm max diameter past front lip
-    * 46mm ID
-
-* Planet Input
- * figure out what caused the pullout in op2 from the video
-
 * Overall
- * phase wire clamp
  * back cover
  * get primary shaft to be correct length
- * make back housing out of Al
-   * add weight cutouts in support ring
 
 * Front housing
  * Strategy
