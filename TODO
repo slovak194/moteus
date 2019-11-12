@@ -1,10 +1,6 @@
  * BE8108 gearbox v2
-   * Machine front housing
-     * Machine back side
-
-   * Make another temporary back housing for a r3.1 board
-
-   * Get center shaft
+   * Machine r3.1 back housing
+   * Get center shaft and machine grooves
 
    * design new absolute position sense board
 
@@ -78,11 +74,19 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-11-12
+ * More work on machining front housing, and getting ready for back
+   housing
+
+DONE 2019-11-10
+ * Worked on machining front housing more
+
 DONE 2019-11-07
  * Worked on machining front housing more
  * Finished up draft design of mk2 servo
  * Printed up new mounting plate and new op2 bracket to move the part
    closer to the mill... ran out of z travel
+ * Started working on toolpaths for r3.1 version of back housing
 
 DONE 2019-11-06
  * Started machining front housing on pocket nc

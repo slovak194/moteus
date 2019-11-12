@@ -1,18 +1,3 @@
-* Overall
- * back cover
- * get primary shaft to be correct length
-
-* Front housing
- * Strategy
-   * Use the asylum's manual to face both sides of stock to a precision height
-   * Drill a hole in the center
-   * Create a fixture that mounts to the pocketNC and has a bolt hole in the middle
-   * Hold the stock w/ hole to that
-   * do the primary mounting holes/threads and outer housing holes/threads
-   * Create a second fixture which bolts to the primary mounting holes
-     using only 2 or 3 threads and then bolts to the pocket NC table
-   * Do everything else in that setup
-
 DONE 2019-10-31
  * Alignment indicates that I need to re-home before op2, as the B
    axis was mis-encoded
