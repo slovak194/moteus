@@ -1,3 +1,24 @@
+ * Front and back housing housing mounting holes don't seem to align
+   properly
+
+
+ * Do weight reduction to planet input and output
+ * Machine central shaft
+   * maybe just glue central shaft?
+ * Magnet holder needs a tighter fit for magnet
+
+DONE 2019-11-18
+ * mk2 r3.1 version:
+   * front housing 65.9g
+   * back housing 75.9g
+   * outer housing 62.6g
+   * total: 204.4g
+ * current
+   * front housing 41.0g
+   * back housing 42.0
+   * outer housing 25.9
+   * total 108.9
+
 DONE 2019-10-31
  * Alignment indicates that I need to re-home before op2, as the B
    axis was mis-encoded
