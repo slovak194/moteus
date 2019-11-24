@@ -1,8 +1,12 @@
  * BE8108 gearbox v2
-   * Machine r3.1 back housing
-   * Get center shaft and machine grooves
-
+   * mfg all axial mk2
    * design new absolute position sense board
+
+ * Port controller to STM32G4
+   * FD-CAN
+   * PWM
+   * ADC
+   * bootloader
 
  * power dist
    * Test CAN
@@ -10,12 +14,6 @@
    * Implement basic firmware
 
  * test new battery stud
-
- * Port controller to STM32G4
-   * FD-CAN
-   * PWM
-   * ADC
-   * bootloader
 
  * New telemetry format
    * Binary -> Python
@@ -73,6 +71,33 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-11-23
+ * Discovered reason for holes not aligning.  A bug in both back AND
+   front housing. :( It propagated to the outer housing too, so all
+   three are toast.
+ * Ordered more front housing stock
+ * Added more clearance to outer housing stud walls
+
+DONE 2019-11-22
+ * Finished first draft of outer housing reduced weight mk2 servo
+
+DONE 2019-11-19
+ * Continued machining on weight reduced mk2 servo
+
+DONE 2019-11-18
+ * Started machining on weight reduced mk2 servo
+
+DONE 2019-11-17
+ * Ordered fdcanusb r2
+
+DONE 2019-11-14
+ * Ordered full supply of magnets
+ * Assembled first mk2 prototype
+
+DONE 2019-11-13
+ * Finished machining 3rd try of front housing
+ * Finished machining back housing
 
 DONE 2019-11-12
  * More work on machining front housing, and getting ready for back
