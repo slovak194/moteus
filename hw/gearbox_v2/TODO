@@ -1,5 +1,21 @@
- * Front and back housing housing mounting holes don't seem to align
-   properly
+ * Prepare more front housing stock
+ * Prepare more back housing stock
+
+ * Machine a second weight reduced front housing
+
+ * Back housing should be flat behind controller board to make it
+   easier to machine
+
+ * Machine a second weight reduced back housing
+
+ * Outer housing needs to have an op2 alignment fixture to go to B
+   table
+ * Outer housing op2 fixture is too tight around mounting studs, needs
+   clearance around perimeter
+ * Print another outer housing op2 fixture
+ * Print an outer housing op2 alignment fixture
+
+ * Machine a second weight reduced outer housing
 
 
  * Do weight reduction to planet input and output
