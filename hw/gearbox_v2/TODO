@@ -1,26 +1,20 @@
- * Prepare more front housing stock
- * Prepare more back housing stock
+ * outer housing
+   * I think the stud tops are maybe not finished?
+   * Redo workholding and tool path ordering to solve rigidity
+     issues... use a 3d printed and bolted fixture for second op
 
- * Machine a second weight reduced front housing
+ * front housing
+   * output bearing needs to have continuous contact, i.e. no weight
+     cutouts
 
- * Back housing should be flat behind controller board to make it
-   easier to machine
+ * Make outer housing shell extend around the back and front housing a
+   tiny bit so we don't need a visible gap for tolerance stackup?
 
- * Machine a second weight reduced back housing
-
- * Outer housing needs to have an op2 alignment fixture to go to B
-   table
- * Outer housing op2 fixture is too tight around mounting studs, needs
-   clearance around perimeter
- * Print another outer housing op2 fixture
- * Print an outer housing op2 alignment fixture
-
- * Machine a second weight reduced outer housing
-
+ * Prepare another back housing stock
+ * Prepare another front housing stock
 
  * Do weight reduction to planet input and output
- * Machine central shaft
-   * maybe just glue central shaft?
+
  * Magnet holder needs a tighter fit for magnet
 
 DONE 2019-11-18

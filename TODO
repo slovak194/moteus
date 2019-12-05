@@ -1,17 +1,32 @@
- * BE8108 gearbox v2
-   * mfg all axial mk2
-   * design new absolute position sense board
-
  * Port controller to STM32G4
-   * FD-CAN
-   * PWM
    * ADC
+    * bus voltage
+    * FET temp
+    * current sense
+   * drv8323
+   * PWM
+   * Figure out why mbed failure flashes too slowly
+   * motor operation
+   * persistent settings
+
+   * FD-CAN
+     * implement MicroServer layer
+     * tview
    * bootloader
+   * get script to set boot config from openocd
+
+ * BE8108 gearbox v2
+   * fix problems with outer housing, re-mfg
+   * make more stock for front and back housings
+   * fix problems with front housing, re-mfg
 
  * power dist
    * Test CAN
    * get script to set boot pins properly
    * Implement basic firmware
+
+
+ * design new absolute position sense board
 
  * test new battery stud
 
@@ -72,12 +87,29 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-12-05
+ * stm32g4
+   * boot without faults
+   * got serial tview working
+   * serial number fixed
+   * as5047
+
+DONE 2019-11-25
+ * Finished second artifact of outer housing
+ * Started on second artifact of back housing
+
+DONE 2019-11-24
+ * Got r4.1 blinking lights!
+ * Printed new outer housing op2 brackets and aligners
+ * More outer housing machining, got op1 done on the second artifact
+
 DONE 2019-11-23
  * Discovered reason for holes not aligning.  A bug in both back AND
    front housing. :( It propagated to the outer housing too, so all
    three are toast.
  * Ordered more front housing stock
  * Added more clearance to outer housing stud walls
+ * Got a stub stm32g4 build system in place
 
 DONE 2019-11-22
  * Finished first draft of outer housing reduced weight mk2 servo
