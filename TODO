@@ -1,10 +1,4 @@
  * Port controller to STM32G4
-   * ADC
-    * bus voltage
-    * FET temp
-    * current sense
-   * drv8323
-   * PWM
    * Figure out why mbed failure flashes too slowly
    * motor operation
    * persistent settings
@@ -93,6 +87,12 @@ DONE 2019-12-05
    * got serial tview working
    * serial number fixed
    * as5047
+   * ADC
+    * bus voltage
+    * FET temp
+    * current sense
+   * drv8323
+   * PWM
 
 DONE 2019-11-25
  * Finished second artifact of outer housing
