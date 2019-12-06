@@ -1,18 +1,20 @@
  * Port controller to STM32G4
-   * Figure out why mbed failure flashes too slowly
-   * motor operation
-   * persistent settings
-
    * FD-CAN
      * implement MicroServer layer
      * tview
+
    * bootloader
    * get script to set boot config from openocd
+   * get CCM memory to work
+   * get frequency back up to 40kHz
+   * tune current control loops
 
  * BE8108 gearbox v2
    * fix problems with outer housing, re-mfg
    * make more stock for front and back housings
    * fix problems with front housing, re-mfg
+   * machine back cover
+   * create wire cover for back housing
 
  * power dist
    * Test CAN
@@ -40,6 +42,7 @@
 
  * C++ moteus tool
    * Implement calibration
+   * Work with serial ports in addition to robot
 
 
  * Hard-fault or assert needs to reset the device and latch a fault
@@ -81,6 +84,13 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-12-06
+ * r4.1
+   * Got voltage based FOC working
+   * fixed snprintf of floats by fixing stack alignment
+   * persistent settings
+   * ran a motor!
+
 DONE 2019-12-05
  * stm32g4
    * boot without faults
@@ -93,6 +103,7 @@ DONE 2019-12-05
     * current sense
    * drv8323
    * PWM
+   * got mbed_die to work properly
 
 DONE 2019-11-25
  * Finished second artifact of outer housing
