@@ -1,13 +1,14 @@
  * Port controller to STM32G4
    * FD-CAN
-     * implement MicroServer layer
-     * tview
+     * py moteus_tool
+     * c++ moteus_tool
 
-   * bootloader
-   * get script to set boot config from openocd
    * get CCM memory to work
    * get frequency back up to 40kHz
    * tune current control loops
+
+   * bootloader
+   * get script to set boot config from openocd
 
  * BE8108 gearbox v2
    * fix problems with outer housing, re-mfg
@@ -84,12 +85,16 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-12-07
+ * Got tview working with fdcanusb
+
 DONE 2019-12-06
  * r4.1
    * Got voltage based FOC working
    * fixed snprintf of floats by fixing stack alignment
    * persistent settings
    * ran a motor!
+   * got MicroServer hooked up to FDCAN
 
 DONE 2019-12-05
  * stm32g4

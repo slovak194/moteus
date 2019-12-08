@@ -7,15 +7,17 @@
    * output bearing needs to have continuous contact, i.e. no weight
      cutouts
 
- * Make outer housing shell extend around the back and front housing a
-   tiny bit so we don't need a visible gap for tolerance stackup?
+ * back housing
+   * maybe could lower the controller board by a mm
+   * need a wire cover
+
+ * back cover
+   * machine
 
  * Prepare another back housing stock
  * Prepare another front housing stock
 
  * Do weight reduction to planet input and output
-
- * Magnet holder needs a tighter fit for magnet
 
 DONE 2019-11-18
  * mk2 r3.1 version:
