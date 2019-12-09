@@ -1,8 +1,5 @@
  * Port controller to STM32G4
    * hardware revision check seems to be broken on r3.1 boards
-   * get CCM memory to work
-   * get frequency back up to 40kHz
-     * measure voltage ripple at high current
    * tune current control loops
 
    * clean up hw
@@ -97,6 +94,62 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-12-09
+ * Performance profiling
+  * g4 w/o ccm
+    * adc_done 92
+    * start_pos_sample 256
+    * done_pos_sample 675
+    * sense 1228
+    * curstate 1763
+    * control_sel_mode 2201
+    * control_done_pos 2993
+    * control_done_cur 3954
+    * control 4484
+    * emitdbg 4494
+    * done 4524
+  * g4 w/ ccm
+    * adc_done 74
+    * start_pos_sample 164
+    * done_pos_sample 564
+    * sense 868
+    * curstate 1176
+    * control_sel_mode 1370
+    * control_done_pos 1880
+    * control_done_Cur 2600
+    * control 2900
+    * emitdbg 2903
+    * done 2930
+  * f4
+    * adc_done 73
+    * start_pos_sample 167
+    * done_pos_sample 606
+    * sense 903
+    * curstate 1194
+    * control_sel_mode 1470
+    * control_done_pos 1924
+    * control_done_cur 2575
+    * control 2929
+    * emitdbg 2958
+    * done 2974
+  * g4 after moving everything I could to CCM
+    * adc_done 55
+    * start_pos_sample 144
+    * done_pos_sample 517
+    * sense 760
+    * curstate 1028
+    * control_sel_mode 1225
+    * control_done_pos 1560
+    * control_done_cur 2130
+    * control 2500
+    * emitdbg 2512
+    * done 2528
+ * w/ 40kHz rate, 24V input, 30A phase current measured about 0.7V p-p
+   ripple
+ * Moved all hot loop stuff to CCM, without further work got the ISR
+   time down to 14.2us, which is probably good enough for now.  Likely
+   plenty of room for improvement still.
 
 DONE 2019-12-07
  * Got tview working with fdcanusb
