@@ -1,11 +1,18 @@
  * Port controller to STM32G4
-   * FD-CAN
-     * py moteus_tool
-     * c++ moteus_tool
-
+   * hardware revision check seems to be broken on r3.1 boards
    * get CCM memory to work
    * get frequency back up to 40kHz
+     * measure voltage ripple at high current
    * tune current control loops
+
+   * clean up hw
+     * remove serial wires
+     * add grease
+
+   * Run some kind of stress and endurance test... maybe throwing and
+     catching a heavy ball repeatedly?
+     * build fixture
+     * run it
 
    * bootloader
    * get script to set boot config from openocd
@@ -56,6 +63,12 @@
    limit.  Perhaps the control_position should have a special mode for
    when it is started outside?
 
+ * rationalize all the debug tools w.r.t. serial/network/fdcanusb/robot
+   * tview
+   * multiplex_tool
+   * py moteus_tool
+   * c++ moteus_tool
+
  * moteus_tool needs to check for faults after doing the velocity config
 
  * Bringup improvements
@@ -87,6 +100,7 @@ Code cleanup
 
 DONE 2019-12-07
  * Got tview working with fdcanusb
+ * Got py moteus_tool working with fdcanusb
 
 DONE 2019-12-06
  * r4.1
