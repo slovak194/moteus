@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""Generate G-Code to perform the "lathe-like" operations on the outer
+housing.
+"""
+
+import argparse
+
 PREFIX = """
 %
 (AXIS,stop)
@@ -22,7 +28,7 @@ N200 G1 X0 Y{y:.3f} F10000.
 
 N400 X0 Z53 F10000.
 
-N500 Z43 F750.
+N500 Z{z:.3f} F750.
 N550 G93
 """
 
@@ -48,20 +54,49 @@ N{line2} B{b2} F2
 """
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
+        '-t', '--top', action='store_true',
+        help='Initial top facing')
+    group.add_argument(
+        '-o', '--od', action='store_true',
+        help='Outer diameter')
+
+    args = parser.parse_args()
+
+
     REF_TO_STOCK_BOTTOM = 24.717
-    STOCK_HEIGHT = 33.5
+    STOCK_HEIGHT = 29.4
     MODEL_TOP = 26.8
     TOOL_DIAMETER = 4
 
-    YSTART = REF_TO_STOCK_BOTTOM + STOCK_HEIGHT + 0.5 * TOOL_DIAMETER
-    YEND = REF_TO_STOCK_BOTTOM + MODEL_TOP + 0.5 * TOOL_DIAMETER
-    YSTEP = 0.15
+    if args.top:
+        # This gives about 1mm inside the ID of the stock
+        Z_POSITION = 43
+
+        YSTART = REF_TO_STOCK_BOTTOM + STOCK_HEIGHT + 0.5 * TOOL_DIAMETER
+        YEND = REF_TO_STOCK_BOTTOM + MODEL_TOP + 0.5 * TOOL_DIAMETER
+        YSTEP = 0.15
+        BSTART = 0
+    elif args.od:
+        # This is the final radius of the outer housing.
+        Z_POSITION = 50
+
+        MARGIN = 0.65
+        YSTART = REF_TO_STOCK_BOTTOM + MODEL_TOP + 0.5 * TOOL_DIAMETER + MARGIN
+        YEND = REF_TO_STOCK_BOTTOM
+        YSTEP = 0.65
+        BSTART = 8000
+    else:
+        raise RuntimeError("No mode specified")
 
     y = YSTART
-    b = 7000
+    b = BSTART
     line = 1000
 
-    print(PREFIX.format(y=y, bstart=b))
+    print(PREFIX.format(z=Z_POSITION, y=y, bstart=b))
 
     while True:
         y = max(y - YSTEP, YEND)
