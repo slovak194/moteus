@@ -1,11 +1,12 @@
  * outer housing
-   * I think the stud tops are maybe not finished?
-   * Redo workholding and tool path ordering to solve rigidity
-     issues... use a 3d printed and bolted fixture for second op
+   * spacing between front and back housing and studs differs between
+     front and back side
 
  * front housing
    * output bearing needs to have continuous contact, i.e. no weight
      cutouts
+   * gear needs to have less cutout
+   * Update to do bulk of material removal on AA CNC bridgeport
 
  * back housing
    * maybe could lower the controller board by a mm
