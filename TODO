@@ -1,25 +1,20 @@
+ * order pre-production r4.1 boards
+ * consign AMASS connectors to macrofab
+
+ * get planet output ready for mfg
+   * weight reduce
+   * make prototype
+   * order qty
+
  * Port controller to STM32G4
-   * hardware revision check seems to be broken on r3.1 boards
-   * tune current control loops
-
-   * clean up hw
-     * remove serial wires
-     * add grease
-
-   * Run some kind of stress and endurance test... maybe throwing and
-     catching a heavy ball repeatedly?
-     * build fixture
-     * run it
-
    * bootloader
    * get script to set boot config from openocd
 
  * BE8108 gearbox v2
-   * fix problems with outer housing, re-mfg
    * make more stock for front and back housings
-   * fix problems with front housing, re-mfg
    * machine back cover
    * create wire cover for back housing
+   * fix problems with front housing, re-mfg
 
  * power dist
    * Test CAN
@@ -95,6 +90,15 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2019-12-16
+ * Functioning endurance test of r4.1, 4.5Nm worked indefinitely w/
+   intervention every 5-30min.  Tested up to 30Nm w/ manual catching.
+
+DONE 2019-12-15
+ * Working towards endurance test of r4.1... having adhesive
+   challenges on servo mk2... maybe have a recipe which works well enough now?
+ * New outer housing machined on pnc
+
 DONE 2019-12-09
  * Performance profiling
   * g4 w/o ccm
@@ -150,6 +154,8 @@ DONE 2019-12-09
  * Moved all hot loop stuff to CCM, without further work got the ISR
    time down to 14.2us, which is probably good enough for now.  Likely
    plenty of room for improvement still.
+ * Tuned current control loop for noise
+ * Removed debug serial wire, greased motor
 
 DONE 2019-12-07
  * Got tview working with fdcanusb
