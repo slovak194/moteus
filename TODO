@@ -1,20 +1,43 @@
- * order pre-production r4.1 boards
- * consign AMASS connectors to macrofab
+ * order stock for back cover
+   * .375" x 2.5" cut to ~3.5?
+ * order stock for wire cover
+   * .375 x 1" cut to 2"
 
- * get planet output ready for mfg
-   * weight reduce
-   * make prototype
-   * order qty
+ * CAM for back cover on pnc
+ * CAM for wire cover on pnc
+ * CAM for back housing on AA BP
+ * CAM for front housing on AA BP
+
+ * make updated back housing
+ * make wire cover
+ * make back cover
+ * make updated front housing
+
+ * make drawings
+   * planet input
+   * planet output
+   * front housing
+   * back housing
+   * outer housing
+   * wire cover
+   * back cover
+
+ * order qty 30
+   * planet input
+   * planet output
+   * front housing
+   * back housing
+   * outer housing
+   * wire cover
+   * back cover
+
+ * build BOM for moteus controller dev kit
+   * Test power supply for devkit
+
 
  * Port controller to STM32G4
    * bootloader
    * get script to set boot config from openocd
-
- * BE8108 gearbox v2
-   * make more stock for front and back housings
-   * machine back cover
-   * create wire cover for back housing
-   * fix problems with front housing, re-mfg
 
  * power dist
    * Test CAN
@@ -89,6 +112,24 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-12-20
+ * Ordered AMASS connectors for qty 100 r4x run
+ * Finished weight reduced planet output
+ * Fixed outer housing stud length discrepency... both front and back
+   housings were measured 3mm from their outermost face, but they were
+   different overall thicknesses... in the name of keeping the outer
+   housing symmetric, I just switched it to have the same distance
+   from their inner face
+ * Updated back housing to have wire cover
+
+DONE 2019-12-19
+ * Mfg weight reduced planet input, 9.3g now
+ * Designed weight reduced planet output
+ * Machined op1 of planet output
+
+DONE 2019-12-17
+ * Ordered qty of fdcanusb and moteus r4.2
 
 DONE 2019-12-16
  * Functioning endurance test of r4.1, 4.5Nm worked indefinitely w/
