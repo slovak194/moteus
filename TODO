@@ -1,3 +1,17 @@
+ * C++ moteus_tool
+   * Implement calibration
+   * Work with serial ports in addition to robot
+
+ * New telemetry format
+   * fdcanusb bridge
+   * javascript tree viewer from network
+
+ * rationalize all the debug tools w.r.t. serial/network/fdcanusb/robot
+   * tview
+   * multiplex_tool
+   * py moteus_tool
+   * c++ moteus_tool
+
  * order stock for back cover
    * .375" x 2.5" cut to ~3.5?
  * order stock for wire cover
@@ -39,18 +53,7 @@
    * bootloader
    * get script to set boot config from openocd
 
- * power dist
-   * Test CAN
-   * get script to set boot pins properly
-   * Implement basic firmware
-
-
- * design new absolute position sense board
-
- * test new battery stud
-
  * New telemetry format
-   * Binary -> Python
    * C++ file writer
    * Binary -> Javascript
 
@@ -59,14 +62,18 @@
    * Javascript <-> Binary
    * Python -> Binary
    * C++ network server
-   * Javascript tree viewer from network
+
    * Javascript file reader
    * Javascript live + logged analysis tool
 
- * C++ moteus tool
-   * Implement calibration
-   * Work with serial ports in addition to robot
+ * power dist
+   * Test CAN
+   * get script to set boot pins properly
+   * Implement basic firmware
 
+ * design new absolute position sense board
+
+ * test new battery stud
 
  * Hard-fault or assert needs to reset the device and latch a fault
  * Calibration goes forever if the magnet is axially magnetized or
@@ -77,12 +84,6 @@
    the absolute limit, than slew as hard as possible to get into the
    limit.  Perhaps the control_position should have a special mode for
    when it is started outside?
-
- * rationalize all the debug tools w.r.t. serial/network/fdcanusb/robot
-   * tview
-   * multiplex_tool
-   * py moteus_tool
-   * c++ moteus_tool
 
  * moteus_tool needs to check for faults after doing the velocity config
 
@@ -112,6 +113,19 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2019-12-30
+ * Switched all of mjlib to use clipp instead of boost::po
+ * Updated multiplex_tool to use a switching mechanism that will work
+   with moteus_tool too
+ * Nominally have multiplex_tool working with fdcanusb/rs485 and
+   arbitrary client defined clients
+
+DONE 2019-12-25
+ * Nominally made multiplex_tool work with fdcanusb
+ * Switched moteus to use new telemetry format
+ * Ported tview into moteus, nominally ported to fdcanusb and new telemetry format
+ * Designed websocket telemetry protocol
 
 DONE 2019-12-20
  * Ordered AMASS connectors for qty 100 r4x run
