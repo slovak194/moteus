@@ -7,12 +7,18 @@
    * wire cover
    * back cover
 
- * Get moteus/moteus_tool working
-   * flashing w/ rs485
+ * C++ moteus_tool calibration
+ * remove py_moteus_tool
 
- * C++ moteus_tool
-   * Implement calibration
-   * Work with serial ports in addition to robot
+ * moteus r4.2 devkit
+   * build BOM
+   * Test power supply for devkit
+   * design brackets to mount to motor
+   * make up simple instructions?  perhaps just update README?
+
+ * Port controller to STM32G4
+   * CAN bootloader
+   * get script to set boot config from openocd
 
  * New telemetry format
    * fdcanusb bridge
@@ -25,14 +31,6 @@
    * c++ moteus_tool
    * make tview poll for more data immediately if something was present
 
-
- * build BOM for moteus controller dev kit
-   * Test power supply for devkit
-
-
- * Port controller to STM32G4
-   * bootloader
-   * get script to set boot config from openocd
 
  * New telemetry format
    * C++ file writer
@@ -103,6 +101,7 @@ DONE 2020-01-09
  * machined another back cover, this one fits
  * finished draft of back cover drawing
  * juggle stress tested mk2 prototype for around 6 hours, no problems
+ * got rs485 flashing working with coroutine moteus_tool
 
 DONE 2020-01-08
  * Made drawing for front housing
