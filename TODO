@@ -1,3 +1,15 @@
+ * order qty 25
+   * planet input
+   * planet output
+   * front housing
+   * back housing
+   * outer housing
+   * wire cover
+   * back cover
+
+ * Get moteus/moteus_tool working
+   * flashing w/ rs485
+
  * C++ moteus_tool
    * Implement calibration
    * Work with serial ports in addition to robot
@@ -11,39 +23,8 @@
    * multiplex_tool
    * py moteus_tool
    * c++ moteus_tool
+   * make tview poll for more data immediately if something was present
 
- * order stock for back cover
-   * .375" x 2.5" cut to ~3.5?
- * order stock for wire cover
-   * .375 x 1" cut to 2"
-
- * CAM for back cover on pnc
- * CAM for wire cover on pnc
- * CAM for back housing on AA BP
- * CAM for front housing on AA BP
-
- * make updated back housing
- * make wire cover
- * make back cover
- * make updated front housing
-
- * make drawings
-   * planet input
-   * planet output
-   * front housing
-   * back housing
-   * outer housing
-   * wire cover
-   * back cover
-
- * order qty 30
-   * planet input
-   * planet output
-   * front housing
-   * back housing
-   * outer housing
-   * wire cover
-   * back cover
 
  * build BOM for moteus controller dev kit
    * Test power supply for devkit
@@ -114,12 +95,50 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2020-01-09
+ * greased new mk2 prototype
+ * finished draft of back housing drawing
+ * finished draft of wire cover drawing
+ * updated back cover model to hopefully fit
+ * machined another back cover, this one fits
+ * finished draft of back cover drawing
+ * juggle stress tested mk2 prototype for around 6 hours, no problems
+
+DONE 2020-01-08
+ * Made drawing for front housing
+ * Made drawing for planet input
+ * Made drawing for outer housing
+ * Third try on wire cover was the charm
+ * Got tview working with new telemetry format
+ * Got mk2 servo programmed and calibrated
+
+DONE 2020-01-07
+ * Finished back cover
+ * Made CAM for and machined wire cover
+ * Made drawing for planet output
+
+DONE 2020-01-06
+ * Got moteus tool console working with coroutines and fdcanusb
+ * Finished front housing
+ * Completed CAM for rough back cover, started machining
+
+DONE 2020-01-02
+ * Machined 2x front housing op0 and 2x back housing op0
+ * Fixed buffering problems in multiplex_tool w/ fdcanusb
+
+DONE 2019-12-31
+ * Received pre-production rotors and stators, incoming QC checks out
+   fine
+ * Prepared op0 soft-jaw and toolpaths for back and front housing on
+   AA machine
+
 DONE 2019-12-30
  * Switched all of mjlib to use clipp instead of boost::po
  * Updated multiplex_tool to use a switching mechanism that will work
    with moteus_tool too
  * Nominally have multiplex_tool working with fdcanusb/rs485 and
    arbitrary client defined clients
+ * Ordered stock for back cover and wire cover
 
 DONE 2019-12-25
  * Nominally made multiplex_tool work with fdcanusb
