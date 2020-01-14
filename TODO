@@ -1,19 +1,18 @@
+ * moteus_tool needs to print firmware info and stats after calibration
+
  * order qty 25
    * planet input
    * planet output
    * front housing
-   * back housing
    * outer housing
-   * wire cover
-   * back cover
-
- * C++ moteus_tool calibration
- * remove py_moteus_tool
 
  * moteus r4.2 devkit
-   * build BOM
-   * Test power supply for devkit
-   * design brackets to mount to motor
+   * devkit brackets machined: 3/6
+   * CAN cables made: 6/6
+   * stm32 cables made: 0/6
+   * desk stands printed: 2/6
+
+   * make product listing / datasheet
    * make up simple instructions?  perhaps just update README?
 
  * Port controller to STM32G4
@@ -50,21 +49,15 @@
    * get script to set boot pins properly
    * Implement basic firmware
 
+ * Hard-fault or assert needs to reset the device and latch a fault
  * design new absolute position sense board
 
  * test new battery stud
-
- * Hard-fault or assert needs to reset the device and latch a fault
- * Calibration goes forever if the magnet is axially magnetized or
-   insufficiently magnetized
- * Figure out why I had to update the minimum PWM time.
 
  * need to do something better if starting position control outside
    the absolute limit, than slew as hard as possible to get into the
    limit.  Perhaps the control_position should have a special mode for
    when it is started outside?
-
- * moteus_tool needs to check for faults after doing the velocity config
 
  * Bringup improvements
    * bringup procedure needs to automatically verify temperature is
@@ -92,6 +85,27 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-01-14
+ * Made devkit CAN cables
+ * Printed and machined devkit parts
+ * Powered up r4.2 for the first time, updated firmware accordingly
+ * Removed unused tview tab
+ * Added timeout and variable speed to calibration cycle
+ * Made moteus_tool calibration check for faults
+
+DONE 2020-01-13
+ * Started ordering servo machined parts
+ * Quoted more servo parts
+ * Machined first devkit bracket
+ * Test fit first devit assembly, seems to mostly work
+ * Tested w/ fdcanusb r2.1, works fine
+
+DONE 2020-01-10
+ * Drew up draft of controller devkit mounting, ordered stock for
+   metal bracket
+ * Implemented calibration in C++ moteus tool, removed python one
+ * CAM for devkit bracket
 
 DONE 2020-01-09
  * greased new mk2 prototype
