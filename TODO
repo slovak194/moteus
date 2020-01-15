@@ -1,5 +1,3 @@
- * moteus_tool needs to print firmware info and stats after calibration
-
  * order qty 25
    * planet input
    * planet output
@@ -7,17 +5,20 @@
    * outer housing
 
  * moteus r4.2 devkit
-   * devkit brackets machined: 3/6
-   * CAN cables made: 6/6
+   * make first kit, take product photos
+    * all accessories together - BLOCKED on stm32 cables
+
+   * devkit brackets machined: 4/5
+   * CAN cables made: 5/5
    * stm32 cables made: 0/6
-   * desk stands printed: 2/6
+   * desk stands printed: 5/5
+   * power cables made: 5/5
 
    * make product listing / datasheet
-   * make up simple instructions?  perhaps just update README?
+   * make getting started video
 
  * Port controller to STM32G4
    * CAN bootloader
-   * get script to set boot config from openocd
 
  * New telemetry format
    * fdcanusb bridge
@@ -26,7 +27,6 @@
  * rationalize all the debug tools w.r.t. serial/network/fdcanusb/robot
    * tview
    * multiplex_tool
-   * py moteus_tool
    * c++ moteus_tool
    * make tview poll for more data immediately if something was present
 
@@ -62,11 +62,7 @@
  * Bringup improvements
    * bringup procedure needs to automatically verify temperature is
      sane, including when powering motor
-   * always store calibrations on host computer
    * zeroing procedure needs a way to verify it online
-   * Investigate improving the repeatability of the V/Hz calibration
-     procedure (it seems it may currently depend on the unwrapped
-     position scale too)
 
  * Add a "brake" mode that just shorts the terminals all to ground
 
@@ -86,6 +82,13 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2020-01-15
+ * Built devkit power supplies
+ * Figured out how to set the option bytes from openocd
+ * Updated README for r4.x
+ * Verified that ID change works
+ * Got git hash into firmware
+
 DONE 2020-01-14
  * Made devkit CAN cables
  * Printed and machined devkit parts
@@ -93,6 +96,7 @@ DONE 2020-01-14
  * Removed unused tview tab
  * Added timeout and variable speed to calibration cycle
  * Made moteus_tool calibration check for faults
+ * moteus_tool calibration now emits report and saves it to disk
 
 DONE 2020-01-13
  * Started ordering servo machined parts
