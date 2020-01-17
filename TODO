@@ -8,17 +8,13 @@
    * make first kit, take product photos
     * all accessories together - BLOCKED on stm32 cables
 
-   * devkit brackets machined: 4/5
-   * CAN cables made: 5/5
+   * devkit brackets machined: 7/6
+   * CAN cables made: 8/6
    * stm32 cables made: 0/6
-   * desk stands printed: 5/5
-   * power cables made: 5/5
+   * desk stands printed: 7/6
+   * power cables made: 10/6
 
-   * make product listing / datasheet
    * make getting started video
-
- * Port controller to STM32G4
-   * CAN bootloader
 
  * New telemetry format
    * fdcanusb bridge
@@ -82,12 +78,17 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2020-01-16
+ * Machined more brackets
+ * Implemented CAN bootloader
+
 DONE 2020-01-15
  * Built devkit power supplies
  * Figured out how to set the option bytes from openocd
  * Updated README for r4.x
  * Verified that ID change works
  * Got git hash into firmware
+ * Made product page
 
 DONE 2020-01-14
  * Made devkit CAN cables
