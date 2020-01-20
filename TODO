@@ -1,20 +1,35 @@
+ * would be nice if tview could show enum names for fault codes
+
+ * split out a getting started and reference manual from readme
+   * reference needs to include stream command reference, especially
+     for "d" commands, but also multiplex_tool level register commands
+   * motor calibration should probably be in reference manual
+
+ * devkit nice to haves
+   * make getting started video
+   * make getting started flyer
+     * both need to mention support via discord
+   * Hard-fault or assert needs to reset the device and latch a fault
+
  * order qty 25
-   * planet input
-   * planet output
-   * front housing
    * outer housing
 
  * moteus r4.2 devkit
    * make first kit, take product photos
-    * all accessories together - BLOCKED on stm32 cables
+    * all accessories together
 
    * devkit brackets machined: 7/6
    * CAN cables made: 8/6
-   * stm32 cables made: 0/6
+   * stm32 cables made: 10/6
    * desk stands printed: 7/6
    * power cables made: 10/6
+   * magnet adapters 7/6
 
-   * make getting started video
+   * fdcanusb's programmed 0/6
+   * stands assembled 0/6
+   * moteus controller's programmed 0/6
+   * kits packed 0/6
+
 
  * New telemetry format
    * fdcanusb bridge
@@ -25,7 +40,6 @@
    * multiplex_tool
    * c++ moteus_tool
    * make tview poll for more data immediately if something was present
-
 
  * New telemetry format
    * C++ file writer
@@ -40,12 +54,12 @@
    * Javascript file reader
    * Javascript live + logged analysis tool
 
+ * mk2 chassis
+
  * power dist
    * Test CAN
-   * get script to set boot pins properly
    * Implement basic firmware
 
- * Hard-fault or assert needs to reset the device and latch a fault
  * design new absolute position sense board
 
  * test new battery stud
@@ -64,7 +78,6 @@
 
  * Make moteus_tool servo auto-detection more robust
    * especially in the face of things spewing
- * derate for temperature
  * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Get all mbed ticker stuff out of the link, we never want it used
@@ -77,6 +90,22 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-01-19
+ * Got all magnet adapters printed and magnets installed
+
+DONE 2020-01-17
+ * moteus_tool rezeros when done calibrating
+ * pulled multiplex_tool binary into moteus repo
+ * implemented temperature derating
+ * multiple open channels now works in tview
+ * replaced controller which seems to have had a gate drive get
+   shorted to a phase wire :(
+ * tuned 6008 loops:
+   * current loop: p0.003 i200
+   * position: p3 d.07 i0
+ * built stm32 cables
+ * made errata gdoc
 
 DONE 2020-01-16
  * Machined more brackets
