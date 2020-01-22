@@ -1,34 +1,21 @@
- * would be nice if tview could show enum names for fault codes
-
- * split out a getting started and reference manual from readme
-   * reference needs to include stream command reference, especially
-     for "d" commands, but also multiplex_tool level register commands
-   * motor calibration should probably be in reference manual
-
  * devkit nice to haves
-   * make getting started video
-   * make getting started flyer
-     * both need to mention support via discord
    * Hard-fault or assert needs to reset the device and latch a fault
+   * add multiplex_tool register stuff to reference
+   * add tview delays and multi unit features
+   * document how to change id
 
  * order qty 25
    * outer housing
 
  * moteus r4.2 devkit
-   * make first kit, take product photos
-    * all accessories together
-
-   * devkit brackets machined: 7/6
-   * CAN cables made: 8/6
-   * stm32 cables made: 10/6
-   * desk stands printed: 7/6
-   * power cables made: 10/6
-   * magnet adapters 7/6
-
-   * fdcanusb's programmed 0/6
-   * stands assembled 0/6
-   * moteus controller's programmed 0/6
+   * test all DB9-CAN cables 0/6
+   * test all stm32 programmers 0/6
+   * moteus controller's programmed w/ ship fw 0/6
+     * including 6008 pid constants, unwrapped_position_scale, and position limits
    * kits packed 0/6
+
+
+ * would be nice if tview could show enum names for fault codes
 
 
  * New telemetry format
@@ -90,6 +77,28 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-01-21
+ * Added warranty disclaimer to product page
+ * Turned on power light
+ * assembly
+   * stands assembled 6/6
+   * fdcanusb's programmed w/ ship fw 8/6
+ * fixed drop read lines in moteus_tool
+ * filed away mk2 wire covers
+ * made devkit intro video
+ * made devkit flyer
+
+DONE 2020-01-20
+ * Took final devkit product photos
+ * assembly
+   * devkit brackets machined: 7/6
+   * CAN cables made: 8/6
+   * stm32 cables made: 10/6
+   * desk stands printed: 7/6
+   * power cables made: 10/6
+   * magnet adapters 7/6
+ * moteus_tool device info
 
 DONE 2020-01-19
  * Got all magnet adapters printed and magnets installed
