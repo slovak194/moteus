@@ -1,22 +1,21 @@
+ * mk2 leg
+   * print and verify each of
+    * shoulder
+    * upper motor mount
+    * upper leg
+    * upper pulley
+    * lower leg
+    * lower pulley
+    * lower foot
+
+
  * devkit nice to haves
    * Hard-fault or assert needs to reset the device and latch a fault
    * add multiplex_tool register stuff to reference
    * add tview delays and multi unit features
    * document how to change id
 
- * order qty 25
-   * outer housing
-
- * moteus r4.2 devkit
-   * test all DB9-CAN cables 0/6
-   * test all stm32 programmers 0/6
-   * moteus controller's programmed w/ ship fw 0/6
-     * including 6008 pid constants, unwrapped_position_scale, and position limits
-   * kits packed 0/6
-
-
  * would be nice if tview could show enum names for fault codes
-
 
  * New telemetry format
    * fdcanusb bridge
@@ -70,13 +69,32 @@
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
 
- * design and build controller automated test fixture
-
 
 Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-01-30
+ * Started printing mk2 leg shoulder adapter
+ * Ordered more 6704 bearings for mk2 leg
+ * Ordered belts for mk2 legs
+ * Made draft bom for mk2 leg
+
+DONE 2020-01-28
+ * Made fdcanusb w/ moteus_tool and multiplex_tool much more robust
+
+DONE 2020-01-27
+ * fdcan frames padded with nops
+
+DONE 2020-01-22
+ * devkit assembly
+   * moteus controller's programmed w/ ship fw 6/6
+     * including 6008 pid constants, unwrapped_position_scale, and position limits
+   * test all DB9-CAN cables 8/6
+   * test all stm32 programmers 10/6
+   * packed 6/6 kits
+
 
 DONE 2020-01-21
  * Added warranty disclaimer to product page
