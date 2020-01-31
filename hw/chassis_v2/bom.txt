@@ -13,7 +13,7 @@ Chassis - 3d printed
 Battery
  * Battery 3d print left
  * Battery 3d print right
- * 2x terminals - digikey 36-5305-ND
+ * 2x terminals - digikey 36-5205-ND
  * 2x wires
  * XT90 connector
 
