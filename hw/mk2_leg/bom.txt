@@ -16,8 +16,8 @@
 * ??? 8x shoulder to upper servo bolts
 * 3x M3x8 low profile - upper motor mount to servo bolts
 * 7x M3x10 low profile - upper motor mount to lower servo bolts
-* ??? 6x upper leg to servo bolts
-* ??? 3x upper pulley to servo bolts
+* 5x M3x8, 1x M3x4 low profile upper leg to servo bolts
+* 3x M3x6 low profile upper pulley to servo bolts
 * ??? 6x upper leg to knee stud bolts
 * ??? 6x lower leg to lower pulley bolts
 
