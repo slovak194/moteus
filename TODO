@@ -1,19 +1,34 @@
  * mk2 leg
-   * print and verify each of
-    * shoulder
-    * upper motor mount
-    * upper leg
-    * upper pulley
-    * lower leg
-    * lower pulley
-    * lower foot
+   * print
+     * lower leg
+   * verify
+     * lower pulley
+     * upper leg v2
+     * upper pulley v3
+     * shoulder v4 (with dimension slightly smaller again, figure out
+       what went wrong)
+   * design al knee stud
 
+ * get lower foot to a working state
+
+ * mk2 chassis
+   * just need to redo front and back plates
+
+ * rpi3 hat
+   * make plan
+   * device tree eeprom
+   * spi slave
+   * define spi protocol
 
  * devkit nice to haves
    * Hard-fault or assert needs to reset the device and latch a fault
    * add multiplex_tool register stuff to reference
    * add tview delays and multi unit features
    * document how to change id
+
+ * the "fault" state should flash the LEDs in a pattern that is
+   distinct from the hard fault state (or I guess the same if
+   hard-faults start resetting into a fault state)
 
  * would be nice if tview could show enum names for fault codes
 
@@ -40,15 +55,7 @@
    * Javascript file reader
    * Javascript live + logged analysis tool
 
- * mk2 chassis
-
- * power dist
-   * Test CAN
-   * Implement basic firmware
-
  * design new absolute position sense board
-
- * test new battery stud
 
  * need to do something better if starting position control outside
    the absolute limit, than slew as hard as possible to get into the
@@ -69,17 +76,34 @@
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
 
+ * implement CAN for the power distribution board
+
 
 Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2020-02-02
+ * upper motor joint seems to work
+ * battery stud seems to fit well
+
+DONE 2020-01-31
+ * Tested first mk2 leg shoulder
+ * Tested first mk2 leg upper joint
+ * Wrote power dist firmware
+ * Worked on getting better enamel stripping solution
+ * Got mk2 leg pulleys and stud printed, untested yet
+ * ordered al stock for knee stud
+
 DONE 2020-01-30
  * Started printing mk2 leg shoulder adapter
  * Ordered more 6704 bearings for mk2 leg
  * Ordered belts for mk2 legs
  * Made draft bom for mk2 leg
+ * Tested updated battery stud for fit with battery, made slight
+   tweaks to model.  Also updated the model so that the contact can be
+   soldered before insertion, so there is no risk of heat damage.
 
 DONE 2020-01-28
  * Made fdcanusb w/ moteus_tool and multiplex_tool much more robust
