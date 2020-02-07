@@ -7,7 +7,7 @@
 * 1x upper leg bearing - 6704zz
 * 2x lower leg bearing - 6704zz
 * 1x HK0408 - tensioner bearing
-* ??? tensioner axle
+* 1x M4x22 dowel - tensioner axle
 * 2x upper leg M3 heat set inserts - 92160A119
 * 1x upper leg M3 tensioner bolt - M3x14
 * 8x M2.5 lower pulley heat set inserts
@@ -19,7 +19,7 @@
 * 5x M3x8, 1x M3x4 low profile upper leg to servo bolts
 * 3x M3x6 low profile upper pulley to servo bolts
 * ??? 6x upper leg to knee stud bolts
-* ??? 6x lower leg to lower pulley bolts
+* 8x M2.5x6 flat - lower leg to lower pulley bolts
 
 ## 3d printed ##
 
