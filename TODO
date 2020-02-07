@@ -1,18 +1,28 @@
  * mk2 leg
-   * print
-     * lower leg
-   * verify
-     * lower pulley
-     * upper leg v2
-     * upper pulley v3
-     * shoulder v4 (with dimension slightly smaller again, figure out
-       what went wrong)
-   * design al knee stud
+   * test lower leg bearing fit
+   * test shoulder on final servo hw
 
  * get lower foot to a working state
+   * get casting to a workable state
+   * test epoxying foot bracket to leg, do some kind of load test
+
+ * print all mk2 legs
+   * upper leg 4/5
+   * tensioner 1/5
+
+   * shoulder 0/5
+   * lower leg 0/5
+   * foot bracket 0/5
+
+ * machine mk2 legs
 
  * mk2 chassis
-   * just need to redo front and back plates
+   * print
+     * 0/2 front/back
+     * 0/1 top
+     * 0/2 sides
+     * 0/2 bottoms
+     * 0/2 ribs
 
  * rpi3 hat
    * make plan
@@ -83,6 +93,32 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-02-07
+ * knee stud op2 5/5
+ * 1/1 battery stud
+
+DONE 2020-02-06
+ * upper motor mount 5/5
+ * ordered enamel stripper
+ * knee stud op1 5/5
+
+DONE 2020-02-05
+ * finished upper pulley and lower pulley for mk2 legs
+ * Tried foaming in another foot, decided to do it by weight, ordered
+   more supplies
+ * Updated chassis for mk2 leg
+
+DONE 2020-02-04
+ * Started prints of upper motor joint and pulleys
+ * CAM for knee stud
+ * Op1 on first knee stud
+ * Prepared op2 bracket for printing
+ * verified upper leg v3
+
+DONE 2020-02-03
+ * Tested upper upper pulley v3, seems to work
+ * Tested shoulder v4, seems to work, although need fit test on final HW
 
 DONE 2020-02-02
  * upper motor joint seems to work
