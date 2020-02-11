@@ -1,0 +1,41 @@
+# Parts #
+
+## "off the shelf" ##
+
+* ??? 4x mk2 leg assemblies
+* ??? mjbots power distribution board
+* ??? rpi3b+
+* ??? mjbots rpi3 hat
+* ??? switch
+* ??? top heat set inserts
+* ??? front/back heat set inserts
+* ??? battery stud heat set inserts
+* ??? bolts from top to front/back
+* ??? bolts from sides to front/back
+* ??? bolts from bottom to front/back
+* ??? bolts from battery stud to top
+* ??? bolts from switch plate to top
+* ??? bolts from power dist to side
+* ??? bolts from rpi to side
+* ??? bolts from rpihat to rpi
+
+## Cable harnesses ##
+
+* battery stud to xt90
+* 4x xt30 from power dist to leg
+* xt30 from power dist to rpi3 hat
+* 4x jst from rpi3 hat to shoulder
+* switch to jst ph4
+
+## 3d printed ##
+
+* top
+* left side
+* right side
+* 2x front/back plate
+* 2x stiffener
+* bottom left
+* bottom right
+* battery stud left
+* battery stud right
+* switch plate
