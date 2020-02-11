@@ -21,6 +21,13 @@
 * ??? 6x upper leg to knee stud bolts
 * 8x M2.5x6 flat - lower leg to lower pulley bolts
 
+## Cable harnesses ##
+
+* xt30 from shoulder to upper leg
+* xt30 from upper leg to lower
+* jst ph3 from shoulder to upper leg
+* jst ph3 from upper leg to lower
+
 ## 3d printed ##
 
 * shoulder
