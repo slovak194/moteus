@@ -1,19 +1,3 @@
- * outer housing
-
- * front housing
-   * output bearing needs to have continuous contact, i.e. no weight
-     cutouts
-   * gear needs to have slightly less cutout or continuous
-   * Update to do bulk of material removal on AA CNC bridgeport
-
- * back housing
-   * maybe could lower the controller board by a mm
-
- * back cover
-   * machine
-
- * Do weight reduction to planet output
-
 DONE 2019-11-18
  * mk2 r3.1 version:
    * front housing 65.9g
