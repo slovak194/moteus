@@ -1,0 +1,110 @@
+# Parts #
+
+## "off the shelf" ##
+
+ * moteus controller
+ * 3x 4x22 dowel pin for planets - PN?????
+ * 1x 4x22 (maybe 24) dowel pin for primary shaft - PN?????
+ * 3x HK0408 needle bearing - planet bearing
+ * 1x 6802-zz 15x24x5 - planet input bearing
+ * 1x 624-zz 4x13x5 - planet output bearing
+ * 1x 6708-2rs 40x50x6 - output bearing
+ * 1x 6702-zz 15x21x4 - rotor bearing
+ * D42DIA 1/4" x 1/8" N42 magnet from K&J
+
+## Fasteners ##
+
+ * 3x M3x10 low profile bolts from planet input to output - PN???????
+ * ??? bolts from front housing to outer housing - PN??????
+ * ??? bolts from back housing to outer housing - PN??????
+ * ??? bolts from controller to back housing - PN??????
+ * ??? bolts from wire cover to back housing - PN??????
+ * ??? bolts from back cover to back housing - PN??????
+
+## Adhesives ##
+
+ * IPA
+ * Loctite 7471 activator
+ * Loctite 638 retaining compound
+
+## Custom ##
+
+ * Front housing
+ * Outer housing
+ * Planet output
+ * Planet input
+ * Back housing
+ * Back cover
+ * Wire cover
+ * Magnet rotor adapter
+ * sun gear
+ * internal gear
+ * planet gears
+
+# Assembly #
+
+## Planet Output ##
+
+1. IPA wipe
+  a) bearing surfaces of planet output
+  b) outside of planet output bearing
+  c) inside of output bearing
+2. Apply 7471 to:
+  a) outside of planet output bearing
+  b) inside of output bearing
+3. Apply 638 to bearing surfaces of planet output
+4. Mate planet output bearing and output bearing
+5. Cure at 40C for 24hr
+
+## Rotor ##
+
+1. Rough surfaces w/ medium emory cloth
+  a) outside of sun gear mating surface
+  b) inside of rotor mating surface
+2. Wipe with IPA until clean
+  a) same two surfaces
+3. Apply 7471 to outside of sun gear
+4. Apply 638 to inside of rotor
+5. Mate sun gear and rotor
+6. Cure at 40C for 24hr
+
+## Planet input ##
+
+1. Wipe w/ IPA
+  a) Shaft surfaces of planet input
+  b) Outside of each shaft
+2. Apply 7471 to outside of shaft near end
+3. Apply 638 to shaft holes on planet input
+4. Mate shafts into planet input
+  a) use fixture planet output to align shafts
+5. Cure at 40C for 24hr
+
+## Front housing ##
+
+1. Rough surfaces w/ medium emory cloth
+  a) outside of internal gear
+2. Adjust windings of stator
+  a) no windings should be inside overall ID
+  b) no windings should be present alongside steel center in region
+     where lip exists
+3. Wipe with IPA until clean
+  a) outside of internal gear
+  b) outside of output bearing
+  c) output bearing surface on front housing
+  d) internal gear surface on front housing
+  e) stator surface on front housing
+  f) inside of stator
+4. Apply 7471 to
+  a) outside of output bearing
+  b) outside of internal gear
+  c) inside of stator
+5. Apply 638 to
+  a) output bearing surface on front housing
+  b) internal gear surface on front housing
+  c) stator surface on front housing
+6. Mate
+  a) output bearing (including planet output assembly)
+  b) internal gear
+  c) stator w/ phase wires aligned to notch and facing towards front
+     of front housing
+7. Cure at 40C for 24hr
