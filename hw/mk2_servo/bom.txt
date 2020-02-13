@@ -15,17 +15,18 @@
 ## Fasteners ##
 
  * 3x M3x10 low profile bolts from planet input to output - PN???????
- * ??? bolts from front housing to outer housing - PN??????
- * ??? bolts from back housing to outer housing - PN??????
- * ??? bolts from controller to back housing - PN??????
- * ??? bolts from wire cover to back housing - PN??????
- * ??? bolts from back cover to back housing - PN??????
+ * 8x M2.5x5 flat head bolts from front housing to outer housing - PN??????
+ * 7x M2.5x5 flat bolts from back housing to outer housing - PN??????
+ * 4x M2.5x5 std bolts from controller to back housing - PN??????
+ * 2x M2.5x4 flat bolts from wire cover to back housing - PN??????
+ * 4x M2.5x5 std bolts from back cover to back housing - PN??????
 
 ## Adhesives ##
 
  * IPA
  * Loctite 7471 activator
  * Loctite 638 retaining compound
+ * Loctite 243 threadlock
 
 ## Custom ##
 
@@ -108,3 +109,52 @@
   c) stator w/ phase wires aligned to notch and facing towards front
      of front housing
 7. Cure at 40C for 24hr
+
+## Rotor bearings ##
+
+1. Install planet input bearing on rotor 6802-zz
+  a) a press w/ fixture/plate may be needed
+2. Install rotor bearing 6702-zz
+  a) a press w/ fixture/plate may be needed
+
+## Axle install ##
+
+1. Press central 4x22 dowel axle into output bearing
+
+## Planet input and gears ##
+
+1. Place 3 planet gears on PI shaft
+2. Install planet input
+3. Fasten PI to PI w/ 3x M3x10 low profile bolts
+  a) Use loctite 243 on each bolt
+
+## Outer housing ##
+
+1. Install outer housing to front housing w/ 8x M2.5x5 flat head bolts
+  a) Use loctite 243 on each bolt
+
+## Rotor install ##
+
+1. Place rotor onto central axle
+  a) a press may be necessary, be careful not to damage the stator
+2. Install magnet
+  a) super glue magnet to adapter
+  b) super glue adapter into rotor
+
+## Strip stator wires ##
+
+1. TODO measure wires
+2. TODO strip
+
+## Back housing ##
+
+1. Install back housing w/ 7x M2.5x5 flat head
+  a) Use loctite 243 on each bolt
+2. Solder phase wires to controller
+3. Apply thermal compound to heatsink on back housing
+4. Mount controller to back plate w/ 4x M2.5x5 bolts
+  a) Use loctite 243 on each bolt
+5. Fasten wire cover w/ 2x M2.5x4 flat head bolts
+  a) Use loctite 243 on each bolt
+6. Fast back cover w/ 4x M2.5x5 bolts
+  a) Use loctite 243 on each bolt
