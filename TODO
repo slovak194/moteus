@@ -2,27 +2,30 @@
    * test lower leg bearing fit
    * test shoulder on final servo hw
 
- * get lower foot to a working state
-   * get casting to a workable state
-   * test epoxying foot bracket to leg, do some kind of load test
+ * mk2 servo build
+   * 1/25 planet output inner and outer bearing
+   * 1/25 shafts to planet input
+   * 1/25 sun gear in rotor
+   * 1/25 front housing pieces (po, ig, stator)
+   * 1/25 both bearings on rotor
+   * 0/25 central axle
+   * 0/25 planet input and gears
+   * 0/25 outer housing to front housing
+   * 0/25 rotor installed
+   * 0/25 stator wires stripped
+   * 0/25 back housing, controller, magnets, and covers
 
  * print all mk2 legs
-   * upper leg 4/5
    * tensioner 1/5
 
    * shoulder 0/5
-   * lower leg 0/5
-   * foot bracket 0/5
-
- * machine mk2 legs
+   * lower leg 1/5
+   * assemble lower leg 1/4
 
  * mk2 chassis
-   * print
-     * 0/2 front/back
-     * 0/1 top
-     * 0/2 sides
-     * 0/2 bottoms
-     * 0/2 ribs
+   * install heat set inserts
+   * assemble battery stud
+   * assemble chassis
 
  * rpi3 hat
    * make plan
@@ -93,6 +96,28 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-02-13
+   * upper leg 5/5
+
+DONE 2020-02-12
+ * Cast 5 feet using current best procedure
+ * Epoxied test lower leg to cast foot
+ * Printed 25x magnet holders
+ * Load tested lower leg w/ epoxied foot, 11kg was fine when perfectly horizontal
+
+DONE 2020-02-11
+ * mk2 chassis
+     * 2/2 front/back
+
+
+DONE 2020-02-09
+ * mk2 chassis
+     * 1/1 top
+     * 2/2 sides
+     * 2/2 bottoms
+     * 2/2 ribs
+
 
 DONE 2020-02-07
  * knee stud op2 5/5
