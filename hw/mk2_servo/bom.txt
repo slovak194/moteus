@@ -14,19 +14,20 @@
 
 ## Fasteners ##
 
- * 3x M3x10 low profile bolts from planet input to output - PN???????
+ * 3x M3x8 low profile bolts from planet input to output - PN???????
  * 8x M2.5x5 flat head bolts from front housing to outer housing - PN??????
- * 7x M2.5x5 flat bolts from back housing to outer housing - PN??????
+ * 8x M2.5x5 flat bolts from back housing to outer housing - PN??????
  * 4x M2.5x5 std bolts from controller to back housing - PN??????
  * 2x M2.5x4 flat bolts from wire cover to back housing - PN??????
  * 4x M2.5x5 std bolts from back cover to back housing - PN??????
 
-## Adhesives ##
+## Adhesives / Fluids ##
 
  * IPA
  * Loctite 7471 activator
  * Loctite 638 retaining compound
  * Loctite 243 threadlock
+ * Yamalube ACC-MOLDM-GS-10
 
 ## Custom ##
 
@@ -123,14 +124,10 @@
 
 ## Planet input and gears ##
 
-1. Place 3 planet gears on PI shaft
-2. Install planet input
-3. Fasten PI to PI w/ 3x M3x10 low profile bolts
-  a) Use loctite 243 on each bolt
-
-## Outer housing ##
-
-1. Install outer housing to front housing w/ 8x M2.5x5 flat head bolts
+1. Press HK0408 bearings into 3 gears
+2. Place 3 planet gears on PI shaft
+3. Install planet input
+4. Fasten PI to PI w/ 3x M3x8 low profile bolts
   a) Use loctite 243 on each bolt
 
 ## Rotor install ##
@@ -140,11 +137,18 @@
 2. Install magnet
   a) super glue magnet to adapter
   b) super glue adapter into rotor
+3. Apply Yamalube grease
+
+## Outer housing ##
+
+1. Install outer housing to front housing w/ 8x M2.5x5 flat head bolts
+  a) Use loctite 243 on each bolt
 
 ## Strip stator wires ##
 
-1. TODO measure wires
-2. TODO strip
+1. Trim phase wires to 98mm as measured from front housing central
+   cylinder (i.e. inner surface of stator)
+2. Strip 4mm from the end of each phase wire
 
 ## Back housing ##
 
