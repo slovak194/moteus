@@ -3,8 +3,8 @@
 ## "off the shelf" ##
 
  * moteus controller
- * 3x 4x22 dowel pin for planets - PN?????
- * 1x 4x22 (maybe 24) dowel pin for primary shaft - PN?????
+ * 3x 4x22 dowel pin for planets - 91595A170
+ * 1x 4x22 dowel pin for primary shaft - 91595A170
  * 3x HK0408 needle bearing - planet bearing
  * 1x 6802-zz 15x24x5 - planet input bearing
  * 1x 624-zz 4x13x5 - planet output bearing
@@ -17,9 +17,9 @@
  * 3x M3x8 low profile bolts from planet input to output - PN???????
  * 8x M2.5x5 flat head bolts from front housing to outer housing - PN??????
  * 8x M2.5x5 flat bolts from back housing to outer housing - PN??????
- * 4x M2.5x5 std bolts from controller to back housing - PN??????
+ * 4x M2.5x4 std bolts from controller to back housing - PN??????
  * 2x M2.5x4 flat bolts from wire cover to back housing - PN??????
- * 4x M2.5x5 std bolts from back cover to back housing - PN??????
+ * 4x M2.5x6 std bolts from back cover to back housing - PN??????
 
 ## Adhesives / Fluids ##
 
@@ -73,8 +73,7 @@
 ## Planet input ##
 
 1. Wipe w/ IPA
-  a) Shaft surfaces of planet input
-  b) Outside of each shaft
+  a) Outside of each shaft
 2. Apply 7471 to outside of shaft near end
 3. Apply 638 to shaft holes on planet input
 4. Mate shafts into planet input
@@ -129,6 +128,7 @@
 3. Install planet input
 4. Fasten PI to PI w/ 3x M3x8 low profile bolts
   a) Use loctite 243 on each bolt
+5. Apply Yamalube grease
 
 ## Rotor install ##
 
@@ -137,28 +137,27 @@
 2. Install magnet
   a) super glue magnet to adapter
   b) super glue adapter into rotor
-3. Apply Yamalube grease
+
+## Strip stator wires ##
+
+1. Trim phase wires to 96mm as measured from front housing central
+   cylinder (i.e. inner surface of stator)
+2. Strip 4mm from the end of each phase wire
 
 ## Outer housing ##
 
 1. Install outer housing to front housing w/ 8x M2.5x5 flat head bolts
   a) Use loctite 243 on each bolt
 
-## Strip stator wires ##
-
-1. Trim phase wires to 98mm as measured from front housing central
-   cylinder (i.e. inner surface of stator)
-2. Strip 4mm from the end of each phase wire
-
 ## Back housing ##
 
-1. Install back housing w/ 7x M2.5x5 flat head
+1. Install back housing w/ 8x M2.5x5 flat head
   a) Use loctite 243 on each bolt
 2. Solder phase wires to controller
 3. Apply thermal compound to heatsink on back housing
-4. Mount controller to back plate w/ 4x M2.5x5 bolts
+4. Mount controller to back plate w/ 4x M2.5x4 bolts
   a) Use loctite 243 on each bolt
 5. Fasten wire cover w/ 2x M2.5x4 flat head bolts
   a) Use loctite 243 on each bolt
-6. Fast back cover w/ 4x M2.5x5 bolts
+6. Fast back cover w/ 4x M2.5x6 bolts
   a) Use loctite 243 on each bolt

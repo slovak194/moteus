@@ -20,6 +20,18 @@ Battery
 Inserts
  * x a lot M3 insert
 
+Fasteners
+ * 6x M3x8 low profile to attach battery stud
+ * 40x M3x6 low profile to attach top, sides, and bottom to front/back
+ * 16x M3x6 low profile to attach stiffener
+ * 28x M3x6 low profile to attach shoulders to front/back
+ * 4x M2.5x4 standard to attach power dist board to side
+ * ??? to attach rpi to side
+
+Harnesses
+ * Power from power dist to each shoulder
+ * Power from power dist to rpi
+
 Modules
  * 4x legs
  * Power distribution board
