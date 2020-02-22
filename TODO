@@ -1,37 +1,51 @@
- * mk2 leg
-   * test lower leg bearing fit
-   * test shoulder on final servo hw
-
  * mk2 servo build
-   * 1/25 planet output inner and outer bearing
-   * 1/25 shafts to planet input
-   * 1/25 sun gear in rotor
-   * 1/25 front housing pieces (po, ig, stator)
-   * 1/25 both bearings on rotor
-   * 0/25 central axle
-   * 0/25 planet input and gears
-   * 0/25 outer housing to front housing
-   * 0/25 rotor installed
-   * 0/25 stator wires stripped
-   * 0/25 back housing, controller, magnets, and covers
+   * 21/21 program/test controllers
+   * 21/21 planet output inner and outer bearing
+   * 21/21 sun gear in rotor
+   * 21/21 shafts to planet input
+   * 21/21 front housing pieces (po, ig)
+   * 21/21 both bearings on rotor
+   * 21/21 outer housing engraved
+   * 21/21 front housing stator
+   * 21/21 central axle
+   * 21/21 planet input and gears
+   * 21/21 grease gears
+   * 21/21 rotor installed
+   * 14/21 stator wires stripped
+   * 14/21 outer housing to front housing
+   * 14/21 back housing, controller, magnets, and covers
 
- * print all mk2 legs
-   * tensioner 1/5
+ * quad A1
+   * build power and data harnesses for each leg
+   * re-design shoulder (move legs out laterally) so that legs don't
+     interfere
+   * get rpi3 flashed with realtime kernel (maybe copy existing one)
+   * mount rpi3 on chassis
+   * make CAN cables from rpi3 to shoulder joints
+   * assign CAN IDs to all the servos
 
-   * shoulder 0/5
-   * lower leg 1/5
-   * assemble lower leg 1/4
-
- * mk2 chassis
-   * install heat set inserts
-   * assemble battery stud
-   * assemble chassis
+ * chassis battery stud needs to have thicker aligners to ensure the
+   contacts mate with the battery
+ * make "quad" sticker to go under the mjbots one
 
  * rpi3 hat
    * make plan
    * device tree eeprom
    * spi slave
    * define spi protocol
+   * build test fixture
+
+ * Make test fixture for servos
+   * perform actual calibration
+   * then connect to a dynamometer of some kind
+   * sweep different torques at different speeds
+   * measure maximum speed
+   * measure maximum stall torque
+
+ * test fixtures should have a way to store json formatted test
+   results online per-serial number...  semi-standardized way to
+   report tests that passed and per-device specific things like plots
+   or quality metrics
 
  * devkit nice to haves
    * Hard-fault or assert needs to reset the device and latch a fault
@@ -97,8 +111,43 @@ Code cleanup
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
 
+DONE 2020-02-21
+ * Finished testing first 14 qdd100's
+ * Assembled all 4 legs of quad A1
+
+DONE 2020-02-20
+ * 5x tensioners
+ * Lots of assembly
+
+DONE 2020-02-19
+ * Testing stator alignment
+   * first one, against al face: 175kv
+   * second one, w/ 1.25mm wire spacer: 145
+   * third one, w/ 1.25mm wire spacer: 162
+   * fourth one, w/ 1.02mm wire spacer: 160
+ * kv rating seemed to drop another 10% when measured at 24v instead of 18v?
+ * assembled remaining stators for initial batch
+ * assembled 4 shoulder servos onto chassis, mfgd power harnesses
+
+DONE 2020-02-18
+ * Ordered nrfusb
+ * More mk2 assembly
+ * Tried using scotchbrite on back housing... didn't really work that
+   well.  Will try a vibratory tumbler instead
+ * Epoxied remaining 4 lower legs and assembled all 5
+
+DONE 2020-02-14
+   * lower leg 5/5
+ * Assembled first mk2 servo with all production parts except back
+   housing (which is still my prototype).  Smooth as butter!
+ * brushed planet output front for more uniform look
+ * worked on pre-production mk2 servo build
+
 DONE 2020-02-13
    * upper leg 5/5
+ * Installed all chassis heat set inserts
+ * Installed heat set inserts for all lower pulleys
+ * Got logo on controller pcb
 
 DONE 2020-02-12
  * Cast 5 feet using current best procedure
