@@ -1,39 +1,5 @@
- * mk2 servo build
-   * 21/21 program/test controllers
-   * 21/21 planet output inner and outer bearing
-   * 21/21 sun gear in rotor
-   * 21/21 shafts to planet input
-   * 21/21 front housing pieces (po, ig)
-   * 21/21 both bearings on rotor
-   * 21/21 outer housing engraved
-   * 21/21 front housing stator
-   * 21/21 central axle
-   * 21/21 planet input and gears
-   * 21/21 grease gears
-   * 21/21 rotor installed
-   * 14/21 stator wires stripped
-   * 14/21 outer housing to front housing
-   * 14/21 back housing, controller, magnets, and covers
-
- * quad A1
-   * build power and data harnesses for each leg
-   * re-design shoulder (move legs out laterally) so that legs don't
-     interfere
-   * get rpi3 flashed with realtime kernel (maybe copy existing one)
-   * mount rpi3 on chassis
-   * make CAN cables from rpi3 to shoulder joints
-   * assign CAN IDs to all the servos
-
  * chassis battery stud needs to have thicker aligners to ensure the
    contacts mate with the battery
- * make "quad" sticker to go under the mjbots one
-
- * rpi3 hat
-   * make plan
-   * device tree eeprom
-   * spi slave
-   * define spi protocol
-   * build test fixture
 
  * Make test fixture for servos
    * perform actual calibration
@@ -110,6 +76,14 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-02-23
+ * Updated shoulder and upper motor joint to remove interference,
+   printed first pair... seems to work, will make a full set
+
+DONE 2020-02-22
+ * Built all power and data harnesses
+ * Assigned IDs to all servos
 
 DONE 2020-02-21
  * Finished testing first 14 qdd100's
