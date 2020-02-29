@@ -1,3 +1,8 @@
+ * Order test fixture for controller r4.3 test pad locations from oshpark
+
+ * implement CAN for the power distribution board
+ * rev power dist board so no blue wires needed
+
  * chassis battery stud needs to have thicker aligners to ensure the
    contacts mate with the battery
 
@@ -7,6 +12,7 @@
    * sweep different torques at different speeds
    * measure maximum speed
    * measure maximum stall torque
+   * some way of testing side loads and deflection while in motion?
 
  * test fixtures should have a way to store json formatted test
    results online per-serial number...  semi-standardized way to
@@ -69,7 +75,6 @@
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
 
- * implement CAN for the power distribution board
 
 
 Code cleanup
