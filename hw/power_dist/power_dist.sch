@@ -4104,8 +4104,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <sheets>
 <sheet>
 <plain>
-<text x="-78.74" y="218.44" size="5.08" layer="91">moteus power dist r3
-(c) 2019 Josh Pieper, jjp@pobox.com
+<text x="-78.74" y="218.44" size="5.08" layer="91">mjbots power dist r3
+(c) 2020 Josh Pieper, jjp@pobox.com
 Licensed under the Apache 2.0 License
 https://www.apache.org/licenses/LICENSE-2.0</text>
 <wire x1="-78.74" y1="210.82" x2="109.22" y2="210.82" width="0.1524" layer="90"/>
