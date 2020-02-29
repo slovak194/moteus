@@ -1,9 +1,9 @@
-Need mjbots logo
-
 r3 DONE
  * Fixed SWDIO and SWCLK
  * Drove VBAT
  * Moved LEDS
+ * Need mjbots logo
+
 
 r2 ERRATA
  * SWDIO and SWCLK are on wrong pins!
