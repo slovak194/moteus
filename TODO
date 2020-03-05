@@ -1,7 +1,7 @@
- * Order test fixture for controller r4.3 test pad locations from oshpark
+ * Make production devkit
 
- * implement CAN for the power distribution board
- * rev power dist board so no blue wires needed
+ * Reference docs should have example usage of register protocol
+ * Need sample usage of register protocol from python w/ fdcanusb
 
  * chassis battery stud needs to have thicker aligners to ensure the
    contacts mate with the battery
@@ -61,11 +61,6 @@
    limit.  Perhaps the control_position should have a special mode for
    when it is started outside?
 
- * Bringup improvements
-   * bringup procedure needs to automatically verify temperature is
-     sane, including when powering motor
-   * zeroing procedure needs a way to verify it online
-
  * Add a "brake" mode that just shorts the terminals all to ground
 
  * Make moteus_tool servo auto-detection more robust
@@ -81,6 +76,12 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-03-05
+ * Reported rezeroing state
+
+DONE 2020-02-28
+ * Brought up CAN on the power dist board
 
 DONE 2020-02-23
  * Updated shoulder and upper motor joint to remove interference,
