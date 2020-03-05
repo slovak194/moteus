@@ -1,3 +1,7 @@
+r4 ERRATA
+ * Need an isolated CAN transceiver so that we can actually connect it up
+
+
 r3 DONE
  * Fixed SWDIO and SWCLK
  * Drove VBAT
