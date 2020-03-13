@@ -1,10 +1,9 @@
+ * Torque constant drops off at higher currents, leading to inaccurate
+   torque
+
  * Make production devkit
 
  * Reference docs should have example usage of register protocol
- * Need sample usage of register protocol from python w/ fdcanusb
-
- * chassis battery stud needs to have thicker aligners to ensure the
-   contacts mate with the battery
 
  * Make test fixture for servos
    * perform actual calibration
