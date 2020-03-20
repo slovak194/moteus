@@ -1,9 +1,10 @@
+ * switch ADC to be triggered off of timer instead of software
+ * make position sensing happen in parallel with other things
+
  * Torque constant drops off at higher currents, leading to inaccurate
    torque
 
  * Make production devkit
-
- * Reference docs should have example usage of register protocol
 
  * Make test fixture for servos
    * perform actual calibration
@@ -41,9 +42,6 @@
    * make tview poll for more data immediately if something was present
 
  * New telemetry format
-   * C++ file writer
-   * Binary -> Javascript
-
    * Json -> Binary
    * Binary <-> JSON
    * Javascript <-> Binary
@@ -75,6 +73,10 @@ Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-03-19
+ * Fixed many things in the g4 integration, and some generic things
+   like voltage to pwm mapping and kv calibration
 
 DONE 2020-03-05
  * Reported rezeroing state
