@@ -3875,9 +3875,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+18V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
-<part name="C2" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 35V">
+<part name="C2" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 50V">
 <attribute name="MF" value="TDK"/>
-<attribute name="MPN" value="CGA5L1X7R1V106K160AC"/>
+<attribute name="MPN" value="C3216X7R1H106K160AE"/>
 </part>
 <part name="P+3" library="supply1" deviceset="+12V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -3987,9 +3987,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="MPN" value="NLFV32T-330K-EF"/>
 <attribute name="POPULATE" value="1"/>
 </part>
-<part name="C7" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 35V">
+<part name="C7" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 50V">
 <attribute name="MF" value="TDK"/>
-<attribute name="MPN" value="CGA5L1X7R1V106K160AC"/>
+<attribute name="MPN" value="C3216X7R1H106K160AE"/>
 </part>
 <part name="C8" library="mfpassives" deviceset="CAPACITOR_NP" device="_0603" value="1uF 50V">
 <attribute name="MF" value="SAMSUNG"/>
@@ -4029,9 +4029,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/STM32G474CEU6
 <attribute name="HOUSEPART" value="1"/>
 <attribute name="MPN" value="MF-CAP-0402-1uF"/>
 </part>
-<part name="C15" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 35V">
+<part name="C15" library="mfpassives" deviceset="CAPACITOR_NP" device="_1206" value="10uF 50V">
 <attribute name="MF" value="TDK"/>
-<attribute name="MPN" value="CGA5L1X7R1V106K160AC"/>
+<attribute name="MPN" value="C3216X7R1H106K160AE"/>
 </part>
 <part name="J1" library="precharge" deviceset="JST-ZH6" device="SMT_VERT">
 <attribute name="MF" value="JST"/>
