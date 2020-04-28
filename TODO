@@ -1,10 +1,9 @@
- * switch ADC to be triggered off of timer instead of software
- * make position sensing happen in parallel with other things
+ * chassis
+   * assemble new chassis - BLOCKED on new leg
+   * Try sanding down corners
 
  * Torque constant drops off at higher currents, leading to inaccurate
    torque
-
- * Make production devkit
 
  * Make test fixture for servos
    * perform actual calibration
@@ -62,17 +61,25 @@
 
  * Make moteus_tool servo auto-detection more robust
    * especially in the face of things spewing
- * Turn on -Wdouble-promotion for STM32 builds
  * Figure out why -O2 and -O3 start linking in assert
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
-
 
 
 Code cleanup
  * get link time optimization working
  * Try to figure out a way so that we can actually bind callbacks without
    having to shrink all over the place?
+
+DONE 2020-04-28
+ * Designed foaming fixture
+ * Turned on -Werror and -Wdouble-promotion
+
+DONE 2020-04-15
+ * Moved rpi further away so hdmi can be used without unmounting
+ * Removed junction board
+ * Added a 160mm mounting pattern on top
+ * Move power switch to front/back plate
 
 DONE 2020-03-19
  * Fixed many things in the g4 integration, and some generic things
