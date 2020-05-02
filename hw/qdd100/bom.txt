@@ -140,7 +140,7 @@
 
 ## Strip stator wires ##
 
-1. Trim phase wires to 96mm as measured from front housing central
+1. Trim phase wires to 95mm as measured from front housing central
    cylinder (i.e. inner surface of stator)
 2. Strip 4mm from the end of each phase wire
 
