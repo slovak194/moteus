@@ -2,7 +2,7 @@
 
 ## "off the shelf" ##
 
-* 3x moteus M80 mk2 servos
+* 3x qdd100 servos
 * belt - 5mm GT3 85 teeth 15mm wide belt - 425-5MGT-15
 * 1x upper leg bearing - 6704zz
 * 2x lower leg bearing - 6704zz
