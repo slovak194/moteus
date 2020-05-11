@@ -1,6 +1,5 @@
-* Front and back plates have an inconvenient length for bolts that
-  hold should motors on.  Slightly too long to reliably use an M3x6
-  and slightly too short to reliably use a M3x8.
-* Cavity liner interferes with rpi antenna
-* Cavity liner could be extended to cover the middle cavities too,
-  unsupported is probably fine
+
+DONE 2020-05-04
+ * Extended the countersink in front plate by 1mm to make M3x6 bolts
+   be the optimal size
+ * Updated internal cover to not interfere with rpi antenna
