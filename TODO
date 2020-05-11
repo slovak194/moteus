@@ -45,12 +45,6 @@
 
  * design new absolute position sense board
 
- * need to do something better if starting position control outside
-   the absolute limit, than slew as hard as possible to get into the
-   limit.  Perhaps the control_position should have a special mode for
-   when it is started outside?  Faulting is probably better than what
-   we have now.
-
  * Add a "brake" mode that just shorts the terminals all to ground
 
  * Make moteus_tool servo auto-detection more robust
