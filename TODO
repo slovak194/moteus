@@ -1,6 +1,9 @@
+ * bring up 4.4
+   * verify that I made new version pins
+   * double check the pins that I changed
+
  * chassis
-   * assemble new chassis - BLOCKED on new leg
-   * Try sanding down corners
+   * print new bottom and internal covers
 
  * Torque constant drops off at higher currents, leading to inaccurate
    torque
@@ -40,36 +43,23 @@
    * c++ moteus_tool
    * make tview poll for more data immediately if something was present
 
- * New telemetry format
-   * Json -> Binary
-   * Binary <-> JSON
-   * Javascript <-> Binary
-   * Python -> Binary
-   * C++ network server
-
-   * Javascript file reader
-   * Javascript live + logged analysis tool
-
  * design new absolute position sense board
 
  * need to do something better if starting position control outside
    the absolute limit, than slew as hard as possible to get into the
    limit.  Perhaps the control_position should have a special mode for
-   when it is started outside?
+   when it is started outside?  Faulting is probably better than what
+   we have now.
 
  * Add a "brake" mode that just shorts the terminals all to ground
 
  * Make moteus_tool servo auto-detection more robust
    * especially in the face of things spewing
- * Figure out why -O2 and -O3 start linking in assert
  * Get all mbed ticker stuff out of the link, we never want it used
  * use less power when driver is not active
 
-
-Code cleanup
- * get link time optimization working
- * Try to figure out a way so that we can actually bind callbacks without
-   having to shrink all over the place?
+DONE 2020-05-02
+ * Designed leg zeroing fixtures
 
 DONE 2020-04-28
  * Designed foaming fixture
