@@ -147,17 +147,22 @@
 ## Outer housing ##
 
 1. Install outer housing to front housing w/ 8x M2.5x5 flat head bolts
-  a) Use loctite 243 on each bolt
+  a) Apply loctite 7471 to hole
+  b) Use loctite 243 on each bolt
 
 ## Back housing ##
 
 1. Install back housing w/ 8x M2.5x5 flat head
-  a) Use loctite 243 on each bolt
+  a) Apply loctite 7471 to each hole
+  b) Use loctite 243 on each bolt
 2. Solder phase wires to controller
 3. Apply thermal compound to heatsink on back housing
 4. Mount controller to back plate w/ 4x M2.5x4 bolts
-  a) Use loctite 243 on each bolt
+  a) Apply loctite 7471 in each hole
+  b) Use loctite 243 on each bolt
 5. Fasten wire cover w/ 2x M2.5x4 flat head bolts
-  a) Use loctite 243 on each bolt
+  a) Apply loctite 7471 in each hole
+  b) Use loctite 243 on each bolt
 6. Fast back cover w/ 4x M2.5x6 bolts
-  a) Use loctite 243 on each bolt
+  a) Apply loctite 7471 in each hole
+  b) Use loctite 243 on each bolt
