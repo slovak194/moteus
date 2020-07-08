@@ -38,4 +38,5 @@
 * bottom right
 * battery stud left
 * battery stud right
-* switch plate
+* internal cover left
+* internal cover right
