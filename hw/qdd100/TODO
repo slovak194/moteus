@@ -1,6 +1,18 @@
-* mount holes should be an extra 1mm deep, only 2.5mm is inconvenient
-* stator appears to be about 1.2mm too far away from the rotor
+DONE 2020-07-22
+ * Added aligning ledges
 
+DONE 2020-07-21
+ * Double checked stator distance, an extra 1.2mm is just about
+   exactly what is wanted... verified grindy gears were a result of
+   crooked stator
+ * Added an extra .3mm of material to bottom of back housing mounting
+   by making tap slightly smaller.
+
+DONE 2020-07-20
+ * Added an extra mm to both front and back mount holes
+ * Made back mount interior same 4.5mm diam
+ * Updated all shafts to 22mm length, removed circlip slot
+ * Moved stator an extra 1.2mm away
 
 DONE 2019-11-18
  * mk2 r3.1 version:
