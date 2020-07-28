@@ -1,3 +1,4 @@
+ * No guard against running moteus_tool and tview at the same time
  * Limit maximum controllable speed to what the encoder can handle
 
  * infinite rotation
@@ -8,9 +9,6 @@
  * bring up 4.4
    * verify that I made new version pins
    * double check the pins that I changed
-
- * Torque constant drops off at higher currents, leading to inaccurate
-   torque
 
  * Make test fixture for servos
    * perform actual calibration
