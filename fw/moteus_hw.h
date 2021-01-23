@@ -165,7 +165,7 @@ constexpr int kCompatibleHwRev[] = {
 #if MOTEUS_HW_REV <= 1
 #error "Not supported"
 #elif MOTEUS_HW_REV >= 2
-#define MOTEUS_CURRENT_SENSE_OHM 0.0005f
+#define MOTEUS_CURRENT_SENSE_OHM 0.005f
 #endif
 #endif
 
